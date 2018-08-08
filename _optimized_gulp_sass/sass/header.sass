@@ -1,0 +1,158 @@
+@import "bourbon"
+@import "vars.sass"
+@import "app/libs/owlcarousel/dist/assets/owl.carousel.min"
+
+
+
+body
+	font-size: 16px
+	min-width: 480px
+	position: relative
+	line-height: 1.6
+	font-family: "Open Sans", sans-serif
+	font-weight: 400
+	overflow-x: hidden
+	color: #fff
+
+.hidden
+	display: none
+
+a
+	outline: none!important
+	color: #fff
+	&:hover, &:focus
+		color: #111
+		text-decoration: none
+
+.text-right
+	text-align: right
+.text-left
+	text-align: left
+.text-center
+	text-align: center
+
+.home
+	width: 100%
+	height: 100vh
+	position: relative
+	.home-bg
+		background-image: url(../img/header/bg-header.png)
+		position: absolute
+		background-size: cover
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		&::before
+			content: ''
+			background: linear-gradient(to right, #24013A, #E11CB6)
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			position: absolute
+			opacity: .5
+	.home-content
+		position: relative
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		padding: 25px
+		.home-btns
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: flex-end
+			.fa-th
+				font-size: 30px
+			.fa-bars
+				font-size: 32px
+			.home-btns-info, .home-btns-contact
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 70px
+				height: 70px
+				font-size: 24px
+				background-color: #fff
+				background-clip: padding-box
+				border: 13px solid rgba(250, 255, 255, 0.25)
+				border-radius: 50%
+				color: #333
+				&:hover
+					animation-name: size
+					animation-duration: 2s
+					animation-fill-mode: forwards
+					@keyframes size
+						10% {border: 33px solid rgba(250, 255, 255, 0.25)}
+						25% {background-color: #999}
+						50% {border: 0px solid rgba(250, 255, 255, 0.25)}
+						80% {background-color: #333}
+						100% {color: #fff; background-color: #333; border: 7px solid rgba(250, 255, 255, 0.25)}
+				&:active
+					background-color: #333
+					color: #fff
+			.policy
+				font-family: RobotoRegular, sans-serif
+				font-size: em(14px)
+				opacity: 0.6
+		.home-content-page
+			position:  relative
+			.page-1
+				padding: 100px 50px 0
+				margin-bottom: 70px
+				position: relative
+				p
+					font-size: em(16px)
+					opacity: 0.6
+					&:hover
+						opacity: 1
+				h2
+					font-size: em(24px)
+					font-family: "Open Sans", sans-serif
+					font-weight: 700
+				img
+					width: 35%
+					height: auto
+			.page-2
+				background-color: rgba(0, 0, 0, .75)
+				width: 100%
+				padding: 30px
+				position: absolute
+				top: 30px
+				display: flex
+				flex-direction: row
+				box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.25)
+				display: none
+				animation-name: tobot
+				animation-duration: 1s
+				@keyframes tobot
+					0% {top: -1000px}
+					100% {top: 30px}
+				.page-2-content
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					flex-wrap: wrap
+					.page-2-content-item
+						display: flex
+						flex-direction: column
+						margin: 20px
+						font-size: 16px
+						font-family: "Open Sans", sans-serif
+						font-weight: 700
+						img
+							width: 270px
+							height: 135px
+
+
+
+
+
+			
+				
+
+
+			
+
