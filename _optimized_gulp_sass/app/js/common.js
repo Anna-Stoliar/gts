@@ -68,6 +68,7 @@ $(function() {
 
 });
 
+
 //for tabs in modal 3(left bottom one)
 function openTabHome(cityName,elmnt) {
     var i, tabcontent, tablinks;
@@ -87,4 +88,44 @@ function openTabHome(cityName,elmnt) {
 }
 //open one tab by default
 document.getElementById("open-link").click();
+jQuery(function($){
+	$(document).mouseup(function (e){
+		var div = $(".page-2");
+		var tabs = $("#tabs");
+		if (!div.is(e.target)
+			&& div.has(e.target).length === 0 && !tabs.is(e.target) && tabs.has(e.target).length === 0) {
+			div.hide();
+		}
+	});
+});
+jQuery(function($){
+	$(document).mouseup(function (e){
+		var div = $(".page-3");
+		var burger = $("#burger");
+		if (!div.is(e.target)
+			&& div.has(e.target).length === 0 && !burger.is(e.target) && burger.has(e.target).length === 0) {
+			div.hide();
+		}
+	});
+});
+jQuery(function($){
+	$(document).mouseup(function (e){
+		var div = $(".page-4");
+		var dots = $("#dots");
+		if (!div.is(e.target)
+			&& div.has(e.target).length === 0 && !dots.is(e.target) && dots.has(e.target).length === 0) {
+			div.hide();
+		}
+	});
+});
+jQuery(function($){
+	$(document).mouseup(function (e){
+		var div = $(".page-5");
+		var phone = $("#phone");
+		if (!div.is(e.target)
+			&& div.has(e.target).length === 0 && !phone.is(e.target) && phone.has(e.target).length === 0) {
+			div.hide();
+		}
+	});
+});
 
