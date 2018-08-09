@@ -70,12 +70,20 @@ $(function() {
 
 //for tabs in modal 3(left bottom one)
 function openTabHome(cityName,elmnt) {
-    var i, tabcontent;
+    var i, tabcontent, tablinks;
+
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
     document.getElementById(cityName).style.display = "block";
+
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("p4-active");
+    }
+
+    elmnt.classList.add("p4-active");
 }
 //open one tab by default
 document.getElementById("open-link").click();
