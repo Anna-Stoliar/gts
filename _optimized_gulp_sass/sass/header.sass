@@ -32,17 +32,12 @@ a
 .text-center
 	text-align: center
 
+//home page
 .home
 	width: 100%
 	height: 100vh
 	position: relative
 	.home-bg
-		position: absolute
-		background-size: cover
-		top: 0
-		right: 0
-		bottom: 0
-		left: 0
 		&::before
 			content: ''
 			background: linear-gradient(to right, #24013A, #E11CB6)
@@ -52,14 +47,14 @@ a
 			height: 100%
 			position: absolute
 			opacity: .5
-	.home-content
+	.content
 		position: relative
 		height: 100%
 		display: flex
 		flex-direction: column
 		justify-content: space-between
 		padding: 25px
-		.home-btns
+		.btns
 			display: flex
 			flex-direction: row
 			justify-content: space-between
@@ -131,6 +126,7 @@ a
 				animation-duration: 1s
 				padding-bottom: 50px
 				padding-top: 40px
+				z-index: 100
 				@keyframes tobot
 					0% {top: -1000px}
 					100% {top: 15px}
@@ -162,6 +158,7 @@ a
 							height: 135px
 			.page-3
 				background-color: #fff
+				z-index: 100
 				ul
 					list-style: none
 					text-transform: uppercase
@@ -208,6 +205,7 @@ a
 				padding: 10px 0 30px 15px
 				font-family: "Open Sans", sans-serif
 				font-weight: 600
+				z-index: 100
 				.page-4-top
 					margin-bottom: 10px
 					animation-name: toleft
@@ -294,6 +292,7 @@ a
 				padding: 45px
 				margin-top: 70px
 				left: calc(50% - 210px)
+				z-index: 100
 				h4
 					color: #743535
 					font-family: "Open Sans", sans-serif
@@ -332,12 +331,158 @@ a
 
 
 
+//services page
+.services
+	width: 100%
+	height: 100vh
+	position: absolute
+	top: 0
+	.services-bg
+		&::before
+			content: ''
+			background: linear-gradient(to right, #4DA0B0, #D39D38)
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			position: absolute
+			opacity: .5
+		&::after
+			content: ''
+			background: #000
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			position: absolute
+			opacity: .5
+	.content
+		position: relative
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		padding: 25px
+		.services-top-btns
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			.fa-th
+				font-size: 30px
+			.fa-bars
+				font-size: 32px
+		.btns
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: flex-end
+			z-index: 0
+			.services-btns-info, .services-btns-contact
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 70px
+				height: 70px
+				font-size: 24px
+				background-color: #fff
+				background-clip: padding-box
+				border: 13px solid rgba(250, 255, 255, 0.25)
+				border-radius: 50%
+				color: #333
+				z-index: 0
+				&:hover
+					animation-name: serv-size
+					animation-duration: 1s
+					animation-fill-mode: forwards
+					@keyframes serv-size
+						10% {border: 33px solid rgba(250, 255, 255, 0.25)}
+						30% {background-color: #E11CB6}
+						60% {border: 1px solid rgba(225, 28, 182, 0.25)}
+						80% {background-image: radial-gradient(#E11CB6, #68245C)}
+						100% {color: #fff; background-image: radial-gradient(#E11CB6, #68245C); border: 7px solid rgba(225, 28, 182, 0.25); background-color: #555}
+				&:active, &:focus
+					background-color: #333
+					color: #fff
+			.policy
+				font-family: RobotoRegular, sans-serif
+				font-size: em(14px)
+				opacity: 0.6
+
+		.services-content-page
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			align-items: center
+			height: 100%
+			margin: 0 5vw
+			.services-top
+				h2
+					font-family: "Open Sans", sans-serif
+					font-weight: 700
+					margin-bottom: 40px
+					font-size: em(24px)
+					&::after
+						content: ""
+						height: 1px
+						width: 160px
+						position: absolute
+						background-color: #fff
+						left: calc(50% - 80px)
+						top: 145px
+					
+			.services-middle
+				display: flex
+				flex-direction: row
+				flex-wrap: wrap
+				justify-content: space-between
+				align-items: center
+				font-family: "Open Sans", sans-serif
+				font-weight: 700
+				.services-middle-item
+					position: relative
+					margin-bottom: 30px
+					img
+					&:hover
+						.item-name
+							height: 100%
+							font-size: em(20px)
+							transition: all 0.5s ease
+					.item-name
+						color: #4E1B4A
+						position: absolute
+						background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), #fff)
+						width: 100%
+						bottom: 0px
+						display: flex
+						justify-content: center
+						align-items: center
+						height: 35%
+			.services-bottom
+				font-family: "Open Sans", sans-serif
+				font-weight: 700
+				font-size: em(16px)
+				margin-bottom: -20px
+				span
+					font-weight: 400
+					opacity: 0.6
+
+
 
 
 
 			
 				
 
+
+//for all
+.bg
+	position: absolute
+	background-size: cover
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
 
 			
 
