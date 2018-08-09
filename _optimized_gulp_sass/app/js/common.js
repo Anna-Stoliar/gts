@@ -16,7 +16,7 @@ $(function() {
 		mainClass: 'my-mfp-slide-bottom'
 	});
 
-
+	//for opening modals on home page
 	$("#tabs").click(function() {
 		$(".page-2").toggle();
 	});
@@ -27,6 +27,10 @@ $(function() {
 	$("#dots").click(function() {
 		$(".page-4").toggle();
 	});
+	$("#phone").click(function() {
+		$(".page-5").toggle();
+	});
+
 
 	$("a[href=#callback]").click(function() {
 		$("#callback .formname").val($(this).data("form"));
@@ -63,4 +67,16 @@ $(function() {
 
 
 });
+
+//for tabs in modal 3(left bottom one)
+function openTabHome(cityName,elmnt) {
+    var i, tabcontent;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    document.getElementById(cityName).style.display = "block";
+}
+//open one tab by default
+document.getElementById("open-link").click();
 
