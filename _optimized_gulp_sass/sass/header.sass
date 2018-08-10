@@ -52,19 +52,18 @@ a
 			position: absolute
 			opacity: .5
 	.content
-		position: fixed
 		height: 100%
 		width: 100%
 		display: flex
 		flex-direction: column
 		justify-content: space-between
 		padding: 25px
-		padding-top: 50px
 		.btns
 			display: flex
 			flex-direction: row
 			justify-content: space-between
 			align-items: flex-end
+			z-index: 0
 			.fa-th
 				font-size: 30px
 			.fa-bars
@@ -99,9 +98,10 @@ a
 				font-size: em(14px)
 				opacity: 0.6
 		.home-content-page
-			position:  relative
+			position: relative
 			.page
 				width: 100%
+				height: 100%
 				padding: 30px
 				position: absolute
 				top: 15px
@@ -130,8 +130,7 @@ a
 				background-color: rgba(0, 0, 0, .75)
 				animation-name: tobot
 				animation-duration: 1s
-				padding-bottom: 50px
-				padding-top: 40px
+				padding-top: calc(50% - 650px)
 				z-index: 100
 				@keyframes tobot
 					0% {top: -1000px}
@@ -173,7 +172,7 @@ a
 					font-family: "Open Sans", sans-serif
 					font-weight: 700
 					margin: 0
-					padding: 80px 0 145px 0
+					padding: 80px 0 125px 0
 					li
 						a
 							color: #959090
@@ -213,7 +212,7 @@ a
 				font-weight: 600
 				z-index: 100
 				.page-4-top
-					margin-bottom: 10px
+					margin: 15px 0
 					animation-name: toleft
 					animation-duration: 1.7s
 					@keyframes toleft
@@ -231,10 +230,12 @@ a
 				.page-4-content
 					display: flex
 					flex-direction: row
+					height: 80%
 					.page-4-content-links
 						display: flex
 						flex-direction: column
 						align-items: center
+						justify-content: space-between
 						border-right: 1px solid #F3F3F3
 						.page-4-content-links-link
 							background: none
@@ -420,7 +421,7 @@ a
 			justify-content: space-between
 			align-items: center
 			height: 100%
-			margin: 0 5vw
+			margin: 15px 5vw 0
 			.services-top
 				h2
 					font-family: "Open Sans", sans-serif
@@ -436,13 +437,13 @@ a
 						position: absolute
 						background-color: #fff
 						left: calc(50% - 80px)
-						top: 115px
+						top: 145px
 					
 			.services-middle
 				display: flex
 				flex-direction: row
 				flex-wrap: wrap
-				justify-content: space-between
+				justify-content: space-around
 				align-items: center
 				font-family: "Open Sans", sans-serif
 				font-weight: 700
@@ -450,6 +451,8 @@ a
 					position: relative
 					margin-bottom: 30px
 					img
+						width: 25vw
+						height: auto
 					&:hover
 						.item-name
 							height: 100%
@@ -475,7 +478,215 @@ a
 					opacity: 0.6
 
 
+//services page
+.pros
+	width: 100%
+	height: 100vh
+	position: relative
+	top: 0
+	.pros-bg
+		background-image: url(../img/header/bg-header.png)
+		&::before
+			content: ''
+			background: linear-gradient(to right, #FCB045 20%, #FD1D1D 80%,  #AE1CE1 100%)
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			position: absolute
+			opacity: .5
+		&::after
+			content: ''
+			background: #000
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			position: absolute
+			opacity: .3
+	.content
+		position: absolute
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		padding: 25px
+		padding-top: 15px
+		.pros-top-btns
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			.fa-th
+				font-size: 30px
+			.fa-bars
+				font-size: 32px
+		.btns
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: flex-end
+			.pros-btns-info, .pros-btns-contact
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 70px
+				height: 70px
+				font-size: 24px
+				background-color: #fff
+				background-clip: padding-box
+				border: 13px solid rgba(250, 255, 255, 0.25)
+				border-radius: 50%
+				color: #333
+				&:hover
+					animation-name: serv-size
+					animation-duration: 1s
+					animation-fill-mode: forwards
+					@keyframes serv-size
+						10% {border: 33px solid rgba(250, 255, 255, 0.25)}
+						30% {background-color: #E11CB6}
+						60% {border: 1px solid rgba(225, 28, 182, 0.25)}
+						80% {background-image: radial-gradient(#E11CB6, #68245C)}
+						100% {color: #fff; background-image: radial-gradient(#E11CB6, #68245C); border: 7px solid rgba(225, 28, 182, 0.25); background-color: #555}
+				&:active, &:focus
+					background-color: #333
+					color: #fff
+			.policy
+				font-family: RobotoRegular, sans-serif
+				font-size: em(14px)
+				opacity: 0.6
 
+		.pros-content-page
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+			align-items: center
+			height: 100%
+			margin: 0 5vw
+			.pros-top
+				h2
+					font-family: "Open Sans", sans-serif
+					font-weight: 700
+					margin: 0px
+					margin-bottom: 20px
+					margin-top: 10px
+					font-size: em(24px)
+					&::after
+						content: ""
+						height: 2px
+						width: 100px
+						position: absolute
+						background-color: #fff
+						left: calc(50% - 50px)
+						top: 145px
+					
+			.pros-middle
+				display: flex
+				flex-direction: row
+				flex-wrap: wrap
+				justify-content: space-between
+				align-items: space-between
+				font-family: "Open Sans", sans-serif
+				font-weight: 700
+				padding-bottom: 80px
+				.pros-middle-item
+					position: relative
+					margin-bottom: 30px
+					flex: 20%
+					display: flex
+					flex-direction: column
+					align-items: center
+					margin: 1% 2%
+					padding: 30px
+					.pros-middle-item-img
+						width: 64px
+						height: 64px
+						background-size: cover
+						background-repeat: no-repeat
+						margin-bottom: 10px
+					&:nth-child(1)
+						.pros-middle-item-img
+							background-image: url(../img/pros/pros1.png)
+					&:nth-child(2)
+						.pros-middle-item-img
+							background-image: url(../img/pros/pros2.png)
+					&:nth-child(3)
+						.pros-middle-item-img
+							background-image: url(../img/pros/pros3.png)
+					&:nth-child(4)
+						.pros-middle-item-img
+							background-image: url(../img/pros/pros4.png)
+					&:nth-child(5)
+						.pros-middle-item-img
+							background-image: url(../img/pros/pros5.png)
+					&:nth-child(6)
+						.pros-middle-item-img
+							background-image: url(../img/pros/pros6.png)
+					&:nth-child(7)
+						.pros-middle-item-img
+							background-image: url(../img/pros/pros7.png)
+					&:nth-child(8)
+						.pros-middle-item-img
+							background-image: url(../img/pros/pros8.png)
+					h4, p
+						margin: 0
+					h4
+						font-family: "Open Sans", sans-serif
+						font-weight: 700
+						font-size: em(16px)
+						margin-bottom: 5px
+					p
+						font-family: "Open Sans", sans-serif
+						font-weight: 400
+						font-size: em(12px)
+						opacity: 0.6
+					.more
+						display: inline-block
+						transition: ease 1s display
+					.more-text
+						display: none
+						transition: ease 1s display
+					&:hover
+						background: #fff
+						border-radius: 4px
+						color: #292929
+						transition: ease 1s background
+						.more
+							display: none
+							transition: ease 1s display
+						.more-text
+							display: inline-block
+							transition: ease 1s display
+						&:nth-child(1)
+							.pros-middle-item-img
+								background-image: url(../img/pros/pros1-hov.png)
+						&:nth-child(2)
+							.pros-middle-item-img
+								background-image: url(../img/pros/pros2-hov.png)
+						&:nth-child(3)
+							.pros-middle-item-img
+								background-image: url(../img/pros/pros3-hov.png)
+						&:nth-child(4)
+							.pros-middle-item-img
+								background-image: url(../img/pros/pros4-hov.png)
+						&:nth-child(5)
+							.pros-middle-item-img
+								background-image: url(../img/pros/pros5-hov.png)
+						&:nth-child(6)
+							.pros-middle-item-img
+								background-image: url(../img/pros/pros6-hov.png)
+						&:nth-child(7)
+							.pros-middle-item-img
+								background-image: url(../img/pros/pros7-hov.png)
+						&:nth-child(8)
+							.pros-middle-item-img
+								background-image: url(../img/pros/pros8-hov.png)
+						
+
+
+			
+
+					
 
 
 			
@@ -490,7 +701,6 @@ a
 	right: 0
 	bottom: 0
 	left: 0
-	background-attachment: fixed
 
 			
 
