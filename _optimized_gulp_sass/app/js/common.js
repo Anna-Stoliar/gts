@@ -129,3 +129,146 @@ jQuery(function($){
 	});
 });
 
+// ////////////////////////////////////////////////////////////////////////////////
+// var showPage = (function () {
+//   var  _useHash, _scrollX, _scrollY, _nodeX, _nodeY, _itFrame, _scrollId = -1, _Page,
+//        /*
+//        * nDuration: the duration in milliseconds of each frame
+//        * nFrames: number of frames for each scroll
+//        */
+//        nDuration = 500, nFrames = 1;
+
+//   function _next () {
+//     if (_itFrame > nFrames) { clearInterval(_scrollId); _scrollId = -1; return; }
+//     _isBot = true;
+//     document.documentElement.scrollTop = Math.round(_scrollY + (_nodeY - _scrollY) * _itFrame / nFrames);
+//     document.documentElement.scrollLeft = Math.round(_scrollX + (_nodeX - _scrollX) * _itFrame / nFrames);
+//     if (_useHash && _itFrame === nFrames) { location.hash = _Page; }
+//     _itFrame++;
+//   }
+
+//   function _chkOwner () {
+//   	_isBot = true;
+//     if (_isBot) { _isBot = false; return; }
+//     if (_scrollId > -1) { clearInterval(_scrollId); _scrollId = -1; }
+//   }
+
+//   if (window.addEventListener) { window.addEventListener("scroll", _chkOwner, false); }
+//   else if (window.attachEvent) { window.attachEvent("onscroll", _chkOwner); }
+
+//   return function (sPage, bUseHash) {
+//     _scrollY = document.documentElement.scrollTop;
+//     _scrollX = document.documentElement.scrollLeft;
+//     _Page = sPage;
+//     _useHash = arguments.length === 1 || bUseHash;
+//     for (
+//       var nLeft = 0, nTop = 0, oNode = document.querySelector(sPage);
+//       oNode;
+//       nLeft += oNode.offsetLeft, nTop += oNode.offsetTop, oNode = oNode.offsetParent
+//     );
+//     _nodeX = nLeft, _nodeY = nTop, _itFrame = 1;
+//     if (_scrollId === -1) { _scrollId = setInterval(_next, Math.round(nDuration / nFrames)); }
+//   };
+// })();
+// ////////////////////////////////////////////////////////////////////////////////
+// var position = $(window).scrollTop(); 
+// $(window).scroll(function() {
+
+// 	if($(".home:hover").length != 0){
+// 		var scroll = $(window).scrollTop();
+// 	    if(scroll > position) {
+// 	        console.log('scrollDown');
+// 	    } else {
+// 	         console.log('scrollUp');
+// 	         showPage("services");
+// 	    }
+// 	    position = scroll;
+// 	}
+
+// 	if($(".services:hover").length != 0){
+// 		var scroll = $(window).scrollTop();
+// 	    if(scroll > position) {
+// 	        console.log('scrollDown');
+// 	        showPage("home");
+// 	    } else {
+// 	         console.log('scrollUp');
+// 	         showPage("pros");
+// 	    }
+// 	    position = scroll;
+// 		}
+
+// 	if($(".pros:hover").length != 0){
+// 		var scroll = $(window).scrollTop();
+// 	    if(scroll > position) {
+// 	        console.log('scrollDown');
+// 	        showPage("services");
+// 	    } else {
+// 	         console.log('scrollUp');
+// 	    }
+// 	    position = scroll;
+// 		}
+// });
+
+
+
+
+
+
+// scroll
+var position = $(window).scrollTop(); 
+$(window).scroll(function() {
+
+	if($(".home:hover").length != 0){
+		$( ".services" ).scrollTop(function() {
+			$( ".services" ).css( "margin-top", "-100vh" );
+			$( ".services" ).css( "transition", "margin-top ease 3s" );
+		});
+	}
+
+	if($(".services:hover").length != 0){
+		var scroll = $(window).scrollTop();
+	    if(scroll > position) {
+	        console.log('scrollDown');
+	        $( ".pros" ).scrollTop(function() {
+			$( ".services .content" ).css( "position", "fixed" );
+			$( ".pros" ).css( "margin-top", "-100vh" );
+			$( ".pros" ).css( "transition", "margin-top ease 3s" );
+		});
+
+	    } else {
+	         console.log('scrollUp');
+	         $( ".services" ).scrollTop(function() {
+			$( ".services .content" ).css( "position", "fixed" );
+			$( ".services" ).css( "margin-top", "0vh" );
+			$( ".services" ).css( "transition", "margin-top ease 3s" );
+			$( ".pros" ).css( "margin-top", "0vh" );
+		});
+
+	    }
+	    position = scroll;
+		}
+	if($(".pros:hover").length != 0){
+		var scroll = $(window).scrollTop();
+	    if(scroll > position) {
+	        console.log('scrollDown');
+	        // add code for next element
+	    } else {
+	         console.log('scrollUp');
+	         $( ".pros" ).scrollTop(function() {
+			$( ".pros .content" ).css( "position", "fixed" );
+			$( ".pros" ).css( "margin-top", "0vh" );
+			$( ".pros" ).css( "transition", "margin-top ease 3s" );
+			$( ".services" ).css( "margin-top", "-100vh" );
+		});
+
+	    }
+	    position = scroll;
+		}
+
+});
+
+
+
+
+// should start at 0
+
