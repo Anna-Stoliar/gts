@@ -34,12 +34,8 @@ gulp.task('scripts', function() {
 		'./app/libs/jquery/jquery-1.11.2.min.js',
 		'./app/libs/waypoints/waypoints.min.js',
 		'./app/libs/animate/animate-css.js',
-		'./app/libs/superfish/dist/superfish.min.js',
-		'./app/libs/owlcarousel/dist/owl.carousel.min.js',
-		'./app/libs/Magnific-Popup-master/dist/jquery.magnific-popup.min.js',
-		'./app/libs/mmenu/dist/jquery.mmenu.all.js',
 		'./app/libs/equalHeights/jquery.equalheights.min.js',
-
+		'./app/libs/fullPage/jquery.fullpage.min.js',
 		])
 		.pipe(concat('libs.js'))
 		// .pipe(uglify()) //Minify libs.js
