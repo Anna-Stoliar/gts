@@ -36,6 +36,12 @@ gulp.task('scripts', function() {
 		'./app/libs/animate/animate-css.js',
 		'./app/libs/equalHeights/jquery.equalheights.min.js',
 		'./app/libs/fullPage/jquery.fullpage.min.js',
+		'./app/libs/viewScroller.js-master/jquery-3.1.0.min.js',
+		'./app/libs/viewScroller.js-master/jquery.easing.min.js',
+		'./app/libs/viewScroller.js-master/jquery.mousewheel.min.js',
+		'./app/libs/viewScroller.js-master/viewScroller.min.js',
+
+		
 		])
 		.pipe(concat('libs.js'))
 		// .pipe(uglify()) //Minify libs.js

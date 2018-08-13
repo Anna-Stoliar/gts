@@ -15,8 +15,19 @@ $(function() {
 		$(".page-5").toggle();
 	});
 
-	$('#fullpage').fullpage();
-	FastClick.attach(document.body);
+	// $('#fullpage').fullpage();
+	// FastClick.attach(document.body);
+
+	$(document).ready(function() {
+		$('.mainbag').viewScroller({
+			useScrollbar: false, // Use scrollbar to change views
+			changeWhenAnim: false, // Change views when they are changing
+			loopMainViews: true, // Change horizontal views (mainviews) in loop mode
+		});
+	});
+
+
+
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
@@ -67,9 +78,9 @@ function openTabHome(cityName,elmnt) {
 
     elmnt.classList.add("p4-active");
 }
-
 //open one tab by default
 document.getElementById("open-link").click();
+
 
 //for tabs security page
 function openTabHome(cityName,elmnt) {
@@ -88,12 +99,11 @@ function openTabHome(cityName,elmnt) {
 
     elmnt.classList.add("security-tab-active");
 }
-
 //open one tab by default
 document.getElementById("security-open-link").click();
 
 
-
+//close modal
 jQuery(function($){
 	$(document).mouseup(function (e){
 		var div = $(".page-2");
@@ -194,80 +204,80 @@ jQuery(function($){
 // });
 
 
+// Calculator
+	function toST(elmnt) {
+	    var toStageTwo = document.getElementById('stage-2');
+		toStageTwo.classList.add('stage');
+		toStageTwo.classList.remove('stage-2');
+		toStageTwo.style.padding = '0 5px 15px 0px';
+		
+		var stageOne = document.getElementById('stage-1');
+		var toStageT = stageOne.getElementsByClassName('container-radio-calc');
+		var i;
+		for (i = 0; i < toStageT.length; i++) 
+			{toStageT[i].style.display = 'none';}
 
-function toST(elmnt) {
-    var toStageTwo = document.getElementById('stage-2');
-	toStageTwo.classList.add('stage');
-	toStageTwo.classList.remove('stage-2');
-	toStageTwo.style.padding = '0 5px 15px 0px';
-	
-	var stageOne = document.getElementById('stage-1');
-	var toStageT = stageOne.getElementsByClassName('container-radio-calc');
-	var i;
-	for (i = 0; i < toStageT.length; i++) 
-		{toStageT[i].style.display = 'none';}
+		elmnt.style.display = 'block';
+		stageOne.style.height = '30%';
+		stageOne.style.padding = '0 5px 15px 0';
 
-	elmnt.style.display = 'block';
-	stageOne.style.height = '30%';
-	stageOne.style.padding = '0 5px 15px 0';
+		var formm = document.getElementById('stage-1-form');
+		formm.style.alignItems = 'center'
+		
+		var calcLine = document.getElementById('calc-line');
+		calcLine.style.background = 'linear-gradient(to right, rgba(255, 127, 107, 0.5) 0%, rgba(255, 127, 107, 0.5) 50%, #9E9E9E 50%, #9E9E9E 100%)';
 
-	var formm = document.getElementById('stage-1-form');
-	formm.style.alignItems = 'center'
-	
-	var calcLine = document.getElementById('calc-line');
-	calcLine.style.background = 'linear-gradient(to right, rgba(255, 127, 107, 0.5) 0%, rgba(255, 127, 107, 0.5) 50%, #9E9E9E 50%, #9E9E9E 100%)';
+		var lbl = document.getElementById('calc-text');
+		lbl.innerHTML = 'Размещение проекта';
 
-	var lbl = document.getElementById('calc-text');
-	lbl.innerHTML = 'Размещение проекта';
+		
 
-	
+	}
 
-}
+	function toTT(elmnt) {
+	    var toStageTHree = document.getElementById('stage-3');
+		toStageTHree.classList.add('stage');
+		toStageTHree.classList.remove('stage-3');
+		toStageTHree.style.padding = '0px 5px 15px 100px';
+		
+		var stageTwo = document.getElementById('stage-2');
+		var toStageTT = stageTwo.getElementsByClassName('container-radio-calc');
+		var i;
+		for (i = 0; i < toStageTT.length; i++) 
+			{toStageTT[i].style.display = 'none';}
 
-function toTT(elmnt) {
-    var toStageTHree = document.getElementById('stage-3');
-	toStageTHree.classList.add('stage');
-	toStageTHree.classList.remove('stage-3');
-	toStageTHree.style.padding = '0px 5px 15px 100px';
-	
-	var stageTwo = document.getElementById('stage-2');
-	var toStageTT = stageTwo.getElementsByClassName('container-radio-calc');
-	var i;
-	for (i = 0; i < toStageTT.length; i++) 
-		{toStageTT[i].style.display = 'none';}
+		elmnt.style.display = 'block';
+		stageTwo.style.height = '30%';
+		stageTwo.style.padding = '0px 5px 15px 0px';
 
-	elmnt.style.display = 'block';
-	stageTwo.style.height = '30%';
-	stageTwo.style.padding = '0px 5px 15px 0px';
+		var calcLine = document.getElementById('calc-line');
+		calcLine.style.background = 'linear-gradient(to right, rgba(255, 127, 107, 0.5) 0%, rgba(255, 127, 107, 0.5) 70%, #9E9E9E 70%, #9E9E9E 100%)';
 
-	var calcLine = document.getElementById('calc-line');
-	calcLine.style.background = 'linear-gradient(to right, rgba(255, 127, 107, 0.5) 0%, rgba(255, 127, 107, 0.5) 70%, #9E9E9E 70%, #9E9E9E 100%)';
+		var lbl = document.getElementById('calc-text');
+		lbl.innerHTML = 'Желаемые сроки выполнения';
+	}
 
-	var lbl = document.getElementById('calc-text');
-	lbl.innerHTML = 'Желаемые сроки выполнения';
-}
+	function toET(elmnt) {	
+		var stageThree = document.getElementById('stage-3');
+		var toStageTT = stageThree.getElementsByClassName('container-radio-calc');
+		var i;
+		for (i = 0; i < toStageTT.length; i++) 
+			{toStageTT[i].style.display = 'none';}
 
-function toET(elmnt) {	
-	var stageThree = document.getElementById('stage-3');
-	var toStageTT = stageThree.getElementsByClassName('container-radio-calc');
-	var i;
-	for (i = 0; i < toStageTT.length; i++) 
-		{toStageTT[i].style.display = 'none';}
+		elmnt.style.display = 'block';
+		stageThree.style.height = '30%';
+		stageThree.style.padding = '0px 5px 15px 0px';
 
-	elmnt.style.display = 'block';
-	stageThree.style.height = '30%';
-	stageThree.style.padding = '0px 5px 15px 0px';
+		var btnEnd = document.getElementById('btn-end');
+		btnEnd.classList.add('calc-middle-btn');
+		btnEnd.classList.remove('calc-middle-btn-b');
 
-	var btnEnd = document.getElementById('btn-end');
-	btnEnd.classList.add('calc-middle-btn');
-	btnEnd.classList.remove('calc-middle-btn-b');
+		var formm = document.getElementById('stage-3-form');
+		formm.style.alignItems = 'center'
 
-	var formm = document.getElementById('stage-3-form');
-	formm.style.alignItems = 'center'
+		var calcLine = document.getElementById('calc-line');
+		calcLine.style.background = 'linear-gradient(to right, rgba(255, 127, 107, 0.5) 0%, rgba(255, 127, 107, 0.5) 100%)';
 
-	var calcLine = document.getElementById('calc-line');
-	calcLine.style.background = 'linear-gradient(to right, rgba(255, 127, 107, 0.5) 0%, rgba(255, 127, 107, 0.5) 100%)';
-
-	var lbl = document.getElementById('calc-text');
-	lbl.innerHTML = '!!!';
-}
+		var lbl = document.getElementById('calc-text');
+		lbl.innerHTML = '!!!';
+	}
