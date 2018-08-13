@@ -16,6 +16,7 @@ $(function() {
 	});
 
 	$('#fullpage').fullpage();
+	FastClick.attach(document.body);
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
