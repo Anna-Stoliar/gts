@@ -102,6 +102,67 @@ function openTabHome(cityName,elmnt) {
 //open one tab by default
 document.getElementById("security-open-link").click();
 
+$(document).ready(function() {
+
+    // Sets viewScroller with sample events
+    $('.mainbag').viewScroller({
+        useScrollbar: false,
+        animSpeedMainView: 2000,
+        beforeChange: function() {
+            console.log('beforeChange fired!');
+
+           	$('.con1').removeClass('content-1');
+		    $('.con2').removeClass('content-2');
+		    $('.con3').removeClass('content-3');
+            
+
+            $('.con1').addClass('content-1-b');
+            $('.con2').addClass('content-2-b');
+            $('.con3').addClass('content-3-b');
+
+            return false; // It means that views change will be terminated
+            
+
+        },
+        afterChange: function() {
+            console.log('afterChange fired!');
+
+            $('.con1').removeClass('content-1-b');
+		    $('.con2').removeClass('content-2-b');
+		    $('.con3').removeClass('content-3-b')
+;
+            
+
+		    $('.con1').addClass('content-1');
+            $('.con2').addClass('content-2');
+            $('.con3').addClass('content-3');
+
+
+
+            
+		    
+ 
+        },
+        beforeResize: function() {
+            console.log('beforeResize fired!');
+        },
+        afterResize: function() {
+            console.log('afterResize fired!');
+        }
+    });
+
+    // Turnon / turnoff the scroll views when they are animate
+    $('#scroll').on('click', function() {
+        if ($('#scroll').prop("checked")) {
+            $.fn.viewScroller.setChangeWhenAnim(true);
+        } else {
+            $.fn.viewScroller.setChangeWhenAnim(false);
+        }
+    });
+
+    
+
+});
 
 //close modal
 jQuery(function($){
@@ -151,9 +212,7 @@ jQuery(function($){
 
 
 // // scroll
-// var position = $(window).scrollTop(); 
-// $(window).scroll(function() {
-
+	function hovov (elmnt){}
 // 	if($(".home:hover").length != 0){
 // 		$( ".services" ).scrollTop(function() {
 // 			$( ".services" ).css( "margin-top", "-100vh" );

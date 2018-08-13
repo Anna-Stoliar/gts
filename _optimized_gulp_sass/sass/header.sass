@@ -44,6 +44,7 @@ a
 	position: relative
 	.home-bg
 		background-image: url(../img/header/bg-header.png)
+		background-attavhment: fixed
 		&::before
 			content: ''
 			background: linear-gradient(to right, #24013A, #E11CB6)
@@ -60,6 +61,7 @@ a
 		flex-direction: column
 		justify-content: space-between
 		padding: 25px
+		position: absolute
 		.btns
 			display: flex
 			flex-direction: row
@@ -369,6 +371,7 @@ a
 	.content
 		position: absolute
 		height: 100%
+		width: 100%
 		display: flex
 		flex-direction: column
 		justify-content: space-between
@@ -496,6 +499,7 @@ a
 	.content
 		position: absolute
 		height: 100%
+		width: 100%
 		display: flex
 		flex-direction: column
 		justify-content: space-between
@@ -1442,3 +1446,47 @@ a
 			position: absolute
 			background-color: #fff
 			top: 115px
+
+.content-1
+	animation-name: concon1
+	animation-duration: 1.5s
+	animation-fill-mode: forwards
+	@keyframes concon1
+		0% {margin-left: -2000px;}
+		100% {margin-left: 0px;}
+.content-2
+	animation-name: concon2
+	animation-duration: 1.5s
+	animation-fill-mode: forwards
+	@keyframes concon2
+		from {margin-left: 2000px;}
+		to {margin-left: 0px;}
+.content-3
+	animation-name: concon3
+	animation-duration: 1.5s
+	animation-fill-mode: forwards
+	@keyframes concon3
+		0% {transform: scale(0);}
+		100% {transform: scale(1);}
+
+.content-1-b
+	animation-name: concon1-b
+	animation-duration: 0.5s
+	animation-fill-mode: forwards
+	@keyframes concon1-b
+		0% {margin-left: 0px;}
+		100% {margin-left: 2000px;}
+.content-2-b
+	animation-name: concon2-b
+	animation-duration: 0.5s
+	animation-fill-mode: forwards
+	@keyframes concon2-b
+		from {margin-left: 0px;}
+		to {margin-left: -2000px;}
+.content-3-b
+	animation-name: concon3-b
+	animation-duration: 0.5s
+	animation-fill-mode: forwards
+	@keyframes concon3-b
+		0% {transform: scale(1);}
+		100% {transform: scale(0);}
