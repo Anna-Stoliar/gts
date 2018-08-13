@@ -426,7 +426,7 @@ a
 		.services-content-page
 			display: flex
 			flex-direction: column
-			justify-content: space-around
+			justify-content: space-evenly
 			align-items: center
 			height: 100%
 			margin: 0px 5vw				
@@ -435,7 +435,6 @@ a
 				flex-direction: row
 				flex-wrap: wrap
 				justify-content: space-around
-				align-items: center
 				font-family: "Open Sans", sans-serif
 				font-weight: 700
 				.services-middle-item
@@ -562,11 +561,9 @@ a
 				display: flex
 				flex-direction: row
 				flex-wrap: wrap
-				justify-content: space-between
-				align-items: space-between
+				justify-content: center
 				font-family: "Open Sans", sans-serif
 				font-weight: 700
-				padding-bottom: 80px
 				.pros-middle-item
 					position: relative
 					margin-bottom: 30px
@@ -661,6 +658,234 @@ a
 							.pros-middle-item-img
 								background-image: url(../img/pros/pros8-hov.png)
 						
+
+
+//calc page
+.calc
+	width: 100%
+	height: 100vh
+	position: relative
+	top: 0
+	.calc-bg
+		background-image: url(../img/calc/calc-bg.png)
+		&::before
+			content: ''
+			background: linear-gradient(to right, #ED213A 0%, #FD1D1D 19.34%, #93291E 100%)
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			position: absolute
+			opacity: .5
+		&::after
+			content: ''
+			background: #000
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			position: absolute
+			opacity: .5
+	.content
+		position: absolute
+		height: 100%
+		width: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		padding: 25px
+		padding-top: 15px
+		.calc-top-btns
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			.fa-th
+				font-size: 30px
+			.fa-bars
+				font-size: 32px
+		.btns
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: flex-end
+			.calc-btns-info, .calc-btns-contact
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 70px
+				height: 70px
+				font-size: 24px
+				background-color: #fff
+				background-clip: padding-box
+				border: 13px solid rgba(250, 255, 255, 0.25)
+				border-radius: 50%
+				color: #333
+				&:hover
+					animation-name: serv-size
+					animation-duration: 1s
+					animation-fill-mode: forwards
+					@keyframes serv-size
+						10% {border: 33px solid rgba(250, 255, 255, 0.25)}
+						30% {background-color: #E11CB6}
+						60% {border: 1px solid rgba(225, 28, 182, 0.25)}
+						80% {background-image: radial-gradient(#E11CB6, #68245C)}
+						100% {color: #fff; background-image: radial-gradient(#E11CB6, #68245C); border: 7px solid rgba(225, 28, 182, 0.25); background-color: #555}
+				&:active, &:focus
+					background-color: #333
+					color: #fff
+			.policy
+				font-family: RobotoRegular, sans-serif
+				font-size: em(14px)
+				opacity: 0.6
+		.calc-top
+			h2
+				margin-top: -30px
+				&::after
+					width: 170px
+					left: calc(50% - 85px)
+		.calc-content-page
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+			align-items: center
+			height: 70%
+			margin: 0 5vw
+			background-color: #fff
+			border-radius: 5px	
+			h4
+				width: 300px
+				color: #000
+				position: relative
+				&::after
+					content: ""
+					width: 	570px
+					height: 2px
+					background-color: #ededed
+					position: absolute
+					top: 50px
+					left: -135px
+			.calc-middle
+				display: flex
+				flex-direction: row
+				flex-wrap: nowrap
+				justify-content: center
+				align-items: center
+				font-family: "Open Sans", sans-serif
+				font-weight: 400
+				font-size: em(16px)
+				color: #956D6D
+				margin: auto 0px
+				height: 100%
+				width: 100%
+				position: relative
+				#calc-line
+					position: absolute
+					height: 12px
+					width: 75vw
+					top: 26.5vh
+					background: linear-gradient(to right, rgba(255, 127, 107, 0.5) 0%, rgba(255, 127, 107, 0.5) 30%, #9E9E9E 30%, #9E9E9E 100%)
+					transition: all 1s ease
+				.calc-middle-btn-b
+					width: 74px
+					height: 74px
+					border: 15px solid #C4C4C4
+					background-color: #4D4D4D
+					border-radius: 50%
+					margin: 0 1vw
+					z-index: 2
+				.calc-middle-btn
+					width: 74px
+					height: 74px
+					background-clip: padding-box
+					border-radius: 50%
+					background-image: linear-gradient( to bottom, #FE9A5D, #FF5D7B)
+					border: 15px solid rgba(255, 110, 115, 0.25)
+					background-color: #999
+					margin: 0 1vw
+					z-index: 2
+				.stage-2, .stage-3
+					height: 30%
+					width: 20vw 
+					background: #ededed
+					border-radius: 8px
+					margin: 0 2vw
+					z-index: 2
+					padding: 5px 5px 0px 30px
+					p
+						font-weight: 700
+						margin: 0
+						color: #9E9E9E
+					form
+						display: none
+
+#stage-2-form
+	align-items: center
+
+.stage
+	height: 60%
+	width: 20vw 
+	background: #fff
+	border-radius: 8px
+	box-shadow: 2px 1px 8px #FCB045
+	margin: 0 1vw
+	padding: 5px 5px 0px 30px
+	z-index: 2
+	p
+		font-weight: 700
+		background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		margin: 0
+	form
+		display: flex
+		flex-direction: column
+		flex: 30%
+		height: 85%
+		justify-content: space-around
+		.container-radio-calc
+			&:hover
+				.checkmark
+					background-image: linear-gradient( to bottom, #FF5D7B, #FE9A5D)
+					border: none
+			display: block
+			position: relative
+			padding-left: 40px
+			text-align: left
+			margin-bottom: 12px
+			cursor: pointer
+			-webkit-user-select: none
+			-moz-user-select: none
+			-ms-user-select: none
+			user-select: none
+			input
+				&:checked
+					~ .checkmark
+						background-image: linear-gradient( to bottom, #FF5D7B, #FE9A5D)
+						background-clip: padding-box
+						border: 5px solid rgba(255, 110, 115, 0.25)
+						background-color: rgba(255, 110, 115, 0.25)
+						box-shadow: inset 0 0 3px #C5C5C5
+						transition: all ease 0.5s
+				position: absolute;
+				opacity: 0;
+				cursor: pointer;
+			.checkmark
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 30px;
+				width: 30px;
+				background-color: #fff
+				border-radius: 50%
+				border: 2px solid rgba(255, 184, 0, 0.3)
+				transition: all ease 1s
+
+
+
+
+
+			
 
 
 
@@ -771,16 +996,43 @@ a
 					.tablink-security
 						display: flex
 						flex-direction: row
-						&:hover,
-						.security-tab-active
+						&:hover
 							.tablink-security-info, 
 							.tablink-security-icon
 								background-color: #fff
 								color: #831919
+							&:nth-child(1)
+								.tablink-security-icon
+									background-image: url(../img/security/security1-hov.png)
+							&:nth-child(2)
+								.tablink-security-icon
+									background-image: url(../img/security/security2-hov.png)
+							&:nth-child(3)
+								.tablink-security-icon
+									background: url(../img/security/security3-1-hov.png) no-repeat 20% 30%, url(../img/security/security3-2-hov.png) no-repeat 80% 70%
+									background-size: 45px 45px, 20px 20px
+									background-color: #fff
+							.tablink-security-info
+						
 						.tablink-security-icon
-							background-color: #fff
-							width: 10px
-							height: 10px
+							width: 80px
+							height: 80px
+							margin-right: 20px
+							border-radius: 50%
+							border: 2px solid rgba(255, 255, 255, 0.5)
+							background-repeat: no-repeat
+							background-position: center center
+							background-size: 50px 50px
+						&:nth-child(1)
+							.tablink-security-icon
+								background-image: url(../img/security/security1.png)
+						&:nth-child(2)
+							.tablink-security-icon
+								background-image: url(../img/security/security2.png)
+						&:nth-child(3)
+							.tablink-security-icon
+								background: url(../img/security/security3-1.png) no-repeat 20% 30%, url(../img/security/security3-2.png) no-repeat 80% 70%
+								background-size: 45px 45px, 20px 20px
 						.tablink-security-info
 							display: flex
 							justify-content: center
@@ -795,6 +1047,9 @@ a
 					.tablink-security-icon
 						background-color: #fff
 						color: #831919
+					.tablink-security-icon
+						background-image: url(../img/security/security1-hov.png)
+				
 				.security-line
 					height: 50vh
 					width: 2px
@@ -915,12 +1170,11 @@ a
 			.communication-middle
 				display: flex
 				flex-direction: row
-				flex-wrap: wrap
-				justify-content: space-between
+				flex-wrap: nowrap
+				justify-content: center
 				align-items: space-between
 				font-family: "Open Sans", sans-serif
 				font-weight: 700
-				padding-bottom: 80px
 				.com-form
 					margin-right: 15vw
 					margin-left: -5vw
@@ -1103,17 +1357,16 @@ a
 			.contact-middle
 				display: flex
 				flex-direction: row
-				flex-wrap: wrap
-				justify-content: space-between
-				align-items: center
+				flex-wrap: nowrap
+				justify-content: center
 				font-family: "Open Sans", sans-serif
 				font-weight: 700
-				padding-bottom: 80px
 				.contact-middle-info
 					width: 60%
 					font-family: "Open Sans", sans-serif
 					font-weight: 400
 					font-size: em(18px)
+					padding-right: 45px
 					p
 						opacity: 0.6
 						span
