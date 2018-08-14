@@ -339,9 +339,6 @@ a
 					&:active, &:focus
 						outline: none!important
 
-
-
-
 //services page
 .services
 	width: 100%
@@ -468,7 +465,6 @@ a
 				span
 					font-weight: 400
 					opacity: 0.6
-
 
 //pros page
 .pros
@@ -660,8 +656,6 @@ a
 						&:nth-child(8)
 							.pros-middle-item-img
 								background-image: url(../img/pros/pros8-hov.png)
-						
-
 
 //calc page
 .calc
@@ -884,11 +878,226 @@ a
 				border: 2px solid rgba(255, 184, 0, 0.3)
 				transition: all ease 1s
 
+//faq page
+.faq
+	width: 100%
+	height: 100vh
+	position: relative
+	top: 0
+	.faq-bg
+		background-image: url(../img/faq/faq-bg.png)
+		&::before
+			content: ''
+			background: linear-gradient(to right, #6BE585 0%, #DD3E54 14.92%, #E72842 100%)
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			position: absolute
+			opacity: .5
+		&::after
+			content: ''
+			background: #000
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			position: absolute
+			opacity: .5
+	.content
+		position: absolute
+		height: 100%
+		width: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		padding: 25px
+		padding-top: 15px
+		.faq-top-btns
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			.fa-th
+				font-size: 30px
+			.fa-bars
+				font-size: 32px
+		.btns
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: flex-end
+			.faq-btns-info, .faq-btns-contact
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 70px
+				height: 70px
+				font-size: 24px
+				background-color: #fff
+				background-clip: padding-box
+				border: 13px solid rgba(250, 255, 255, 0.25)
+				border-radius: 50%
+				color: #333
+				&:hover
+					animation-name: serv-size
+					animation-duration: 1s
+					animation-fill-mode: forwards
+					@keyframes serv-size
+						10% {border: 33px solid rgba(250, 255, 255, 0.25)}
+						30% {background-color: #E11CB6}
+						60% {border: 1px solid rgba(225, 28, 182, 0.25)}
+						80% {background-image: radial-gradient(#E11CB6, #68245C)}
+						100% {color: #fff; background-image: radial-gradient(#E11CB6, #68245C); border: 7px solid rgba(225, 28, 182, 0.25); background-color: #555}
+				&:active, &:focus
+					background-color: #333
+					color: #fff
+			.policy
+				font-family: RobotoRegular, sans-serif
+				font-size: em(14px)
+				opacity: 0.6
+		.faq-top
+			h2
+				&::after
+					width: 30px
+					left: calc(50% - 15px)
+		.faq-content-page
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+			align-items: center
+			height: 100%
+			margin: 0 5vw					
+			.faq-middle
+				display: flex
+				flex-direction: row
+				flex-wrap: nowrap
+				justify-content: center
+				font-family: "Open Sans", sans-serif
+				font-weight: 400
+				font-size: em(24px)
+				.faq-info
+					display: flex
+					flex-direction: column
+					justify-content: space-around
+					align-items: center
+					flex: 40%
+					color: #000
+					.faq-info-item
+						display: flex
+						flex-direction: row
+						width: 100%
+						position: relative
+						cursor: pointer
+						.faq-info-item-img
+							width: 70px
+							height: 70px
+							background-color: #fff
+							border-radius: 50%
+							position: absolute
+							box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.25)
+							background-size: 40px 40px
+							background-position: center
+							background-repeat: no-repeat
+						&:nth-child(3)
+							.faq-info-item-text
+								.faq-a
+									top: -25.5vh
+						.faq-info-item-text
+							display: flex
+							flex-direction: column
+							position: relative
+							font-family: "Open Sans", sans-serif
+							font-weight: 400
+							font-size: em(12px)
+							text-align: left
+							line-height: 22px
+							width: 35vw
+							margin: 0 7px
+							box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.25)
+							.faq-q
+								background-color: #fff
+								display: flex
+								align-items: center
+								height: 70px
+								padding-left: 20px
+								position: relative
+								.fas
+									&:first-child
+										color: #838383
+										font-size: 9px
+										position: absolute
+										right: 10px
+										display: block
+										bottom: 5px
+									&:last-child
+										color: #ff766f
+										font-size: 9px
+										position: absolute
+										right: 10px
+										bottom: 5px
+										display: none
+							.faq-a
+								position: absolute
+								display: none
+								background-color: #D8D8D8
+								align-items: center
+								padding: 10px 20px
+								top: 80px
+								z-index: 2
+								font-size: em(13px)
 
+				.faq-info-1
+					.faq-info-item-img
+						top: -35px
+						left: -70px
+					.faq-info-item-text
+						.faq-q
+							border-radius: 0 10px 10px 10px
+						.faq-a
+							border-radius: 10px 10px 0px 10px
+				.faq-info-2
+					.faq-info-item-img
+						top: -35px
+						right: -70px
+					.faq-info-item-text
+						.faq-q
+							border-radius: 10px 0px 10px 10px
+						.faq-a
+							border-radius: 10px 10px 10px 0px
+				.faq-line
+					position: relative
+					display: flex
+					flex-direction: column
+					justify-content: space-around
+					align-items: center
+					height: 60vh
+					width: 4px
+					margin: 0 47px
+					background-color: #fff
+					position: relative
+					.faq-line-el
+						position: absolute
+						width: 30px
+						height: 30px
+						background: linear-gradient(to bottom left, #FF9E5C, #FF5D7B)
+						border-radius: 50%
+					.faq-line-el-s
+						position: absolute
+						width: 20px
+						height: 20px
+						background: linear-gradient(to bottom, #FF9E5C, #FF5D7B)
+						border-radius: 50%
+					.el1
+						top: 0
+					.el2
+						top: 14%
+					.el3
+					.el4
+						top: 81%
+					.el5
+						bottom: 0
 
-
-
-			
 
 
 
@@ -1068,15 +1277,6 @@ a
 						@keyframes pop-up-security
 							0% {transform: scale(0); transition: transform 1s ease}
 							100% {transform: scale(1); transition: transform 1s ease}
-
-
-
-
-
-				
-					
-
-					
 
 /////////////////////////////////////////
 //communication page
@@ -1450,21 +1650,21 @@ a
 .content-1
 	animation-name: concon1
 	animation-duration: 1.5s
-	animation-fill-mode: forwards
+	animation-fill-mode: backwards
 	@keyframes concon1
 		0% {margin-left: -2000px;}
 		100% {margin-left: 0px;}
 .content-2
 	animation-name: concon2
 	animation-duration: 1.5s
-	animation-fill-mode: forwards
+	animation-fill-mode: backwards
 	@keyframes concon2
 		from {margin-left: 2000px;}
 		to {margin-left: 0px;}
 .content-3
 	animation-name: concon3
 	animation-duration: 1.5s
-	animation-fill-mode: forwards
+	animation-fill-mode: backwards
 	@keyframes concon3
 		0% {transform: scale(0);}
 		100% {transform: scale(1);}

@@ -4,7 +4,6 @@ $(function() {
 	$("#tabs").click(function() {
 		$(".page-2").toggle();
 	});
-
 	$("#burger").click(function() {
 		$(".page-3").toggle();
 	});
@@ -15,16 +14,6 @@ $(function() {
 		$(".page-5").toggle();
 	});
 
-	// $('#fullpage').fullpage();
-	// FastClick.attach(document.body);
-
-	$(document).ready(function() {
-		$('.mainbag').viewScroller({
-			useScrollbar: false, // Use scrollbar to change views
-			changeWhenAnim: false, // Change views when they are changing
-			loopMainViews: true, // Change horizontal views (mainviews) in loop mode
-		});
-	});
 
 
 
@@ -62,14 +51,14 @@ $(function() {
 
 
 //for tabs in modal 3(left bottom one)
-function openTabHome(cityName,elmnt) {
+function openTabHome(tabName,elmnt) {
     var i, tabcontent, tablinks;
 
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(tabName).style.display = "block";
 
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
@@ -102,12 +91,14 @@ function openTabHome(cityName,elmnt) {
 //open one tab by default
 document.getElementById("security-open-link").click();
 
+
 $(document).ready(function() {
 
     // Sets viewScroller with sample events
     $('.mainbag').viewScroller({
         useScrollbar: false,
         animSpeedMainView: 2000,
+        loopMainViews: false,
         beforeChange: function() {
             console.log('beforeChange fired!');
 
@@ -115,7 +106,6 @@ $(document).ready(function() {
 		    $('.con2').removeClass('content-2');
 		    $('.con3').removeClass('content-3');
             
-
             $('.con1').addClass('content-1-b');
             $('.con2').addClass('content-2-b');
             $('.con3').addClass('content-3-b');
@@ -129,19 +119,12 @@ $(document).ready(function() {
 
             $('.con1').removeClass('content-1-b');
 		    $('.con2').removeClass('content-2-b');
-		    $('.con3').removeClass('content-3-b')
-;
-            
+		    $('.con3').removeClass('content-3-b');
 
 		    $('.con1').addClass('content-1');
             $('.con2').addClass('content-2');
             $('.con3').addClass('content-3');
 
-
-
-            
-		    
- 
         },
         beforeResize: function() {
             console.log('beforeResize fired!');
@@ -159,9 +142,6 @@ $(document).ready(function() {
             $.fn.viewScroller.setChangeWhenAnim(false);
         }
     });
-
-    
-
 });
 
 //close modal
@@ -212,7 +192,6 @@ jQuery(function($){
 
 
 // // scroll
-	function hovov (elmnt){}
 // 	if($(".home:hover").length != 0){
 // 		$( ".services" ).scrollTop(function() {
 // 			$( ".services" ).css( "margin-top", "-100vh" );
@@ -288,9 +267,6 @@ jQuery(function($){
 
 		var lbl = document.getElementById('calc-text');
 		lbl.innerHTML = 'Размещение проекта';
-
-		
-
 	}
 
 	function toTT(elmnt) {
@@ -340,3 +316,15 @@ jQuery(function($){
 		var lbl = document.getElementById('calc-text');
 		lbl.innerHTML = '!!!';
 	}
+
+//for tabs on faq page
+$(".faq-info-item").click(function() {
+	$(this).find(".fas:first-child").toggle();
+	$(".faq-info-item .fas:first-child").not($(this).find(".fas:first-child")).css( "display", "block" );
+
+	$(this).find(".fas:last-child").toggle();
+	$(".faq-info-item .fas:last-child").not($(this).find(".fas:last-child")).css( "display", "none" );
+
+	$(this).find(".faq-a").toggle();
+	$(".faq-a").not($(this).find(".faq-a")).css( "display", "none" );
+});
