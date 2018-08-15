@@ -40,8 +40,7 @@ gulp.task('scripts', function() {
 		'./app/libs/viewScroller.js-master/jquery.easing.min.js',
 		'./app/libs/viewScroller.js-master/jquery.mousewheel.min.js',
 		'./app/libs/viewScroller.js-master/viewScroller.min.js',
-
-		
+		'./app/libs/slick-1.8.1/slick/slick.min.js',		
 		])
 		.pipe(concat('libs.js'))
 		// .pipe(uglify()) //Minify libs.js

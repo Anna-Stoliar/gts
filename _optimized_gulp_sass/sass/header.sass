@@ -1,6 +1,8 @@
 @import "bourbon"
 @import "vars.sass"
 @import "app/libs/viewScroller.js-master/viewScroller"
+@import "app/libs/slick-1.8.1/slick/slick"
+
 
 
 html::-webkit-scrollbar
@@ -36,6 +38,9 @@ a
 	text-align: left
 .text-center
 	text-align: center
+
+#mainbag
+	width: 100vw
 
 //home page
 .home
@@ -969,7 +974,6 @@ a
 					.el5
 						bottom: 0
 
-
 //security page
 .security
 	width: 100%
@@ -1139,6 +1143,17 @@ a
 						color: #831919
 					.tablink-security-icon
 						background-image: url(../img/security/security1-hov.png)
+					&:nth-child(1)
+						.tablink-security-icon
+							background-image: url(../img/security/security1-hov.png)!important
+					&:nth-child(2)
+						.tablink-security-icon
+							background-image: url(../img/security/security2-hov.png)!important
+					&:nth-child(3)
+						.tablink-security-icon
+							background: url(../img/security/security3-1-hov.png) no-repeat 20% 30%, url(../img/security/security3-2-hov.png) no-repeat 80% 70%!important
+							background-size: 45px 45px, 20px 20px!important
+							background-color: #fff!important
 				
 				.security-line
 					height: 60vh
@@ -1156,6 +1171,220 @@ a
 						@keyframes pop-up-security
 							0% {transform: scale(0); transition: transform 1s ease}
 							100% {transform: scale(1); transition: transform 1s ease}
+
+//team page
+.team
+	width: 100%
+	height: 100vh
+	position: relative
+	top: 0
+	.team-bg
+		background-image: url(../img/team/team-bg.png)
+		&::before
+			content: ''
+			background: linear-gradient(to right, #544A7D, #FFD452)
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			position: absolute
+			opacity: .6
+		&::after
+			content: ''
+			background: #000
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			position: absolute
+			opacity: .6
+	.btns
+		display: flex
+		flex-direction: row
+		align-items: flex-end
+		position: relative
+		width: 100vw
+		z-index: 10
+		img
+			position: absolute
+			top: 15px
+			left: calc(50% - 80px)
+		.fa-th
+			font-size: 30px
+			position: absolute
+			left: 25px
+			top: 25px
+		.fa-bars
+			font-size: 32px
+			position: absolute
+			right: 25px
+			top: 25px
+		.team-btns-info
+			left: 25px
+		.team-btns-contact
+			right: 25px
+		.team-btns-info, .team-btns-contact
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 70px
+			height: 70px
+			font-size: 24px
+			background-color: #fff
+			background-clip: padding-box
+			border: 13px solid rgba(250, 255, 255, 0.25)
+			border-radius: 50%
+			color: #333
+			position: absolute
+			bottom: calc(-100vh + 25px)
+			&:hover
+				animation-name: size10
+				animation-duration: 1s
+				animation-fill-mode: forwards
+				@keyframes size10
+					10% {border: 33px solid rgba(250, 255, 255, 0.25)}
+					30% {background-color: #544A7D}
+					60% {border: 1px solid rgba(255, 212, 82, 0.25)}
+					80% {background-image: radial-gradient(#544A7D, #FFD452)}
+					100% {color: #fff; background-image: radial-gradient(#544A7D, #FFD452); border: 7px solid rgba(255, 212, 82, 0.25); background-color: #333}
+			&:active, &:focus
+				background-color: #333
+				color: #fff
+		.policy
+			font-family: RobotoRegular, sans-serif
+			font-size: em(14px)
+			opacity: 0.6
+			position: absolute
+			bottom: calc(-100vh + 25px)
+			left: calc(50vw - 105px)
+	.content
+		position: absolute
+		height: 100%
+		width: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		padding: 25px
+		padding-top: 50px
+		.team-top
+			h2
+				&::after
+					width: 104px
+					left: calc(50% - 52px)
+		.team-content-page
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+			align-items: center
+			height: 100%
+			margin: 0 5vw
+			.slick
+				position: absolute
+				font-family: "Open Sans", sans-serif
+				font-weight: 700
+				height: 55vh
+				left: 0px
+				padding-left: 100px
+				top: calc(50% - 250px)
+				z-index: 10
+				.item
+					display: flex
+					flex-direrction: row
+					margin: 10px 0
+					opacity: 0.6
+					text-align: left
+					img
+						border-radius: 50%
+						background: #fff
+						background-color: #ad9497
+						box-shadow: 4px 0px 8px (0, 0, 0, 0.25)
+						margin: 5px
+						height: 94px
+						width: 94px
+					.staff-info
+						font-family: RobotoRegular, sans-serif
+						font-weight: 400
+						font-size: em(14px)
+						display: flex
+						flex-direction: column
+						align-items: flex-start
+						justify-content: center
+						margin-left: 25px
+						width: 200px
+						.staff-info-position
+							opacity: 0.6
+						.staff-info-name
+							font-weight: 700
+							font-size: em(18px)
+							box-shadow: 4px 0px 8px (0, 0, 0, 0.25)
+							position: relative
+							&::after
+								content: ""
+								position: absolute
+								height: 1px
+								width: 40px
+								top: 28px
+								left: 0
+								background-color: #fff
+						.staff-info-slogan
+							margin-top: 8px
+
+
+.slick-cur
+	width: 300px!important
+	transform: scale(2.5)!important
+	margin-left: 480px!important
+	margin: 30px 0
+	transition: all 0.5s ease
+	opacity: 1!important
+
+.bor-team
+	border: 3px solid #fff
+	height: 110px
+	width: 110px
+
+.slick-list
+	padding: 5px 550px 5px 110px!important
+	height: 380px!important
+	left: -110px
+	&::before
+		content: ""
+		height: 2px
+		width: 164px
+		position: absolute
+		top: 50%
+		left: 0
+		background-color: #fff
+		overflow: visible
+	&::after
+		content: ""
+		height: 2px
+		width: 320px
+		position: absolute
+		top: 50%
+		right: 0
+		background-color: #fff
+
+.fa-long-arrow-alt-up
+	&::before
+		position: absolute
+		top: calc(50% - 10px)
+		left: 3.3vw
+		z-index: 10
+		font-size: 30px
+		margin-left: 100px
+
+.fa-long-arrow-alt-down
+	&::before
+		position: absolute
+		top: calc(50% + 70px)
+		left: 3.3vw
+		z-index: 10
+		font-size: 30px
+		margin-left: 100px
+
+
+
 
 //communication page
 .communication
@@ -1626,13 +1855,9 @@ a
 		height: auto
 .page-2
 	background-color: rgba(0, 0, 0, .75)
-	animation-name: tobot
-	animation-duration: 1s
-	padding-top: calc(50% - 640px)
+	padding-top: calc(50% - 650px)
 	z-index: 100
-	@keyframes tobot
-		0% {top: -1000px}
-		100% {top: 15px}
+
 	.page-2-content
 		display: flex
 		flex-direction: row
@@ -1652,6 +1877,8 @@ a
 				-webkit-border-image: -webkit-linear-gradient(top, #FE9A5D 0%, #FF5D7B 100%)
 				border-image: linear-gradient(to bottom, #FE9A5D 0%, #FF5D7B 100%)
 				border-image-slice: 1
+				margin: 6px
+				padding: 8px
 				span
 					background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
 					-webkit-background-clip: text
@@ -1797,7 +2024,7 @@ a
 	width: 420px
 	height: 400px
 	padding: 45px
-	margin-top: 70px
+	margin-top: 20px
 	left: calc(50% - 210px)
 	z-index: 100
 	h4

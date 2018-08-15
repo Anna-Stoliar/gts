@@ -99,7 +99,6 @@ function openTabSec(cityName,elmnt) {
 //open one tab by default
 document.getElementById("security-open-link").click();
 
-
 $(document).ready(function() {
 
     // Sets viewScroller with sample events
@@ -326,3 +325,33 @@ jQuery(function($){
 	}
 
 
+var slickOptions = {
+	vertical: true,
+	centerMode: true,
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	initialSlide: 3,
+	prevArrow:"<i class='fas fa-long-arrow-alt-up'></i>",
+	nextArrow:"<i class='fas fa-long-arrow-alt-down'></i>"
+}
+
+
+$('.slick').slick(slickOptions)
+
+$('.slick-current').addClass('slick-cur');
+$('.slick-current img').addClass('bor-team');
+
+$('.slick').on('init', function() {
+  $('.slick-current').addClass('slick-cur');
+}).on('beforeChange', function() {
+  $(".item").removeClass('slick-cur');
+}).on('afterChange', function() {
+  $('.slick-current').addClass('slick-cur');
+
+   $('.slick-current img').addClass('bor-team');
+}).on('beforeChange', function() {
+  $(".item img").removeClass('bor-team');
+}).on('afterChange', function() {
+  $('.slick-current img').addClass('bor-team');
+
+});
