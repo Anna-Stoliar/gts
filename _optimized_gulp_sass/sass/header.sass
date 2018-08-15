@@ -1337,8 +1337,6 @@ a
 
 .slick-cur
 	width: 300px!important
-	transform: scale(2.5)!important
-	margin-left: 480px!important
 	margin: 30px 0
 	transition: all 0.5s ease
 	opacity: 1!important
@@ -1349,9 +1347,11 @@ a
 	width: 110px
 
 .slick-list
-	padding: 5px 550px 5px 110px!important
+	padding: 5px 1200px 5px 110px!important
 	height: 380px!important
-	left: -110px
+	left: 0px
+	top: calc(50% - 190px)
+	position: absolute
 	&::before
 		content: ""
 		height: 2px
@@ -1364,7 +1364,7 @@ a
 	&::after
 		content: ""
 		height: 2px
-		width: 520px
+		width: 800px
 		position: absolute
 		top: 50%
 		right: 0
@@ -1373,8 +1373,8 @@ a
 .fa-long-arrow-alt-up
 	&::before
 		position: absolute
-		top: calc(50% - 10px)
-		left: 3.3vw
+		top: calc(50% - 15px - 40px)
+		left: 55px
 		z-index: 10
 		font-size: 30px
 		margin-left: 100px
@@ -1382,8 +1382,8 @@ a
 .fa-long-arrow-alt-down
 	&::before
 		position: absolute
-		top: calc(50% + 70px)
-		left: 3.3vw
+		top: calc(50% - 15px + 40px)
+		left: 55px
 		z-index: 10
 		font-size: 30px
 		margin-left: 100px

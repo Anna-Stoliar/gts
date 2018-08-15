@@ -340,6 +340,8 @@ $('.slick').slick(slickOptions)
 
 $('.slick-current').addClass('slick-cur');
 $('.slick-current img').addClass('bor-team');
+$('.slick-current .staff-info-slogan').css('width', "400px");
+
 
 $('.slick').on('init', function() {
   $('.slick-current').addClass('slick-cur');
@@ -353,5 +355,11 @@ $('.slick').on('init', function() {
   $(".item img").removeClass('bor-team');
 }).on('afterChange', function() {
   $('.slick-current img').addClass('bor-team');
+
+  $('.slick-current .staff-info-slogan').css('width', "400px");
+}).on('beforeChange', function() {
+   $('.slick-current .staff-info-slogan').css('width', "200px");
+}).on('afterChange', function() {
+   $('.slick-current .staff-info-slogan').css('width', "400px");
 
 });
