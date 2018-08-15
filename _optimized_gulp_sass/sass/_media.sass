@@ -115,6 +115,14 @@
 			.security-content-page
 				.security-middle
 					transform: scale(0.7)
+
+	.stage 
+		form
+			transform: scale(0.8)
+
+	.stage-1, .stage-2, .stage-3
+		padding: 5px 5px 0px 0px!important
+
 						
 
 @media only screen and (max-width : 1150px)
@@ -196,6 +204,33 @@
 	.slick-cur
 		transform: scale(1.5)!important
 		margin-left: 200px!important
+
+	.calc-middle
+		transform: scale(0.8)
+
+	.stage
+		form
+			transform: scale(0.6)
+
+	.stage-3
+		padding: 5px 5px 0px 0px!important
+
+	.calc-content-page
+		height: 60%!important
+		margin-bottom: 100px!important
+
+@media only screen and (max-width : 850px)
+
+	.stage 
+			form
+				transform: scale(0.6)
+
+	.calc-line
+		&::after
+			width: 81vw!important
+
+	.calc-middle
+		width: 120%!important
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -296,6 +331,18 @@
 				left: 430px!important
 
 	
+@media only screen and (max-width : 750px)
+
+	.stage 
+			form
+				transform: scale(0.5)
+
+	.calc
+		.content
+			.calc-content-page 
+				h4::after
+					width: 100px!important
+					left: calc(50% - 50px)!important
 
 @media only screen and (max-width : 650px)
 

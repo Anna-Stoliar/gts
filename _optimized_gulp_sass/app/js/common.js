@@ -280,7 +280,7 @@ jQuery(function($){
 	    var toStageTHree = document.getElementById('stage-3');
 		toStageTHree.classList.add('stage');
 		toStageTHree.classList.remove('stage-3');
-		toStageTHree.style.padding = '0px 5px 15px 70px';
+		toStageTHree.style.padding = '0px 5px 15px 0px';
 		
 		var stageTwo = document.getElementById('stage-2');
 		var toStageTT = stageTwo.getElementsByClassName('container-radio-calc');
