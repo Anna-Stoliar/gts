@@ -1,21 +1,18 @@
 $(function() {
 
 	//for opening modals on home page
-	$("#tabs").click(function() {
+	$(".tabs").click(function() {
 		$(".page-2").toggle();
 	});
-	$("#burger").click(function() {
+	$(".burger").click(function() {
 		$(".page-3").toggle();
 	});
-	$("#dots").click(function() {
+	$(".dots").click(function() {
 		$(".page-4").toggle();
 	});
-	$("#phone").click(function() {
+	$(".phone").click(function() {
 		$(".page-5").toggle();
 	});
-
-
-
 
 
 	//SVG Fallback
@@ -46,7 +43,17 @@ $(function() {
 		return false;
 	});
 
+	//for tabs on faq page
+	$(".faq-info-item").click(function() {
+		$(this).find(".fas:first-child").toggle();
+		$(".faq-info-item .fas:first-child").not($(this).find(".fas:first-child")).css( "display", "block" );
 
+		$(this).find(".fas:last-child").toggle();
+		$(".faq-info-item .fas:last-child").not($(this).find(".fas:last-child")).css( "display", "none" );
+
+		$(this).find(".faq-a").toggle();
+		$(".faq-a").not($(this).find(".faq-a")).css( "display", "none" );
+	});
 });
 
 
@@ -72,7 +79,7 @@ document.getElementById("open-link").click();
 
 
 //for tabs security page
-function openTabHome(cityName,elmnt) {
+function openTabSec(cityName,elmnt) {
     var i, tabcontentS, tablinksS;
 
     tabcontentS = document.getElementsByClassName("tabcontent-security");
@@ -88,6 +95,7 @@ function openTabHome(cityName,elmnt) {
 
     elmnt.classList.add("security-tab-active");
 }
+
 //open one tab by default
 document.getElementById("security-open-link").click();
 
@@ -97,7 +105,7 @@ $(document).ready(function() {
     // Sets viewScroller with sample events
     $('.mainbag').viewScroller({
         useScrollbar: false,
-        animSpeedMainView: 2000,
+        animSpeedMainView: 1500,
         loopMainViews: false,
         beforeChange: function() {
             console.log('beforeChange fired!');
@@ -148,7 +156,7 @@ $(document).ready(function() {
 jQuery(function($){
 	$(document).mouseup(function (e){
 		var div = $(".page-2");
-		var tabs = $("#tabs");
+		var tabs = $(".tabs");
 		if (!div.is(e.target)
 			&& div.has(e.target).length === 0 && !tabs.is(e.target) && tabs.has(e.target).length === 0) {
 			div.hide();
@@ -158,7 +166,7 @@ jQuery(function($){
 jQuery(function($){
 	$(document).mouseup(function (e){
 		var div = $(".page-3");
-		var burger = $("#burger");
+		var burger = $(".burger");
 		if (!div.is(e.target)
 			&& div.has(e.target).length === 0 && !burger.is(e.target) && burger.has(e.target).length === 0) {
 			div.hide();
@@ -168,7 +176,7 @@ jQuery(function($){
 jQuery(function($){
 	$(document).mouseup(function (e){
 		var div = $(".page-4");
-		var dots = $("#dots");
+		var dots = $(".dots");
 		if (!div.is(e.target)
 			&& div.has(e.target).length === 0 && !dots.is(e.target) && dots.has(e.target).length === 0) {
 			div.hide();
@@ -178,7 +186,7 @@ jQuery(function($){
 jQuery(function($){
 	$(document).mouseup(function (e){
 		var div = $(".page-5");
-		var phone = $("#phone");
+		var phone = $(".phone");
 		if (!div.is(e.target)
 			&& div.has(e.target).length === 0 && !phone.is(e.target) && phone.has(e.target).length === 0) {
 			div.hide();
@@ -263,7 +271,7 @@ jQuery(function($){
 		formm.style.alignItems = 'center'
 		
 		var calcLine = document.getElementById('calc-line');
-		calcLine.style.background = 'linear-gradient(to right, rgba(255, 127, 107, 0.5) 0%, rgba(255, 127, 107, 0.5) 50%, #9E9E9E 50%, #9E9E9E 100%)';
+		calcLine.classList.add('calc-line-1');
 
 		var lbl = document.getElementById('calc-text');
 		lbl.innerHTML = 'Размещение проекта';
@@ -286,7 +294,7 @@ jQuery(function($){
 		stageTwo.style.padding = '0px 5px 15px 0px';
 
 		var calcLine = document.getElementById('calc-line');
-		calcLine.style.background = 'linear-gradient(to right, rgba(255, 127, 107, 0.5) 0%, rgba(255, 127, 107, 0.5) 70%, #9E9E9E 70%, #9E9E9E 100%)';
+		calcLine.classList.add('calc-line-2');
 
 		var lbl = document.getElementById('calc-text');
 		lbl.innerHTML = 'Желаемые сроки выполнения';
@@ -311,20 +319,10 @@ jQuery(function($){
 		formm.style.alignItems = 'center'
 
 		var calcLine = document.getElementById('calc-line');
-		calcLine.style.background = 'linear-gradient(to right, rgba(255, 127, 107, 0.5) 0%, rgba(255, 127, 107, 0.5) 100%)';
+		calcLine.classList.add('calc-line-3');
 
 		var lbl = document.getElementById('calc-text');
 		lbl.innerHTML = '!!!';
 	}
 
-//for tabs on faq page
-$(".faq-info-item").click(function() {
-	$(this).find(".fas:first-child").toggle();
-	$(".faq-info-item .fas:first-child").not($(this).find(".fas:first-child")).css( "display", "block" );
 
-	$(this).find(".fas:last-child").toggle();
-	$(".faq-info-item .fas:last-child").not($(this).find(".fas:last-child")).css( "display", "none" );
-
-	$(this).find(".faq-a").toggle();
-	$(".faq-a").not($(this).find(".faq-a")).css( "display", "none" );
-});

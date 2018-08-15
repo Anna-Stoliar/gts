@@ -47,13 +47,68 @@ a
 		background-attavhment: fixed
 		&::before
 			content: ''
-			background: linear-gradient(to right, #24013A, #E11CB6)
+			background: linear-gradient(to top right, #24013A, #E11CB6)
 			top: 0
 			left: 0
 			width: 100%
 			height: 100%
 			position: absolute
 			opacity: .5
+	.btns
+		display: flex
+		flex-direction: row
+		align-items: flex-end
+		position: relative
+		width: 100vw
+		z-index: 10
+		.fa-th
+			font-size: 30px
+			position: absolute
+			left: 25px
+			top: 25px
+		.fa-bars
+			font-size: 32px
+			position: absolute
+			right: 25px
+			top: 25px
+		.home-btns-info
+			left: 25px
+		.home-btns-contact
+			right: 25px
+		.home-btns-info, .home-btns-contact
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 70px
+			height: 70px
+			font-size: 24px
+			background-color: #fff
+			background-clip: padding-box
+			border: 13px solid rgba(250, 255, 255, 0.25)
+			border-radius: 50%
+			color: #333
+			position: absolute
+			bottom: calc(-100vh + 25px)
+			&:hover
+				animation-name: size1
+				animation-duration: 1s
+				animation-fill-mode: forwards
+				@keyframes size1
+					10% {border: 33px solid rgba(250, 255, 255, 0.25)}
+					30% {background-color: #E11CB6}
+					60% {border: 1px solid rgba(255, 28, 182, 0.25)}
+					80% {background-image: radial-gradient(#24013A, #E11CB6)}
+					100% {color: #fff; background-image: radial-gradient(#24013A, #E11CB6); border: 7px solid rgba(255, 28, 182, 0.25); background-color: #777}
+			&:active, &:focus
+				background-color: #333
+				color: #fff
+		.policy
+			font-family: RobotoRegular, sans-serif
+			font-size: em(14px)
+			opacity: 0.6
+			position: absolute
+			bottom: calc(-100vh + 25px)
+			left: calc(50vw - 105px)
 	.content
 		height: 100%
 		width: 100%
@@ -62,282 +117,8 @@ a
 		justify-content: space-between
 		padding: 25px
 		position: absolute
-		.btns
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-			align-items: flex-end
-			z-index: 0
-			.fa-th
-				font-size: 30px
-			.fa-bars
-				font-size: 32px
-			.home-btns-info, .home-btns-contact
-				display: flex
-				justify-content: center
-				align-items: center
-				width: 70px
-				height: 70px
-				font-size: 24px
-				background-color: #fff
-				background-clip: padding-box
-				border: 13px solid rgba(250, 255, 255, 0.25)
-				border-radius: 50%
-				color: #333
-				&:hover
-					animation-name: size
-					animation-duration: 1s
-					animation-fill-mode: forwards
-					@keyframes size
-						10% {border: 33px solid rgba(250, 255, 255, 0.25)}
-						30% {background-color: #FE9A5D}
-						60% {border: 1px solid rgba(255, 110, 115, 0.25)}
-						80% {background-image: radial-gradient(#FE9A5D, #FF5D7B)}
-						100% {color: #fff; background-image: radial-gradient(#FE9A5D, #FF5D7B); border: 7px solid rgba(255, 110, 115, 0.25); background-color: #333}
-				&:active, &:focus
-					background-color: #333
-					color: #fff
-			.policy
-				font-family: RobotoRegular, sans-serif
-				font-size: em(14px)
-				opacity: 0.6
 		.home-content-page
 			position: relative
-			.page
-				width: 100%
-				height: 89%
-				position: absolute
-				top: 13px
-				display: flex
-				flex-direction: row
-				box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.25)
-				border-radius: 4px
-				display: none
-			.page-1
-				padding: 5vw 50px 0
-				margin-bottom: 70px
-				position: relative
-				p
-					font-size: em(16px)
-					opacity: 0.6
-					&:hover
-						opacity: 1
-				h2
-					font-size: em(24px)
-					font-family: "Open Sans", sans-serif
-					font-weight: 700
-				img
-					width: 40%
-					height: auto
-			.page-2
-				background-color: rgba(0, 0, 0, .75)
-				animation-name: tobot
-				animation-duration: 1s
-				padding-top: calc(50% - 640px)
-				z-index: 100
-				@keyframes tobot
-					0% {top: -1000px}
-					100% {top: 15px}
-				.page-2-content
-					display: flex
-					flex-direction: row
-					justify-content: space-between
-					flex-wrap: wrap
-					.page-2-content-item
-						display: flex
-						flex-direction: column
-						margin: 8px
-						padding: 8px
-						font-size: 16px
-						font-family: "Open Sans", sans-serif
-						font-weight: 700
-						&:hover
-							border: 2px solid transparent
-							-moz-border-image: -moz-linear-gradient(top, #FE9A5D 0%, #FF5D7B 100%)
-							-webkit-border-image: -webkit-linear-gradient(top, #FE9A5D 0%, #FF5D7B 100%)
-							border-image: linear-gradient(to bottom, #FE9A5D 0%, #FF5D7B 100%)
-							border-image-slice: 1
-							span
-								background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
-								-webkit-background-clip: text
-								-webkit-text-fill-color: transparent
-						img
-							width: 270px
-							height: 135px
-			.page-3
-				background-color: #fff
-				z-index: 100
-				ul
-					list-style: none
-					text-transform: uppercase
-					line-height: 50px
-					font-size: em(24px)
-					font-family: "Open Sans", sans-serif
-					font-weight: 700
-					margin: 0
-					padding: 80px 0 125px 0
-					li
-						a
-							color: #959090
-							&::before
-								content: ""
-								margin-left: -80px
-							&::after
-								content: ""
-							&:hover
-								background: -webkit-linear-gradient(#FE9A5D, #FF5D7B)
-								-webkit-background-clip: text
-								-webkit-text-fill-color: transparent
-								&::before
-									content: ""
-									height: 3px
-									width: 80px
-									background-color: #FF796E
-									opacity: 0.8
-									position: absolute
-									margin-top: 24px
-									margin-left: -100px
-									transition: margin-left ease 0.8s
-								&::after
-									content: ""
-									height: 3px
-									width: 80px
-									background-color: #FF796E
-									opacity: 0.8
-									position: absolute
-									margin-top: 24px
-									margin-left: 20px
-									transition: margin-left ease 0.8s
-			.page-4
-				background: linear-gradient(to right, #FDC830, #F37335)
-				padding: 0px 0 30px 15px
-				font-family: "Open Sans", sans-serif
-				font-weight: 600
-				z-index: 100
-				.page-4-top
-					margin: 10px 0 0px
-					animation-name: toleft
-					animation-duration: 1.7s
-					@keyframes toleft
-						0% {margin-right: 1000px; transform: scaleX(-1)}
-						100% {margin-right: 0px}
-					a
-						border-bottom: 1px solid #F3F3F3
-						padding: 0px 15px 10px 5px
-						font-size: 18px
-						font-family: "Open Sans", sans-serif
-						font-weight: 700
-						.fas
-							font-size: 15px
-							margin-left: 15px
-				.page-4-content
-					position: relative
-					display: flex
-					flex-direction: row
-					.page-4-content-links
-						display: flex
-						flex-direction: column
-						align-items: center
-						justify-content: space-between
-						border-right: 1px solid #F3F3F3
-						.page-4-content-links-link
-							background: none
-							border: 2px solid #fff
-							border-radius: 4px
-							color: #fff
-							text-align: left
-							width: 25vw
-							padding: 10px 0px 10px 20px
-							margin: 0 50px 10px 60px
-							transition: background-color 0.5s ease
-							transition: color 0.7s ease
-							&:active, &:focus
-								outline: none!important
-							&:last-child
-								margin-bottom: 0px
-							h4
-								font-family: "Open Sans", sans-serif
-								font-weight: 700
-								font-size: em(18px)
-								text-transform: uppercase
-								margin: 0px
-							p
-								font-family: "Open Sans", sans-serif
-								font-weight: 400
-								font-size: em(14px)
-								margin: 0px
-								span
-									font-size: em(16px)
-									font-weight: 700
-							&:hover, &:focus, &:active
-								color: #421212
-								box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25)
-								background-color: #fff
-						.p4-active
-							color: #421212
-							box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25)
-							background-color: #fff
-					.page-4-content-info
-						display: flex
-						flex-direction: column
-						justify-content: space-between
-						margin: 0 0 0 50px
-						.page-4-content-info-link
-							display: none
-							font-size: em(18px)
-							margin-right: 22vw
-							margin-top: 2vw
-							animation-name: flip
-							animation-duration: 1.8s
-							@keyframes flip
-								0% {transform: scaleX(-1)}
-								100% {margin-right: 22vw}
-						a
-							font-size: em(14px)
-							text-decoration: underline
-							margin-right: 50px
-			.page-5
-				background-color: #fff
-				width: 420px
-				height: 400px
-				padding: 45px
-				margin-top: 70px
-				left: calc(50% - 210px)
-				z-index: 100
-				h4
-					color: #743535
-					font-family: "Open Sans", sans-serif
-					font-weight: 700
-					margin: 0 0 30px 0
-					text-align: center
-				input
-					border: none
-					border-bottom: 1px solid #D1D1D1
-					color: #D1D1D1
-					background-color: none
-					width: 100%
-					padding: 20px 0 0px 10px
-					&:active, &:focus
-						outline: none!important
-						border-bottom: 1px solid #743535
-						transition: border-bottom ease 1s
-				.page-5-btn
-					margin: 50px auto 0
-					width: 270px
-					height: 55px
-					display: flex
-					justify-content: center
-					align-items: center
-					background: linear-gradient(to bottom, #FE9A5D, #FF5D7B)
-					box-shadow: 2px 2px 10px #FF7E6B
-					border-radius: 40px
-					border: none
-					&:hover
-						box-shadow: inset 0 0 10px #777
-						text-shadow: 2px 2px 10px #555
-						transition: box-shadow ease 5s
-					&:active, &:focus
-						outline: none!important
 
 //services page
 .services
@@ -365,6 +146,65 @@ a
 			height: 100%
 			position: absolute
 			opacity: .5
+	.btns
+		display: flex
+		flex-direction: row
+		align-items: flex-end
+		position: relative
+		width: 100vw
+		z-index: 10
+		img
+			position: absolute
+			top: 15px
+			left: calc(50% - 80px)
+		.fa-th
+			font-size: 30px
+			position: absolute
+			left: 25px
+			top: 25px
+		.fa-bars
+			font-size: 32px
+			position: absolute
+			right: 25px
+			top: 25px
+		.services-btns-info
+			left: 25px
+		.services-btns-contact
+			right: 25px
+		.services-btns-info, .services-btns-contact
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 70px
+			height: 70px
+			font-size: 24px
+			background-color: #fff
+			background-clip: padding-box
+			border: 13px solid rgba(250, 255, 255, 0.25)
+			border-radius: 50%
+			color: #333
+			position: absolute
+			bottom: calc(-100vh + 25px)
+			&:hover
+				animation-name: size2
+				animation-duration: 1s
+				animation-fill-mode: forwards
+				@keyframes size2
+					10% {border: 33px solid rgba(250, 255, 255, 0.25)}
+					30% {background-color: #D39D38}
+					60% {border: 1px solid rgba(77, 160, 176, 0.25)}
+					80% {background-image: radial-gradient (#D39D38, #4DA0B0)}
+					100% {color: #fff; background-image: radial-gradient(#D39D38, #4DA0B0); border: 7px solid rgba(77, 160, 176, 0.25); background-color: #333}
+			&:active, &:focus
+				background-color: #333
+				color: #fff
+		.policy
+			font-family: RobotoRegular, sans-serif
+			font-size: em(14px)
+			opacity: 0.6
+			position: absolute
+			bottom: calc(-100vh + 25px)
+			left: calc(50vw - 105px)
 	.content
 		position: absolute
 		height: 100%
@@ -373,52 +213,11 @@ a
 		flex-direction: column
 		justify-content: space-between
 		padding: 25px
-		padding-top: 15px
-		.services-top-btns
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-			align-items: center
-			.fa-th
-				font-size: 30px
-			.fa-bars
-				font-size: 32px
-		.btns
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-			align-items: flex-end
-			.services-btns-info, .services-btns-contact
-				display: flex
-				justify-content: center
-				align-items: center
-				width: 70px
-				height: 70px
-				font-size: 24px
-				background-color: #fff
-				background-clip: padding-box
-				border: 13px solid rgba(250, 255, 255, 0.25)
-				border-radius: 50%
-				color: #333
-				&:hover
-					animation-name: serv-size
-					animation-duration: 1s
-					animation-fill-mode: forwards
-					@keyframes serv-size
-						10% {border: 33px solid rgba(250, 255, 255, 0.25)}
-						30% {background-color: #E11CB6}
-						60% {border: 1px solid rgba(225, 28, 182, 0.25)}
-						80% {background-image: radial-gradient(#E11CB6, #68245C)}
-						100% {color: #fff; background-image: radial-gradient(#E11CB6, #68245C); border: 7px solid rgba(225, 28, 182, 0.25); background-color: #555}
-				&:active, &:focus
-					background-color: #333
-					color: #fff
-			.policy
-				font-family: RobotoRegular, sans-serif
-				font-size: em(14px)
-				opacity: 0.6
+		padding-top: 60px
 		.service-top
 			h2
+				margin-top: 10px
+				margin-bottom: 0px
 				&::after
 					width: 160px
 					left: calc(50% - 80px)	
@@ -461,7 +260,6 @@ a
 				font-family: "Open Sans", sans-serif
 				font-weight: 700
 				font-size: em(16px)
-				margin-bottom: -20px
 				span
 					font-weight: 400
 					opacity: 0.6
@@ -476,7 +274,7 @@ a
 		background-image: url(../img/pros/bg-pros.png)
 		&::before
 			content: ''
-			background: linear-gradient(to right, #FCB045 20%, #FD1D1D 80%,  #AE1CE1 100%)
+			background: linear-gradient(to right, #FCB045 0%, #FD1D1D 30%,  #AE1CE1 100%)
 			top: 0
 			left: 0
 			width: 100%
@@ -492,6 +290,65 @@ a
 			height: 100%
 			position: absolute
 			opacity: .3
+	.btns
+		display: flex
+		flex-direction: row
+		align-items: flex-end
+		position: relative
+		width: 100vw
+		z-index: 10
+		img
+			position: absolute
+			top: 15px
+			left: calc(50% - 80px)
+		.fa-th
+			font-size: 30px
+			position: absolute
+			left: 25px
+			top: 25px
+		.fa-bars
+			font-size: 32px
+			position: absolute
+			right: 25px
+			top: 25px
+		.pros-btns-info
+			left: 25px
+		.pros-btns-contact
+			right: 25px
+		.pros-btns-info, .pros-btns-contact
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 70px
+			height: 70px
+			font-size: 24px
+			background-color: #fff
+			background-clip: padding-box
+			border: 13px solid rgba(250, 255, 255, 0.25)
+			border-radius: 50%
+			color: #333
+			position: absolute
+			bottom: calc(-100vh + 25px)
+			&:hover
+				animation-name: size3
+				animation-duration: 1s
+				animation-fill-mode: forwards
+				@keyframes size3
+					10% {border: 33px solid rgba(250, 255, 255, 0.25)}
+					30% {background-color: #FE9A5D}
+					60% {border: 1px solid rgba(255, 110, 115, 0.25)}
+					80% {background-image: radial-gradient(#FE9A5D, #FF5D7B)}
+					100% {color: #fff; background-image: radial-gradient(#FE9A5D, #FF5D7B); border: 7px solid rgba(255, 110, 115, 0.25); background-color: #333}
+			&:active, &:focus
+				background-color: #333
+				color: #fff
+		.policy
+			font-family: RobotoRegular, sans-serif
+			font-size: em(14px)
+			opacity: 0.6
+			position: absolute
+			bottom: calc(-100vh + 25px)
+			left: calc(50vw - 105px)
 	.content
 		position: absolute
 		height: 100%
@@ -500,50 +357,7 @@ a
 		flex-direction: column
 		justify-content: space-between
 		padding: 25px
-		padding-top: 15px
-		.pros-top-btns
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-			align-items: center
-			.fa-th
-				font-size: 30px
-			.fa-bars
-				font-size: 32px
-		.btns
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-			align-items: flex-end
-			.pros-btns-info, .pros-btns-contact
-				display: flex
-				justify-content: center
-				align-items: center
-				width: 70px
-				height: 70px
-				font-size: 24px
-				background-color: #fff
-				background-clip: padding-box
-				border: 13px solid rgba(250, 255, 255, 0.25)
-				border-radius: 50%
-				color: #333
-				&:hover
-					animation-name: serv-size
-					animation-duration: 1s
-					animation-fill-mode: forwards
-					@keyframes serv-size
-						10% {border: 33px solid rgba(250, 255, 255, 0.25)}
-						30% {background-color: #E11CB6}
-						60% {border: 1px solid rgba(225, 28, 182, 0.25)}
-						80% {background-image: radial-gradient(#E11CB6, #68245C)}
-						100% {color: #fff; background-image: radial-gradient(#E11CB6, #68245C); border: 7px solid rgba(225, 28, 182, 0.25); background-color: #555}
-				&:active, &:focus
-					background-color: #333
-					color: #fff
-			.policy
-				font-family: RobotoRegular, sans-serif
-				font-size: em(14px)
-				opacity: 0.6
+		padding-top: 50px
 		.pros-top
 			h2
 				&::after
@@ -571,7 +385,7 @@ a
 					flex-direction: column
 					align-items: center
 					margin: 1% 2%
-					padding: 30px
+					padding: 20px
 					cursor: default
 					.pros-middle-item-img
 						width: 64px
@@ -625,6 +439,7 @@ a
 						background: #fff
 						border-radius: 4px
 						color: #292929
+						padding: 10px
 						transition: ease 1s background
 						.more
 							display: none
@@ -632,6 +447,10 @@ a
 						.more-text
 							display: inline-block
 							transition: ease 1s display
+						.pros-middle-item-img
+							margin-bottom: 0px
+							margin-top: 5px
+							transition: ease 0.3s all
 						&:nth-child(1)
 							.pros-middle-item-img
 								background-image: url(../img/pros/pros1-hov.png)
@@ -667,7 +486,7 @@ a
 		background-image: url(../img/calc/calc-bg.png)
 		&::before
 			content: ''
-			background: linear-gradient(to right, #ED213A 0%, #FD1D1D 19.34%, #93291E 100%)
+			background: linear-gradient(to right, #ED213A, #93291E)
 			top: 0
 			left: 0
 			width: 100%
@@ -683,6 +502,65 @@ a
 			height: 100%
 			position: absolute
 			opacity: .5
+	.btns
+		display: flex
+		flex-direction: row
+		align-items: flex-end
+		position: relative
+		width: 100vw
+		z-index: 10
+		img
+			position: absolute
+			top: 15px
+			left: calc(50% - 80px)
+		.fa-th
+			font-size: 30px
+			position: absolute
+			left: 25px
+			top: 25px
+		.fa-bars
+			font-size: 32px
+			position: absolute
+			right: 25px
+			top: 25px
+		.calc-btns-info
+			left: 25px
+		.calc-btns-contact
+			right: 25px
+		.calc-btns-info, .calc-btns-contact
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 70px
+			height: 70px
+			font-size: 24px
+			background-color: #fff
+			background-clip: padding-box
+			border: 13px solid rgba(250, 255, 255, 0.25)
+			border-radius: 50%
+			color: #333
+			position: absolute
+			bottom: calc(-100vh + 25px)
+			&:hover
+				animation-name: size4
+				animation-duration: 1s
+				animation-fill-mode: forwards
+				@keyframes size4
+					10% {border: 33px solid rgba(250, 255, 255, 0.25)}
+					30% {background-color: #FE9A5D}
+					60% {border: 1px solid rgba(255, 110, 115, 0.25)}
+					80% {background-image: radial-gradient(#FE9A5D, #FF5D7B)}
+					100% {color: #fff; background-image: radial-gradient(#FE9A5D, #FF5D7B); border: 7px solid rgba(255, 110, 115, 0.25); background-color: #333}
+			&:active, &:focus
+				background-color: #333
+				color: #fff
+		.policy
+			font-family: RobotoRegular, sans-serif
+			font-size: em(14px)
+			opacity: 0.6
+			position: absolute
+			bottom: calc(-100vh + 25px)
+			left: calc(50vw - 105px)
 	.content
 		position: absolute
 		height: 100%
@@ -691,53 +569,9 @@ a
 		flex-direction: column
 		justify-content: space-between
 		padding: 25px
-		padding-top: 15px
-		.calc-top-btns
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-			align-items: center
-			.fa-th
-				font-size: 30px
-			.fa-bars
-				font-size: 32px
-		.btns
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-			align-items: flex-end
-			.calc-btns-info, .calc-btns-contact
-				display: flex
-				justify-content: center
-				align-items: center
-				width: 70px
-				height: 70px
-				font-size: 24px
-				background-color: #fff
-				background-clip: padding-box
-				border: 13px solid rgba(250, 255, 255, 0.25)
-				border-radius: 50%
-				color: #333
-				&:hover
-					animation-name: serv-size
-					animation-duration: 1s
-					animation-fill-mode: forwards
-					@keyframes serv-size
-						10% {border: 33px solid rgba(250, 255, 255, 0.25)}
-						30% {background-color: #E11CB6}
-						60% {border: 1px solid rgba(225, 28, 182, 0.25)}
-						80% {background-image: radial-gradient(#E11CB6, #68245C)}
-						100% {color: #fff; background-image: radial-gradient(#E11CB6, #68245C); border: 7px solid rgba(225, 28, 182, 0.25); background-color: #555}
-				&:active, &:focus
-					background-color: #333
-					color: #fff
-			.policy
-				font-family: RobotoRegular, sans-serif
-				font-size: em(14px)
-				opacity: 0.6
+		padding-top: 50px
 		.calc-top
 			h2
-				margin-top: -30px
 				&::after
 					width: 170px
 					left: calc(50% - 85px)
@@ -746,8 +580,8 @@ a
 			flex-direction: column
 			justify-content: space-around
 			align-items: center
-			height: 65%
-			margin: 0 4vw
+			height: 70%
+			margin: 0 4vw 6vw
 			background-color: #fff
 			border-radius: 5px	
 			h4
@@ -776,13 +610,26 @@ a
 				height: 100%
 				width: 100%
 				position: relative
-				#calc-line
-					position: absolute
-					height: 12px
-					width: 80vw
-					top: 22vh
-					background: linear-gradient(to right, rgba(255, 127, 107, 0.5) 0%, rgba(255, 127, 107, 0.5) 30%, #9E9E9E 30%, #9E9E9E 100%)
-					transition: all 1s ease
+				.calc-line
+					&:after
+						content: ""
+						position: absolute
+						height: 12px
+						width: 80vw
+						top: calc(50% - 5px)
+						background: linear-gradient(to right, rgba(255, 127, 107, 0.5) 0%, rgba(255, 127, 107, 0.5) 30%, #9E9E9E 30%, #9E9E9E 100%)
+						transition: all 1s ease
+				.calc-line-1
+					&:after
+						background: linear-gradient(to right, rgba(255, 127, 107, 0.5) 0%, rgba(255, 127, 107, 0.5) 50%, #9E9E9E 50%, #9E9E9E 100%)
+						width: 78vw
+				.calc-line-2
+					&:after
+						background: linear-gradient(to right, rgba(255, 127, 107, 0.5) 0%, rgba(255, 127, 107, 0.5) 75%, #9E9E9E 75%, #9E9E9E 100%)
+						width: 75vws
+				.calc-line-3
+					&:after
+						background: linear-gradient(to right, rgba(255, 127, 107, 0.5) 0%, rgba(255, 127, 107, 0.5) 100%, #9E9E9E 100%, #9E9E9E 100%)
 				.calc-middle-btn-b
 					width: 74px
 					height: 74px
@@ -793,6 +640,7 @@ a
 					z-index: 2
 				.calc-middle-btn
 					width: 74px
+					position: relative
 					height: 74px
 					background-clip: padding-box
 					border-radius: 50%
@@ -888,7 +736,7 @@ a
 		background-image: url(../img/faq/faq-bg.png)
 		&::before
 			content: ''
-			background: linear-gradient(to right, #6BE585 0%, #DD3E54 14.92%, #E72842 100%)
+			background: linear-gradient(to right, #6BE585, #E72842)
 			top: 0
 			left: 0
 			width: 100%
@@ -904,6 +752,65 @@ a
 			height: 100%
 			position: absolute
 			opacity: .5
+	.btns
+		display: flex
+		flex-direction: row
+		align-items: flex-end
+		position: relative
+		width: 100vw
+		z-index: 10
+		img
+			position: absolute
+			top: 15px
+			left: calc(50% - 80px)
+		.fa-th
+			font-size: 30px
+			position: absolute
+			left: 25px
+			top: 25px
+		.fa-bars
+			font-size: 32px
+			position: absolute
+			right: 25px
+			top: 25px
+		.faq-btns-info
+			left: 25px
+		.faq-btns-contact
+			right: 25px
+		.faq-btns-info, .faq-btns-contact
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 70px
+			height: 70px
+			font-size: 24px
+			background-color: #fff
+			background-clip: padding-box
+			border: 13px solid rgba(250, 255, 255, 0.25)
+			border-radius: 50%
+			color: #333
+			position: absolute
+			bottom: calc(-100vh + 25px)
+			&:hover
+				animation-name: size5
+				animation-duration: 1s
+				animation-fill-mode: forwards
+				@keyframes size5
+					10% {border: 33px solid rgba(250, 255, 255, 0.25)}
+					30% {background-color: #FE9A5D}
+					60% {border: 1px solid rgba(231, 40, 66, 0.25)}
+					80% {background-image: radial-gradient(#E72842, #B97364)}
+					100% {color: #fff; background-image: radial-gradient(#E72842, #B97364); border: 7px solid rgba(231, 40, 66, 0.25); background-color: #333}
+			&:active, &:focus
+				background-color: #333
+				color: #fff
+		.policy
+			font-family: RobotoRegular, sans-serif
+			font-size: em(14px)
+			opacity: 0.6
+			position: absolute
+			bottom: calc(-100vh + 25px)
+			left: calc(50vw - 105px)
 	.content
 		position: absolute
 		height: 100%
@@ -912,50 +819,7 @@ a
 		flex-direction: column
 		justify-content: space-between
 		padding: 25px
-		padding-top: 15px
-		.faq-top-btns
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-			align-items: center
-			.fa-th
-				font-size: 30px
-			.fa-bars
-				font-size: 32px
-		.btns
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-			align-items: flex-end
-			.faq-btns-info, .faq-btns-contact
-				display: flex
-				justify-content: center
-				align-items: center
-				width: 70px
-				height: 70px
-				font-size: 24px
-				background-color: #fff
-				background-clip: padding-box
-				border: 13px solid rgba(250, 255, 255, 0.25)
-				border-radius: 50%
-				color: #333
-				&:hover
-					animation-name: serv-size
-					animation-duration: 1s
-					animation-fill-mode: forwards
-					@keyframes serv-size
-						10% {border: 33px solid rgba(250, 255, 255, 0.25)}
-						30% {background-color: #E11CB6}
-						60% {border: 1px solid rgba(225, 28, 182, 0.25)}
-						80% {background-image: radial-gradient(#E11CB6, #68245C)}
-						100% {color: #fff; background-image: radial-gradient(#E11CB6, #68245C); border: 7px solid rgba(225, 28, 182, 0.25); background-color: #555}
-				&:active, &:focus
-					background-color: #333
-					color: #fff
-			.policy
-				font-family: RobotoRegular, sans-serif
-				font-size: em(14px)
-				opacity: 0.6
+		padding-top: 50px
 		.faq-top
 			h2
 				&::after
@@ -1099,8 +963,6 @@ a
 						bottom: 0
 
 
-
-
 //security page
 .security
 	width: 100%
@@ -1127,6 +989,59 @@ a
 			height: 100%
 			position: absolute
 			opacity: .5
+	.btns
+		display: flex
+		flex-direction: row
+		align-items: flex-end
+		position: relative
+		width: 100vw
+		z-index: 10
+		img
+			position: absolute
+			top: 15px
+			left: calc(50% - 80px)
+		.fa-th
+			font-size: 30px
+			position: absolute
+			left: 25px
+			top: 25px
+		.fa-bars
+			font-size: 32px
+			position: absolute
+			right: 25px
+			top: 25px
+		.security-btns-info
+			left: 25px
+		.security-btns-contact
+			right: 25px
+		.security-btns-info, .security-btns-contact
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 70px
+			height: 70px
+			font-size: 24px
+			background-color: #fff
+			background-clip: padding-box
+			border: 13px solid rgba(250, 255, 255, 0.25)
+			border-radius: 50%
+			color: #333
+			position: absolute
+			bottom: calc(-100vh + 25px)
+			&:hover
+				animation-name: size1
+				animation-duration: 1s
+				animation-fill-mode: forwards
+			&:active, &:focus
+				background-color: #333
+				color: #fff
+		.policy
+			font-family: RobotoRegular, sans-serif
+			font-size: em(14px)
+			opacity: 0.6
+			position: absolute
+			bottom: calc(-100vh + 25px)
+			left: calc(50vw - 105px)
 	.content
 		position: absolute
 		height: 100%
@@ -1135,50 +1050,7 @@ a
 		flex-direction: column
 		justify-content: space-between
 		padding: 25px
-		padding-top: 15px
-		.security-top-btns
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-			align-items: center
-			.fa-th
-				font-size: 30px
-			.fa-bars
-				font-size: 32px
-		.btns
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-			align-items: flex-end
-			.security-btns-info, .security-btns-contact
-				display: flex
-				justify-content: center
-				align-items: center
-				width: 70px
-				height: 70px
-				font-size: 24px
-				background-color: #fff
-				background-clip: padding-box
-				border: 13px solid rgba(250, 255, 255, 0.25)
-				border-radius: 50%
-				color: #333
-				&:hover
-					animation-name: serv-size
-					animation-duration: 1s
-					animation-fill-mode: forwards
-					@keyframes serv-size
-						10% {border: 33px solid rgba(250, 255, 255, 0.25)}
-						30% {background-color: #E11CB6}
-						60% {border: 1px solid rgba(225, 28, 182, 0.25)}
-						80% {background-image: radial-gradient(#E11CB6, #68245C)}
-						100% {color: #fff; background-image: radial-gradient(#E11CB6, #68245C); border: 7px solid rgba(225, 28, 182, 0.25); background-color: #555}
-				&:active, &:focus
-					background-color: #333
-					color: #fff
-			.policy
-				font-family: RobotoRegular, sans-serif
-				font-size: em(14px)
-				opacity: 0.6
+		padding-top: 50px
 		.security-top
 			h2
 				&::after
@@ -1278,7 +1150,6 @@ a
 							0% {transform: scale(0); transition: transform 1s ease}
 							100% {transform: scale(1); transition: transform 1s ease}
 
-/////////////////////////////////////////
 //communication page
 .communication
 	width: 100%
@@ -1305,6 +1176,65 @@ a
 			height: 100%
 			position: absolute
 			opacity: .5
+	.btns
+		display: flex
+		flex-direction: row
+		align-items: flex-end
+		position: relative
+		width: 100vw
+		z-index: 10
+		img
+			position: absolute
+			top: 15px
+			left: calc(50% - 80px)
+		.fa-th
+			font-size: 30px
+			position: absolute
+			left: 25px
+			top: 25px
+		.fa-bars
+			font-size: 32px
+			position: absolute
+			right: 25px
+			top: 25px
+		.communication-btns-info
+			left: 25px
+		.communication-btns-contact
+			right: 25px
+		.communication-btns-info, .communication-btns-contact
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 70px
+			height: 70px
+			font-size: 24px
+			background-color: #fff
+			background-clip: padding-box
+			border: 13px solid rgba(250, 255, 255, 0.25)
+			border-radius: 50%
+			color: #333
+			position: absolute
+			bottom: calc(-100vh + 25px)
+			&:hover
+				animation-name: size8
+				animation-duration: 1s
+				animation-fill-mode: forwards
+				@keyframes size8
+					10% {border: 33px solid rgba(250, 255, 255, 0.25)}
+					30% {background-color: #FE9A5D}
+					60% {border: 1px solid rgba(255, 110, 115, 0.25)}
+					80% {background-image: radial-gradient(#FE9A5D, #FF5D7B)}
+					100% {color: #fff; background-image: radial-gradient(#FE9A5D, #FF5D7B); border: 7px solid rgba(255, 110, 115, 0.25); background-color: #333}
+			&:active, &:focus
+				background-color: #333
+				color: #fff
+		.policy
+			font-family: RobotoRegular, sans-serif
+			font-size: em(14px)
+			opacity: 0.6
+			position: absolute
+			bottom: calc(-100vh + 25px)
+			left: calc(50vw - 105px)
 	.content
 		position: absolute
 		height: 100%
@@ -1313,50 +1243,7 @@ a
 		flex-direction: column
 		justify-content: space-between
 		padding: 25px
-		padding-top: 15px
-		.communication-top-btns
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-			align-items: center
-			.fa-th
-				font-size: 30px
-			.fa-bars
-				font-size: 32px
-		.btns
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-			align-items: flex-end
-			.communication-btns-info, .communication-btns-contact
-				display: flex
-				justify-content: center
-				align-items: center
-				width: 70px
-				height: 70px
-				font-size: 24px
-				background-color: #fff
-				background-clip: padding-box
-				border: 13px solid rgba(250, 255, 255, 0.25)
-				border-radius: 50%
-				color: #333
-				&:hover
-					animation-name: serv-size
-					animation-duration: 1s
-					animation-fill-mode: forwards
-					@keyframes serv-size
-						10% {border: 33px solid rgba(250, 255, 255, 0.25)}
-						30% {background-color: #E11CB6}
-						60% {border: 1px solid rgba(225, 28, 182, 0.25)}
-						80% {background-image: radial-gradient(#E11CB6, #68245C)}
-						100% {color: #fff; background-image: radial-gradient(#E11CB6, #68245C); border: 7px solid rgba(225, 28, 182, 0.25); background-color: #555}
-				&:active, &:focus
-					background-color: #333
-					color: #fff
-			.policy
-				font-family: RobotoRegular, sans-serif
-				font-size: em(14px)
-				opacity: 0.6
+		padding-top: 50px
 		.communication-top
 			h2
 				&::after
@@ -1492,6 +1379,59 @@ a
 			height: 100%
 			position: absolute
 			opacity: .5
+	.btns
+		display: flex
+		flex-direction: row
+		align-items: flex-end
+		position: relative
+		width: 100vw
+		z-index: 10
+		img
+			position: absolute
+			top: 15px
+			left: calc(50% - 80px)
+		.fa-th
+			font-size: 30px
+			position: absolute
+			left: 25px
+			top: 25px
+		.fa-bars
+			font-size: 32px
+			position: absolute
+			right: 25px
+			top: 25px
+		.contact-btns-info
+			left: 25px
+		.contact-btns-contact
+			right: 25px
+		.contact-btns-info, .contact-btns-contact
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 70px
+			height: 70px
+			font-size: 24px
+			background-color: #fff
+			background-clip: padding-box
+			border: 13px solid rgba(250, 255, 255, 0.25)
+			border-radius: 50%
+			color: #333
+			position: absolute
+			bottom: calc(-100vh + 25px)
+			&:hover
+				animation-name: size1
+				animation-duration: 1s
+				animation-fill-mode: forwards
+			&:active, &:focus
+				background-color: #333
+				color: #fff
+		.policy
+			font-family: RobotoRegular, sans-serif
+			font-size: em(14px)
+			opacity: 0.6
+			position: absolute
+			bottom: calc(-100vh + 25px)
+			left: calc(50vw - 105px)
 	.content
 		position: absolute
 		height: 100%
@@ -1500,50 +1440,7 @@ a
 		flex-direction: column
 		justify-content: space-between
 		padding: 25px
-		padding-top: 15px
-		.contact-top-btns
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-			align-items: center
-			.fa-th
-				font-size: 30px
-			.fa-bars
-				font-size: 32px
-		.btns
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-			align-items: flex-end
-			.contact-btns-info, .contact-btns-contact
-				display: flex
-				justify-content: center
-				align-items: center
-				width: 70px
-				height: 70px
-				font-size: 24px
-				background-color: #fff
-				background-clip: padding-box
-				border: 13px solid rgba(250, 255, 255, 0.25)
-				border-radius: 50%
-				color: #333
-				&:hover
-					animation-name: serv-size
-					animation-duration: 1s
-					animation-fill-mode: forwards
-					@keyframes serv-size
-						10% {border: 33px solid rgba(250, 255, 255, 0.25)}
-						30% {background-color: #E11CB6}
-						60% {border: 1px solid rgba(225, 28, 182, 0.25)}
-						80% {background-image: radial-gradient(#E11CB6, #68245C)}
-						100% {color: #fff; background-image: radial-gradient(#E11CB6, #68245C); border: 7px solid rgba(225, 28, 182, 0.25); background-color: #555}
-				&:active, &:focus
-					background-color: #333
-					color: #fff
-			.policy
-				font-family: RobotoRegular, sans-serif
-				font-size: em(14px)
-				opacity: 0.6
+		padding-top: 50px
 		.contact-top
 			h2
 				&::after
@@ -1638,7 +1535,8 @@ a
 		font-family: "Open Sans", sans-serif
 		font-weight: 700
 		margin: 0px
-		margin-top: 10px
+		margin-top: 20px
+		margin-bottom: -20px
 		font-size: em(24px)
 		&::after
 			content: ""
@@ -1690,3 +1588,242 @@ a
 	@keyframes concon3-b
 		0% {transform: scale(1);}
 		100% {transform: scale(0);}
+
+
+.page
+	width: 90%
+	height: 73%
+	position: fixed
+	top: 65px
+	left: 5%
+	display: flex
+	flex-direction: row
+	box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.25)
+	border-radius: 4px
+	display: none
+.page-1
+	padding: 5vw 50px 0
+	margin-bottom: 70px
+	position: relative
+	p
+		font-size: em(16px)
+		opacity: 0.6
+		&:hover
+			opacity: 1
+	h2
+		font-size: em(24px)
+		font-family: "Open Sans", sans-serif
+		font-weight: 700
+	img
+		width: 40%
+		height: auto
+.page-2
+	background-color: rgba(0, 0, 0, .75)
+	animation-name: tobot
+	animation-duration: 1s
+	padding-top: calc(50% - 640px)
+	z-index: 100
+	@keyframes tobot
+		0% {top: -1000px}
+		100% {top: 15px}
+	.page-2-content
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		flex-wrap: wrap
+		.page-2-content-item
+			display: flex
+			flex-direction: column
+			margin: 8px
+			padding: 8px
+			font-size: 16px
+			font-family: "Open Sans", sans-serif
+			font-weight: 700
+			&:hover
+				border: 2px solid transparent
+				-moz-border-image: -moz-linear-gradient(top, #FE9A5D 0%, #FF5D7B 100%)
+				-webkit-border-image: -webkit-linear-gradient(top, #FE9A5D 0%, #FF5D7B 100%)
+				border-image: linear-gradient(to bottom, #FE9A5D 0%, #FF5D7B 100%)
+				border-image-slice: 1
+				span
+					background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
+					-webkit-background-clip: text
+					-webkit-text-fill-color: transparent
+			img
+				width: 270px
+				height: 135px
+.page-3
+	background-color: #fff
+	z-index: 100
+	ul
+		list-style: none
+		text-transform: uppercase
+		line-height: 50px
+		font-size: em(24px)
+		font-family: "Open Sans", sans-serif
+		font-weight: 700
+		margin: 0
+		padding: 80px 0 125px 0
+		li
+			a
+				color: #959090
+				&::before
+					content: ""
+					margin-left: -80px
+				&::after
+					content: ""
+				&:hover
+					background: -webkit-linear-gradient(#FE9A5D, #FF5D7B)
+					-webkit-background-clip: text
+					-webkit-text-fill-color: transparent
+					&::before
+						content: ""
+						height: 3px
+						width: 80px
+						background-color: #FF796E
+						opacity: 0.8
+						position: absolute
+						margin-top: 24px
+						margin-left: -100px
+						transition: margin-left ease 0.8s
+					&::after
+						content: ""
+						height: 3px
+						width: 80px
+						background-color: #FF796E
+						opacity: 0.8
+						position: absolute
+						margin-top: 24px
+						margin-left: 20px
+						transition: margin-left ease 0.8s
+.page-4
+	background: linear-gradient(to right, #FDC830, #F37335)
+	font-family: "Open Sans", sans-serif
+	font-weight: 600
+	z-index: 100
+	.page-4-top
+		margin: 10px 0 0px
+		animation-name: toleft
+		animation-duration: 1.7s
+		@keyframes toleft
+			0% {margin-right: 1000px; transform: scaleX(-1)}
+			100% {margin-right: 0px}
+		a
+			border-bottom: 1px solid #F3F3F3
+			padding: 0px 15px 10px 5px
+			font-size: em(18px)
+			font-family: "Open Sans", sans-serif
+			font-weight: 700
+			.fas
+				font-size: 15px
+				margin-left: 15px
+	.page-4-content
+		position: relative
+		display: flex
+		flex-direction: row
+		.page-4-content-links
+			display: flex
+			flex-direction: column
+			height: 100%
+			align-items: center
+			justify-content: space-between
+			border-right: 1px solid #F3F3F3
+			.page-4-content-links-link
+				background: none
+				border: 2px solid #fff
+				border-radius: 4px
+				color: #fff
+				text-align: left
+				width: 25vw
+				padding: 10px 0px 10px 20px
+				margin: 0 50px 10px 60px
+				transition: background-color 0.5s ease
+				transition: color 0.7s ease
+				&:active, &:focus
+					outline: none!important
+				&:last-child
+					margin-bottom: 0px
+				h4
+					font-family: "Open Sans", sans-serif
+					font-weight: 700
+					font-size: em(18px)
+					text-transform: uppercase
+					margin: 0px
+				p
+					font-family: "Open Sans", sans-serif
+					font-weight: 400
+					font-size: em(14px)
+					margin: 0px
+					span
+						font-size: em(16px)
+						font-weight: 700
+				&:hover, &:focus, &:active
+					color: #421212
+					box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25)
+					background-color: #fff
+			.p4-active
+				color: #421212
+				box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25)
+				background-color: #fff
+		.page-4-content-info
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			margin: 0 0 0 40px
+			height: 100%s
+			.page-4-content-info-link
+				display: none
+				font-size: em(18px)
+				margin-right: 22vw
+				margin-top: 2vw
+				animation-name: flip
+				animation-duration: 1.8s
+				@keyframes flip
+					0% {transform: scaleX(-1)}
+					100% {margin-right: 22vw}
+			a
+				font-size: em(14px)
+				text-decoration: underline
+				margin-right: 50px
+.page-5
+	background-color: #fff
+	width: 420px
+	height: 400px
+	padding: 45px
+	margin-top: 70px
+	left: calc(50% - 210px)
+	z-index: 100
+	h4
+		color: #743535
+		font-family: "Open Sans", sans-serif
+		font-weight: 700
+		margin: 0 0 30px 0
+		text-align: center
+	input
+		border: none
+		border-bottom: 1px solid #D1D1D1
+		color: #D1D1D1
+		background-color: none
+		width: 100%
+		padding: 20px 0 0px 10px
+		&:active, &:focus
+			outline: none!important
+			border-bottom: 1px solid #743535
+			transition: border-bottom ease 1s
+	.page-5-btn
+		margin: 50px auto 0
+		width: 270px
+		height: 55px
+		display: flex
+		justify-content: center
+		align-items: center
+		background: linear-gradient(to bottom, #FE9A5D, #FF5D7B)
+		box-shadow: 2px 2px 10px #FF7E6B
+		border-radius: 40px
+		border: none
+		&:hover
+			box-shadow: inset 0 0 10px #777
+			text-shadow: 2px 2px 10px #555
+			transition: box-shadow ease 5s
+		&:active, &:focus
+			outline: none!important
