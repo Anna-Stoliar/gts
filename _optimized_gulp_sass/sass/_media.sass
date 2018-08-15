@@ -2,60 +2,123 @@
 
 /*==========  Desktop First Method  ==========*/
 
+@media only screen and (min-width : 1366px)
+	/**/
+	.communication
+		.content
+			.communication-content-page
+				.communication-middle
+					transform: scale(1.2)!important
+
+	.faq
+		.content
+			.faq-content-page
+				.faq-middle
+					transform: scale(1.1)
+				.faq-info
+					.faq-info-item
+						.faq-info-item-text
+							.faq-q
+								height: 100px!important
+								line-height: 30px!important
+
+
+@media only screen and (max-width : 1250px)
+	/**/
+	.security
+		.content
+			.security-content-page
+				.security-middle
+					transform: scale(0.9)
+
+	.page
+		transform: scale(0.7)
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
-	.top-email
-			font-size: 12px
-	.slider
-		.slide
-			h2
-				font-size: em(40px)
-			p
-				font-size: em(14px)
-	.sect-teaser
-		margin-top: 449px
+	.services
+		.content
+			.services-content-page
+				.services-bottom
+					margin-bottom: 20px
+				.services-middle
+					margin-bottom: -20px
+	.pros 
+		.content 
+			.pros-content-page 
+				.pros-middle 
+					.pros-middle-item
+						transform: scale(0.7)!important
+						margin: 0!important
+						flex: 25%!important
+						margin-top: -20px!important
+
+
+	.contact
+		.content
+			.contact-content-page
+				.contact-middle
+					.contact-middle-info
+						margin-top: 10vw
+					.con-form
+						transform: scale(0.7)!important
+
+	.communication
+		.content
+			.communication-content-page
+				.communication-middle
+					transform: scale(0.8)!important
+					margin-top: -6vw
+
+	.security
+		.content
+			.security-content-page
+				.security-middle
+					transform: scale(0.7)
+						
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
-	.top-panel
-		padding: 10px 0 20px
-	.logo
-		img
-			width: 100px
-			margin-top: 6px
-	.top-button
-		margin-top: 8px
-	.slider
-		.slide
-			padding-top: 100px
-			.slide-content
-				padding-top: 70px
-	.isnohome
-		.slider
-			.slide
-				.slide-content
-					padding-top: 0px
+	.services
+		.content
+			.services-content-page
+				.services-bottom
+					margin-bottom: 30px
+				.services-middle
+					margin-bottom: -30px
 
-	.sect-universal
-		h2
-			float: left
-			margin-top: 0
-			magrin-bottom: 20px
-			margin-right: 20px
-		.first-col
-			.button
-				float: left
-				margin-bottom: 30px
+	.pros 
+		.content 
+			.pros-content-page 
+				.pros-middle 
+					.pros-middle-item
+						padding: 0!important
+
+	.communication
+		.content
+			.communication-content-page
+				.communication-middle
+					transform: scale(0.7)!important
 	
-	.sect-teaser
-		margin-top: 400px
+	.faq
+		.content
+			.faq-content-page
+				.faq-middle
+					transform: scale(0.8)
 
-	.developer
-		margin-top: 20px
+	.page
+		transform: scale(0.5)
 
+	.page-4
+		.page-4-content
+			.page-4-content-links
+				font-size: 1.9vw
+				width: 600px
+				.page-4-content-links-link
+					width: 400px!important
 
 
 /* Small Devices, Tablets */
@@ -81,38 +144,65 @@
 		-o-animation: none !important
 		-ms-animation: none !important
 		animation: none !important
+
+	.pros
+		.content
+			.pros-content-page
+				margin: 0px!important
+				.pros-middle
+					transform: scale(0.8)!important
+					.pros-middle-item
+						flex: 22%!important
+
+	.contact
+		.content
+			.contact-content-page
+				.contact-middle
+					.contact-middle-info
+						padding-left: 32vw
+						padding-top: 7vw!important
+						padding-right: 0px!important
+						font-size: em(7px)!important
+					.con-form
+						transform: scale(0.6)!important
+						margin-right: 20vw
+						margin-top: 20px!important
+
+	.communication
+		.content
+			.communication-content-page
+				.communication-middle
+					transform: scale(0.5)!important
+
+	.faq
+		.content
+			.faq-content-page
+				.faq-middle
+					transform: scale(0.7)
+
+	.security
+		.content
+			.security-content-page
+				.security-middle
+					transform: scale(0.6)
+					.security-info
+						.tabcontent-security
+							width: 300px
+
+	.page-1
+		p
+			font-size: 2.5vw
 	
-	.sect-services 
-		.col-md-3
-			padding: 0 15px
 
-	.main-foot
-		.text-right
-			text-align: left
+@media only screen and (max-width : 650px)
 
-	.teaser-text
-		padding-top: 11px
+	.page
+		transform: scale(0.38)
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
-	.logo
-		img
-			width: 110px
-			max-width: 110px
 
-	.sect-teaser
-		margin-top: 500px
-
-@media only screen and (max-width : 445px)
-	.isnohome
-		.content
-			margin-top: 280px
-
-@media only screen and (max-width : 427px)
-	.isnohome
-		.content
-			margin-top: 250px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

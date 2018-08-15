@@ -240,6 +240,7 @@ a
 				justify-content: space-around
 				font-family: "Open Sans", sans-serif
 				font-weight: 700
+				margin-bottom: -30px
 				.services-middle-item
 					position: relative
 					margin-bottom: 30px
@@ -249,7 +250,7 @@ a
 					&:hover
 						.item-name
 							height: 100%
-							font-size: em(20px)
+							font-size: 2vw
 							transition: all 0.5s ease
 					.item-name
 						color: #4E1B4A
@@ -261,10 +262,12 @@ a
 						justify-content: center
 						align-items: center
 						height: 35%
+						font-size: 1vw
 			.services-bottom
 				font-family: "Open Sans", sans-serif
 				font-weight: 700
 				font-size: em(16px)
+				margin-bottom: 20px
 				span
 					font-weight: 400
 					opacity: 0.6
@@ -844,7 +847,7 @@ a
 				justify-content: center
 				font-family: "Open Sans", sans-serif
 				font-weight: 400
-				font-size: em(24px)
+				font-size: 2.5vw
 				.faq-info
 					display: flex
 					flex-direction: column
@@ -1088,6 +1091,7 @@ a
 					flex: 40%
 					justify-content: space-around
 					align-items: flex-end
+					font-size: 2vw
 					.tablink-security
 						display: flex
 						flex-direction: row
@@ -1165,6 +1169,7 @@ a
 					flex: 40%
 					.tabcontent-security
 						text-align: left
+						font-size: 2vw
 						animation-name: pop-up-security
 						animation-duration: 1s
 						animation-fill-mode: forwards
@@ -1359,7 +1364,7 @@ a
 	&::after
 		content: ""
 		height: 2px
-		width: 320px
+		width: 520px
 		position: absolute
 		top: 50%
 		right: 0
@@ -1700,7 +1705,7 @@ a
 					width: 60%
 					font-family: "Open Sans", sans-serif
 					font-weight: 400
-					font-size: em(18px)
+					font-size: 1vw
 					padding-right: 45px
 					p
 						opacity: 0.6
@@ -1827,11 +1832,11 @@ a
 
 
 .page
-	width: 90%
-	height: 73%
+	width: 1230px
+	height: 500px
 	position: fixed
-	top: 65px
-	left: 5%
+	top: calc(50% - 250px)
+	left: calc(50% - 615px)
 	display: flex
 	flex-direction: row
 	box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.25)
