@@ -251,77 +251,136 @@ jQuery(function($){
 
 // Calculator
 	function toST(elmnt) {
-	    var toStageTwo = document.getElementById('stage-2');
-		toStageTwo.classList.add('stage');
-		toStageTwo.classList.remove('stage-2');
-		toStageTwo.style.padding = '0 5px 15px 0px';
-		
-		var stageOne = document.getElementById('stage-1');
-		var toStageT = stageOne.getElementsByClassName('container-radio-calc');
-		var i;
-		for (i = 0; i < toStageT.length; i++) 
-			{toStageT[i].style.display = 'none';}
+		if (window.innerWidth > 830) {
+		    var toStageTwo = document.getElementById('stage-2');
+			toStageTwo.classList.add('stage');
+			toStageTwo.classList.remove('stage-2');
+			toStageTwo.style.padding = '0 5px 15px 0px';
+			
+			var stageOne = document.getElementById('stage-1');
+			var toStageT = stageOne.getElementsByClassName('container-radio-calc');
+			var i;
+			for (i = 0; i < toStageT.length; i++) 
+				{toStageT[i].style.display = 'none';}
 
-		elmnt.style.display = 'block';
-		stageOne.style.height = '30%';
-		stageOne.style.padding = '0 5px 15px 0';
+			elmnt.style.display = 'block';
+			stageOne.style.height = '30%';
+			stageOne.style.padding = '0 5px 15px 0';
 
-		var formm = document.getElementById('stage-1-form');
-		formm.style.alignItems = 'center'
-		
-		var calcLine = document.getElementById('calc-line');
-		calcLine.classList.add('calc-line-1');
+			var formm = document.getElementById('stage-1-form');
+			formm.style.alignItems = 'center'
+			
+			var calcLine = document.getElementById('calc-line');
+			calcLine.classList.add('calc-line-1');
 
-		var lbl = document.getElementById('calc-text');
-		lbl.innerHTML = 'Размещение проекта';
+			var lbl = document.getElementById('calc-text');
+			lbl.innerHTML = 'Размещение проекта';
+		}
+
+		if (window.innerWidth < 831) {
+		    var toStageTwo = document.getElementById('stage-2');
+			toStageTwo.classList.add('stage');
+			toStageTwo.classList.remove('stage-2');
+			toStageTwo.style.padding = '0 5px 15px 0px';
+			
+			var stageOne = document.getElementById('stage-1');
+			stageOne.style.display = "none"
+
+			var lbl = document.getElementById('calc-text');
+			lbl.innerHTML = 'Размещение проекта';
+		}
 	}
 
+
 	function toTT(elmnt) {
-	    var toStageTHree = document.getElementById('stage-3');
-		toStageTHree.classList.add('stage');
-		toStageTHree.classList.remove('stage-3');
-		toStageTHree.style.padding = '0px 5px 15px 0px';
-		
-		var stageTwo = document.getElementById('stage-2');
-		var toStageTT = stageTwo.getElementsByClassName('container-radio-calc');
-		var i;
-		for (i = 0; i < toStageTT.length; i++) 
-			{toStageTT[i].style.display = 'none';}
+		if (window.innerWidth > 830) {
+		    var toStageTHree = document.getElementById('stage-3');
+			toStageTHree.classList.add('stage');
+			toStageTHree.classList.remove('stage-3');
+			toStageTHree.style.padding = '0px 5px 15px 0px';
+			
+			var stageTwo = document.getElementById('stage-2');
+			var toStageTT = stageTwo.getElementsByClassName('container-radio-calc');
+			var i;
+			for (i = 0; i < toStageTT.length; i++) 
+				{toStageTT[i].style.display = 'none';}
 
-		elmnt.style.display = 'block';
-		stageTwo.style.height = '30%';
-		stageTwo.style.padding = '0px 5px 15px 0px';
+			elmnt.style.display = 'block';
+			stageTwo.style.height = '30%';
+			stageTwo.style.padding = '0px 5px 15px 0px';
 
-		var calcLine = document.getElementById('calc-line');
-		calcLine.classList.add('calc-line-2');
+			var calcLine = document.getElementById('calc-line');
+			calcLine.classList.add('calc-line-2');
 
-		var lbl = document.getElementById('calc-text');
-		lbl.innerHTML = 'Желаемые сроки выполнения';
+			var lbl = document.getElementById('calc-text');
+			lbl.innerHTML = 'Желаемые сроки выполнения';
+		}
+		if (window.innerWidth < 831) {
+		    var toStageTHree = document.getElementById('stage-3');
+			toStageTHree.classList.add('stage');
+			toStageTHree.classList.remove('stage-3');
+			toStageTHree.style.padding = '0px 5px 15px 0px';
+			toStageTHree.style.paddingLeft = '0px'
+			
+			var stageTwo = document.getElementById('stage-2');
+			stageTwo.style.display = "none"
+
+			var lbl = document.getElementById('calc-text');
+			lbl.innerHTML = 'Желаемые сроки выполнения';
+		}
 	}
 
 	function toET(elmnt) {	
-		var stageThree = document.getElementById('stage-3');
-		var toStageTT = stageThree.getElementsByClassName('container-radio-calc');
-		var i;
-		for (i = 0; i < toStageTT.length; i++) 
-			{toStageTT[i].style.display = 'none';}
+		if (window.innerWidth > 830) {
+			var stageThree = document.getElementById('stage-3');
+			var toStageTT = stageThree.getElementsByClassName('container-radio-calc');
+			var i;
+			for (i = 0; i < toStageTT.length; i++) 
+				{toStageTT[i].style.display = 'none';}
 
-		elmnt.style.display = 'block';
-		stageThree.style.height = '30%';
-		stageThree.style.padding = '0px 5px 15px 0px';
+			elmnt.style.display = 'block';
+			stageThree.style.height = '30%';
+			stageThree.style.padding = '0px 5px 15px 0px';
 
-		var btnEnd = document.getElementById('btn-end');
-		btnEnd.classList.add('calc-middle-btn');
-		btnEnd.classList.remove('calc-middle-btn-b');
+			var btnEnd = document.getElementById('btn-end');
+			btnEnd.classList.add('calc-middle-btn');
+			btnEnd.classList.remove('calc-middle-btn-b');
 
-		var formm = document.getElementById('stage-3-form');
-		formm.style.alignItems = 'center'
+			var formm = document.getElementById('stage-3-form');
+			formm.style.alignItems = 'center'
 
-		var calcLine = document.getElementById('calc-line');
-		calcLine.classList.add('calc-line-3');
+			var calcLine = document.getElementById('calc-line');
+			calcLine.classList.add('calc-line-3');
+			formm.style.paddingLeft = '0px'
 
-		var lbl = document.getElementById('calc-text');
-		lbl.innerHTML = '!!!';
+			var lbl = document.getElementById('calc-text');
+			lbl.innerHTML = 'All Done!';
+		}
+		if (window.innerWidth < 831) {
+		    var stageThree = document.getElementById('stage-3');
+			var toStageTT = stageThree.getElementsByClassName('container-radio-calc');
+			var i;
+			for (i = 0; i < toStageTT.length; i++) 
+				{toStageTT[i].style.display = 'none';}
+
+			elmnt.style.display = 'block';
+			stageThree.style.height = '30%';
+			stageThree.style.padding = '0px 5px 15px 0px';
+
+			var btnEnd = document.getElementById('btn-end');
+			btnEnd.classList.add('calc-middle-btn');
+			btnEnd.classList.remove('calc-middle-btn-b');
+
+			var formm = document.getElementById('stage-3-form');
+			formm.style.alignItems = 'center'
+			formm.style.paddingLeft = '0px'
+
+			var calcLine = document.getElementById('calc-line');
+			calcLine.classList.add('calc-line-3');
+
+			var lbl = document.getElementById('calc-text');
+			lbl.innerHTML = 'All Done!';
+		}
 	}
 
 

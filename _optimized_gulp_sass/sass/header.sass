@@ -589,7 +589,7 @@ a
 			justify-content: space-around
 			align-items: center
 			height: 70%
-			margin: 0 4vw 6vw
+			margin: 0 4vw 7vw
 			background-color: #fff
 			border-radius: 5px	
 			h4
@@ -623,20 +623,21 @@ a
 						content: ""
 						position: absolute
 						height: 12px
-						width: 85vw
+						width: 80vw
 						top: calc(50% - 5px)
 						background: linear-gradient(to right, rgba(255, 127, 107, 0.5) 0%, rgba(255, 127, 107, 0.5) 30%, #9E9E9E 30%, #9E9E9E 100%)
 						transition: all 1s ease
 				.calc-line-1
 					&:after
 						background: linear-gradient(to right, rgba(255, 127, 107, 0.5) 0%, rgba(255, 127, 107, 0.5) 50%, #9E9E9E 50%, #9E9E9E 100%)
-						width: 78vw
 				.calc-line-2
 					&:after
 						background: linear-gradient(to right, rgba(255, 127, 107, 0.5) 0%, rgba(255, 127, 107, 0.5) 75%, #9E9E9E 75%, #9E9E9E 100%)
+						width: 78vw
 				.calc-line-3
 					&:after
 						background: linear-gradient(to right, rgba(255, 127, 107, 0.5) 0%, rgba(255, 127, 107, 0.5) 100%, #9E9E9E 100%, #9E9E9E 100%)
+						width: 78vw
 				.calc-middle-btn-b
 					width: 74px
 					height: 74px
@@ -663,7 +664,6 @@ a
 					border-radius: 8px
 					margin: 0 2vw
 					z-index: 2
-					padding: 5px 5px 0px 20px
 					p
 						font-weight: 700
 						margin: 0
@@ -671,8 +671,15 @@ a
 					form
 						display: none
 
+
 #stage-2-form
 	align-items: center
+#stage-1-form
+	padding-bottom: 25px
+	padding-left: 20px
+#stage-3-form
+	padding-left: 60px
+	
 
 .stage
 	height: 85%
@@ -681,7 +688,7 @@ a
 	border-radius: 8px
 	box-shadow: 2px 1px 8px #FCB045
 	margin: 0 1vw
-	padding: 5px 5px 0px 20px
+	padding: 5px 5px 0px 0px
 	z-index: 2
 	p
 		font-weight: 700
@@ -694,7 +701,6 @@ a
 		flex-direction: column
 		flex: 30%
 		height: 85%
-		padding: 5px 5px 0px 20px
 		justify-content: space-around
 		.container-radio-calc
 			&:hover
@@ -888,7 +894,7 @@ a
 							position: relative
 							font-family: "Open Sans", sans-serif
 							font-weight: 400
-							font-size: em(12px)
+							font-size: 0.6em
 							text-align: left
 							line-height: 22px
 							width: 35vw
@@ -1369,11 +1375,12 @@ a
 		top: 50%
 		right: 0
 		background-color: #fff
+		display: none
 
 .fa-long-arrow-alt-up
 	&::before
 		position: absolute
-		top: calc(50% - 15px - 40px)
+		top: calc(50% + 60px - 40px)
 		left: 55px
 		z-index: 10
 		font-size: 30px
@@ -1382,7 +1389,7 @@ a
 .fa-long-arrow-alt-down
 	&::before
 		position: absolute
-		top: calc(50% - 15px + 40px)
+		top: calc(50% + 60px + 40px)
 		left: 55px
 		z-index: 10
 		font-size: 30px

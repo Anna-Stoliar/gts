@@ -2,14 +2,8 @@
 
 /*==========  Desktop First Method  ==========*/
 
-@media only screen and (min-width : 1366px)
+@media only screen and (min-width : 1367px)
 	/**/
-	.communication
-		.content
-			.communication-content-page
-				.communication-middle
-					transform: scale(1.2)!important
-
 	.faq
 		.content
 			.faq-content-page
@@ -26,12 +20,11 @@
 		transform: scale(2.5)!important
 		margin-left: 480px!important
 
+	
 
-@media only screen and (max-width : 1720px)
+@media only screen and (max-width : 1920px) and (min-width: 1367px)
 	.slick-list
 		top: calc(50% - 130px)!important
-		&::after
-			right: 100px!important
 
 	.fa-long-arrow-alt-up
 		&::before
@@ -41,25 +34,36 @@
 		&::before
 			top: calc(50% + 55px + 40px)!important
 
+	.calc-line-1
+		&:after
+			width: 76vw!important
+	.calc-line-2
+		&:after
+			width: 75vw!important
+	.calc-line-3
+		&:after
+			width: 75vw!important
 
-@media only screen and (max-width : 1400px)
-	.slick-list
-		top: calc(50% - 90px)!important
-		margin-left: -40px!important
-		&::after
-			right: 300px!important
 
-	.fa-long-arrow-alt-up
-		&::before
-			top: calc(50% + 80px - 40px)!important
+@media only screen and (max-width : 1920px) and (min-width : 1400px)
+	.communication
+		.content
+			.communication-content-page
+				.communication-middle
+					transform: scale(1.1)!important
 
-	.fa-long-arrow-alt-down
-		&::before
-			top: calc(50% + 95px + 40px)!important
 
+
+@media only screen and (max-width : 1366px)
 	.slick-cur
-		transform: scale(1.5)!important
-		margin-left: 380px!important
+		transform: scale(2.5)!important
+		margin-left: 480px!important
+
+	.slick-list
+		top: calc(50% - 120px)!important
+
+	.staff-info-slogan
+		width: 200px!important
 
 
 @media only screen and (max-width : 1250px)
@@ -128,8 +132,6 @@
 @media only screen and (max-width : 1150px)
 	.slick-list
 		top: calc(50% - 90px)!important
-		&::after
-			right: 400px!important
 
 	.fa-long-arrow-alt-up
 		&::before
@@ -172,7 +174,7 @@
 		.content
 			.faq-content-page
 				.faq-middle
-					transform: scale(0.8)
+					transform: scale(0.9)
 
 	.page
 		transform: scale(0.5)
@@ -194,12 +196,12 @@
 	.fa-long-arrow-alt-up
 		&::before
 			top: calc(50% + 80px - 40px)!important
-			left: 15px!important
+			left: 55px!important
 
 	.fa-long-arrow-alt-down
 		&::before
 			top: calc(50% + 95px + 40px)!important
-			left: 15px!important
+			left: 55px!important
 
 	.slick-cur
 		transform: scale(1.5)!important
@@ -212,25 +214,56 @@
 		form
 			transform: scale(0.6)
 
-	.stage-3
-		padding: 5px 5px 0px 0px!important
-
 	.calc-content-page
 		height: 60%!important
 		margin-bottom: 100px!important
 
+	.staff-info
+		font-size: 0.79em!important
+
+	#stage-1-form
+		padding-bottom: 25px
+		padding-left: 0px!important
+
 @media only screen and (max-width : 850px)
 
-	.stage 
-			form
-				transform: scale(0.6)
+	.security
+		.content
+			.security-content-page
+				.security-middle
+					width: 130%!important
+					.security-info
+						.tabcontent-security
+							font-size: 2.2vw
+	
+
+@media only screen and (max-width : 830px)
+	.stage-2, .stage-3
+		display: none
+
+	.calc-middle
+		justify-content: space-between!important
+		width: 120%!important
 
 	.calc-line
 		&::after
-			width: 81vw!important
+			width: 90vw!important
 
-	.calc-middle
-		width: 120%!important
+	.stage
+		width: 49vw!important
+		height: 100%!important
+		form
+			transform: scale(0.8)!important
+
+	.calc-line-1
+		&:after
+			width: 90vw!important
+	.calc-line-2
+		&:after
+			width: 90vw!important
+	.calc-line-3
+		&:after
+			width: 90vw!important
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -261,22 +294,25 @@
 			.pros-content-page
 				margin: 0px!important
 				.pros-middle
-					transform: scale(0.8)!important
 					.pros-middle-item
-						flex: 22%!important
+						padding: 20px 5px!important
+						p
+							display: none
 
 	.contact
 		.content
 			.contact-content-page
 				.contact-middle
 					.contact-middle-info
-						padding-left: 32vw
+						padding-left: 20vw
 						padding-top: 7vw!important
 						padding-right: 0px!important
-						font-size: em(7px)!important
+						font-size: 0.5375em!important
+						width: 360px!important
+						margin-right: -50px
 					.con-form
 						transform: scale(0.6)!important
-						margin-right: 20vw
+						margin-right: 10vw
 						margin-top: 20px!important
 
 	.communication
@@ -295,10 +331,17 @@
 		.content
 			.security-content-page
 				.security-middle
-					transform: scale(0.6)
 					.security-info
 						.tabcontent-security
-							width: 300px
+							font-size: 2.5vw!important
+					.security-line
+						margin: 0 50px!important
+					.security-links
+						.tablink-security
+							width: 300px!important
+							.tablink-security-info
+								width: 200px!important
+								font-size: 2.4vw!important
 
 	.page-1
 		p
@@ -325,10 +368,10 @@
 	.team-top
 		text-align: right!important
 		padding-right: 0px
+		display: none
 		h2
 			&::after
-				width: 104px
-				left: 430px!important
+				display: none
 
 	
 @media only screen and (max-width : 750px)
@@ -349,13 +392,45 @@
 	.page
 		transform: scale(0.38)
 
+	.services
+		.content
+			.services-content-page
+				.services-middle
+					.services-middle-item
+						img
+							width: 30vw!important
+						.item-name
+							font-size: 1.5vw!important
+
+	.security
+		.content
+			.security-content-page
+				.security-middle
+					.security-info
+						.tabcontent-security
+							font-size: 2.5vw!important
+					.security-line
+					.security-links
+						.tablink-security
+							width: 270px!important
+							.tablink-security-info
+								font-size: 2.4vw!important
+
+	.calc-line-1
+		&:after
+			width: 85vw!important
+	.calc-line-2
+		&:after
+			width: 85vw!important
+	.calc-line-3
+		&:after
+			width: 85vw!important
+
 @media only screen and (max-width : 600px)
 
 	.slick-list
 		top: 60px!important
 		margin-left: 0px!important
-		&::before
-				display: none
 
 	.slick-cur
 		transform: scale(1.2)!important
@@ -366,7 +441,7 @@
 
 	.team-top
 		text-align: left!important
-		margin-top: 33%!important
+		margin-top: calc(50% - 50px)!important
 		h2
 			font-size: 18px!important
 			&::after
@@ -374,14 +449,50 @@
 
 	.fa-long-arrow-alt-up
 		&::before
-			top: calc(50% + 100px - 40px)!important
+			top: calc(50% + 55px - 40px)!important
 			left: 55px!important
 
 	.fa-long-arrow-alt-down
 		&::before
-			top: calc(50% + 120px + 40px)!important
+			top: calc(50% + 70px + 40px)!important
 			left: 55px!important
-				
+
+	.pros
+		.content
+			.pros-content-page
+				.pros-middle
+					.pros-middle-item
+						margin: 0 -10px!important
+
+	.security
+		.content
+			.security-content-page
+				.security-middle
+					.security-info
+						.tabcontent-security
+							font-size: 3.2vw!important
+					.security-line
+					.security-links
+						.tablink-security
+							width: 270px!important
+							.tablink-security-info
+								font-size: 2.7vw!important
+
+	.contact
+		.content
+			.contact-content-page
+				.contact-middle
+					.contact-middle-info
+						padding-left: 34vw!important
+						padding-top: 7vw!important
+						padding-right: 0px!important
+						font-size: 0.4575em!important
+						width: 360px!important
+						margin-right: -50px
+					.con-form
+						transform: scale(0.52)!important
+						margin-right: 14vw!important
+						margin-top: 0px!important
 
 
 
