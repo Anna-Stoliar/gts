@@ -422,3 +422,10 @@ $('.slick').on('init', function() {
    $('.slick-current .staff-info-slogan').css('width', "400px");
 
 });
+
+
+// function reSizez() {
+// 	if (window.innerWidth < 480) {
+// 		window.screen.lockOrientation("landscape-primary");
+// 	}();
+

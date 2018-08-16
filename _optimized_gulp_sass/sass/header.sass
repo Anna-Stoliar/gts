@@ -11,6 +11,7 @@ html::-webkit-scrollbar
 html
 	-ms-overflow-style: none
 
+
 body
 	font-size: 16px
 	min-width: 480px
@@ -119,11 +120,16 @@ a
 		width: 100%
 		display: flex
 		flex-direction: column
-		justify-content: space-between
+		justify-content: center
+		align-items: center
 		padding: 25px
 		position: absolute
 		.home-content-page
 			position: relative
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
 
 //services page
 .services
@@ -210,22 +216,22 @@ a
 			position: absolute
 			bottom: calc(-100vh + 25px)
 			left: calc(50vw - 105px)
+	.service-top
+		h2
+			left: calc(50% - 116px)
+			&::after
+				width: 160px
+				left: calc(50% - 80px)
 	.content
 		position: absolute
 		height: 100%
 		width: 100%
 		display: flex
 		flex-direction: column
-		justify-content: space-between
+		justify-content: space-around
+		align-items: center
 		padding: 25px
-		padding-top: 60px
-		.service-top
-			h2
-				margin-top: 10px
-				margin-bottom: 0px
-				&::after
-					width: 160px
-					left: calc(50% - 80px)	
+		padding-top: 100px	
 		.services-content-page
 			display: flex
 			flex-direction: column
@@ -357,6 +363,12 @@ a
 			position: absolute
 			bottom: calc(-100vh + 25px)
 			left: calc(50vw - 105px)
+	.pros-top
+		h2
+			left: calc(50% - 77px)
+			&::after
+				width: 87px
+				left: calc(50% - 43px)
 	.content
 		position: absolute
 		height: 100%
@@ -364,13 +376,9 @@ a
 		display: flex
 		flex-direction: column
 		justify-content: space-between
+		align-items: center
 		padding: 25px
 		padding-top: 50px
-		.pros-top
-			h2
-				&::after
-					width: 87px
-					left: calc(50% - 43px)
 		.pros-content-page
 			display: flex
 			flex-direction: column
@@ -569,27 +577,29 @@ a
 			position: absolute
 			bottom: calc(-100vh + 25px)
 			left: calc(50vw - 105px)
+	.calc-top
+		h2
+			left: calc(50% - 146px)
+			color: #fff
+			&::after
+				width: 170px
+				left: calc(50% - 85px)
 	.content
 		position: absolute
 		height: 100%
 		width: 100%
 		display: flex
 		flex-direction: column
-		justify-content: space-between
+		justify-content: center
+		align-items: center
 		padding: 25px
 		padding-top: 50px
-		.calc-top
-			h2
-				&::after
-					width: 170px
-					left: calc(50% - 85px)
 		.calc-content-page
 			display: flex
 			flex-direction: column
-			justify-content: space-around
+			justify-content: center
 			align-items: center
-			height: 70%
-			margin: 0 4vw 7vw
+			height: 60%
 			background-color: #fff
 			border-radius: 5px	
 			h4
@@ -825,20 +835,22 @@ a
 			position: absolute
 			bottom: calc(-100vh + 25px)
 			left: calc(50vw - 105px)
+	.faq-top
+		h2
+			left: calc(50% - 24px)
+			&::after
+				width: 30px
+				left: calc(50% - 15px)
 	.content
 		position: absolute
 		height: 100%
 		width: 100%
 		display: flex
 		flex-direction: column
-		justify-content: space-between
+		justify-content: center
+		align-items: center
 		padding: 25px
 		padding-top: 50px
-		.faq-top
-			h2
-				&::after
-					width: 30px
-					left: calc(50% - 15px)
 		.faq-content-page
 			display: flex
 			flex-direction: column
@@ -1062,20 +1074,22 @@ a
 			position: absolute
 			bottom: calc(-100vh + 25px)
 			left: calc(50vw - 105px)
+	.security-top
+		h2
+			left: calc(50% - 75px)
+			&::after
+				width: 130px
+				left: calc(50% - 65px)
 	.content
 		position: absolute
 		height: 100%
 		width: 100%
 		display: flex
 		flex-direction: column
-		justify-content: space-between
+		justify-content: center
+		align-items: center
 		padding: 25px
 		padding-top: 50px
-		.security-top
-			h2
-				&::after
-					width: 130px
-					left: calc(50% - 65px)
 		.security-content-page
 			display: flex
 			flex-direction: column
@@ -1097,7 +1111,7 @@ a
 					flex: 40%
 					justify-content: space-around
 					align-items: flex-end
-					font-size: 2vw
+					font-size: 1.8vw
 					.tablink-security
 						display: flex
 						flex-direction: row
@@ -1175,7 +1189,7 @@ a
 					flex: 40%
 					.tabcontent-security
 						text-align: left
-						font-size: 2vw
+						font-size: 1.8vw
 						animation-name: pop-up-security
 						animation-duration: 1s
 						animation-fill-mode: forwards
@@ -1268,20 +1282,22 @@ a
 			position: absolute
 			bottom: calc(-100vh + 25px)
 			left: calc(50vw - 105px)
+	.team-top
+		h2
+			left: calc(50% - 93px)
+			&::after
+				width: 104px
+				left: calc(50% - 52px)
 	.content
 		position: absolute
 		height: 100%
 		width: 100%
 		display: flex
 		flex-direction: column
-		justify-content: space-between
+		justify-content: center
+		align-items: center
 		padding: 25px
 		padding-top: 50px
-		.team-top
-			h2
-				&::after
-					width: 104px
-					left: calc(50% - 52px)
 		.team-content-page
 			display: flex
 			flex-direction: column
@@ -1380,7 +1396,7 @@ a
 .fa-long-arrow-alt-up
 	&::before
 		position: absolute
-		top: calc(50% + 60px - 40px)
+		top: calc(50% - 60px)
 		left: 55px
 		z-index: 10
 		font-size: 30px
@@ -1389,7 +1405,7 @@ a
 .fa-long-arrow-alt-down
 	&::before
 		position: absolute
-		top: calc(50% + 60px + 40px)
+		top: calc(50% + 40px)
 		left: 55px
 		z-index: 10
 		font-size: 30px
@@ -1483,20 +1499,22 @@ a
 			position: absolute
 			bottom: calc(-100vh + 25px)
 			left: calc(50vw - 105px)
+	.communication-top
+		h2
+			left: calc(50% - 83px)
+			&::after
+				width: 106px
+				left: calc(50% - 50px)
 	.content
 		position: absolute
 		height: 100%
 		width: 100%
 		display: flex
 		flex-direction: column
-		justify-content: space-between
+		justify-content: center
+		align-items: center
 		padding: 25px
 		padding-top: 50px
-		.communication-top
-			h2
-				&::after
-					width: 106px
-					left: calc(50% - 50px)
 		.communication-content-page
 			display: flex
 			flex-direction: column
@@ -1680,24 +1698,26 @@ a
 			position: absolute
 			bottom: calc(-100vh + 25px)
 			left: calc(50vw - 105px)
+	.contact-top
+		h2
+			left: calc(50% - 51px)
+			&::after
+				width: 73px
+				left: calc(50% - 36px)
 	.content
 		position: absolute
 		height: 100%
 		width: 100%
 		display: flex
 		flex-direction: column
-		justify-content: space-between
+		justify-content: center
+		align-items: center
 		padding: 25px
 		padding-top: 50px
-		.contact-top
-			h2
-				&::after
-					width: 73px
-					left: calc(50% - 36px)
 		.contact-content-page
 			display: flex
 			flex-direction: column
-			justify-content: space-around
+			justify-content: center
 			align-items: center
 			height: 100%
 			margin: 0 5vw					
@@ -1783,15 +1803,15 @@ a
 		font-family: "Open Sans", sans-serif
 		font-weight: 700
 		margin: 0px
-		margin-top: 20px
-		margin-bottom: -20px
 		font-size: em(24px)
+		padding-top: 70px
+		position: absolute
 		&::after
 			content: ""
-			height: 1px
+			height: 2px
 			position: absolute
 			background-color: #fff
-			top: 115px
+			top: 110px
 
 .content-1
 	animation-name: concon1
