@@ -14,6 +14,23 @@ $(function() {
 		$(".page-5").toggle();
 	});
 
+	var owl = $(".slider");
+	owl.owlCarousel({
+		loop: true,
+		items: 1,
+		itemClass: "slide-wrap",
+		nav: true,
+		navElement: false,
+		navText: ""
+	});
+
+	$(".next").click(function(){
+		owl.trigger('next.owl.carousel')
+	});
+	$(".prev").click(function(){
+		owl.trigger('prev.owl.carousel')
+	});
+
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
@@ -405,13 +422,13 @@ $('.slick-current .staff-info-slogan').css('width', "400px");
 $('.slick').on('init', function() {
   $('.slick-current').addClass('slick-cur');
 }).on('beforeChange', function() {
-  $(".item").removeClass('slick-cur');
+  $(".itm").removeClass('slick-cur');
 }).on('afterChange', function() {
   $('.slick-current').addClass('slick-cur');
 
    $('.slick-current img').addClass('bor-team');
 }).on('beforeChange', function() {
-  $(".item img").removeClass('bor-team');
+  $(".itm img").removeClass('bor-team');
 }).on('afterChange', function() {
   $('.slick-current img').addClass('bor-team');
 
@@ -424,8 +441,23 @@ $('.slick').on('init', function() {
 });
 
 
-// function reSizez() {
-// 	if (window.innerWidth < 480) {
-// 		window.screen.lockOrientation("landscape-primary");
-// 	}();
+
+function reSizez() {
+	if (window.innerWidth < 480) {
+		window.screen.lockOrientation("landscape-primary");
+	}
+}
+
+
+// window.onresize = function() {
+//     changeCon();
+// }
+
+// function changeCon() {
+//     if (window.innerWidth < 830) {
+//     }
+//     else {
+//     }    
+// }
+
 

@@ -175,11 +175,7 @@
 				.communication-middle
 					transform: scale(0.7)!important
 	
-	.faq
-		.content
-			.faq-content-page
-				.faq-middle
-					transform: scale(0.9)
+
 
 	.page
 		transform: scale(0.5)
@@ -193,9 +189,7 @@
 					width: 400px!important
 
 
-	.slick-list
-		&::after
-			right: 300px!important
+	
 
 	.fa-long-arrow-alt-up
 		&::before
@@ -239,9 +233,17 @@
 					.security-info
 						.tabcontent-security
 							font-size: 2.2vw
+
+	.slider
+		display: none
+
 	
 
 @media only screen and (max-width : 830px)
+
+	#faq-mid
+		display: none!important
+
 	.stage-2, .stage-3
 		display: none
 
@@ -268,6 +270,56 @@
 	.calc-line-3
 		&:after
 			width: 79vw!important
+
+	.slider
+		display: block!important
+
+	.faq-info-item-text
+		width: 28vw!important
+		margin-top: -110px!important
+		box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25)!important
+		.faq-q
+			height: 90px!important
+			font-size: 1.5em!important
+			line-height: 15px
+			padding-left: 10px!important
+			padding-right: 10px
+			box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.25)
+		.faq-a
+			font-size: 1.4em!important
+			line-height: 15px
+			padding-left: 10px!important
+			padding-right: 10px
+			top: 100px!important
+			width: 35vw!important
+
+	.faq-info-item-img
+		width: 50px!important
+		height: 50px!important
+		background-size: 30px 30px!important
+
+	.faq-line
+		height: 300px!important
+		margin: 0 20px!important
+
+	.faq-info-1
+		.faq-info-item-img
+			top: -140px!important
+			left: -50px!important
+		.faq-info-item-text
+			.faq-a
+				right: 0px!important
+
+	.faq-info-2
+		.faq-info-item-img
+			top: -140px!important
+			right: -50px!important
+
+	.owl-dots
+		display: block!important
+
+	.slider-nav
+		display: block!important
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -325,11 +377,7 @@
 				.communication-middle
 					transform: scale(0.5)!important
 
-	.faq
-		.content
-			.faq-content-page
-				.faq-middle
-					transform: scale(0.7)
+	
 
 	.security
 		.content
