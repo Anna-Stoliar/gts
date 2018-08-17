@@ -62,11 +62,11 @@ $(function() {
 
 	//for tabs on faq page
 	$(".faq-info-item").click(function() {
-		$(this).find(".fas:first-child").toggle();
-		$(".faq-info-item .fas:first-child").not($(this).find(".fas:first-child")).css( "display", "block" );
+		$(this).find("svg:first-child").toggle();
+		$(".faq-info-item svg:first-child").not($(this).find("svg:first-child")).css( "display", "block" );
 
-		$(this).find(".fas:last-child").toggle();
-		$(".faq-info-item .fas:last-child").not($(this).find(".fas:last-child")).css( "display", "none" );
+		$(this).find("svg:last-child").toggle();
+		$(".faq-info-item svg:last-child").not($(this).find("svg:last-child")).css( "display", "none" );
 
 		$(this).find(".faq-a").toggle();
 		$(".faq-a").not($(this).find(".faq-a")).css( "display", "none" );
