@@ -1355,6 +1355,7 @@ a
 								background-color: #fff
 						.staff-info-slogan
 							margin-top: 8px
+						
 
 
 .slick-cur
@@ -1593,6 +1594,9 @@ a
 							.staff-info
 								transform: scale(1.4)
 								transition: all ease 0.3s
+								.staff-social-itm
+									&:hover
+										color: #ff766f
 						img
 							border-radius: 50%
 							background: #fff
@@ -1618,6 +1622,13 @@ a
 							.staff-info-email
 								opacity: 0.6
 							.staff-info-social
+								display: flex
+								flex-direction: row
+								flex-wrap: no-wrap
+								.staff-social-itm
+									font-size: 25px
+									margin-right: 5px
+
 
 //contact page
 .contact
@@ -1739,6 +1750,12 @@ a
 						span
 							font-weight: 700
 							opacity: 1
+					.con-social
+						.con-social-itm
+							font-size: 30px
+							&:hover
+								color: #ff766f
+
 				.con-form
 					background-color: #fff
 					width: 400px
@@ -2170,5 +2187,7 @@ a
 		left: -49vw
 		&:last-child
 			left: 45vw
+
+
 
 

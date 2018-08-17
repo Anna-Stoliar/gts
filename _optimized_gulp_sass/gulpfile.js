@@ -41,7 +41,8 @@ gulp.task('scripts', function() {
 		'./app/libs/viewScroller.js-master/jquery.mousewheel.min.js',
 		'./app/libs/viewScroller.js-master/viewScroller.min.js',
 		'./app/libs/slick-1.8.1/slick/slick.min.js',
-		'./app/libs/owlcarousel/dist/owl.carousel.min.js',		
+		'./app/libs/owlcarousel/dist/owl.carousel.min.js',
+		'./app/libs/font-awesome/svg-with-js/js/fontawesome-all.min.js',		
 		])
 		.pipe(concat('libs.js'))
 		// .pipe(uglify()) //Minify libs.js
