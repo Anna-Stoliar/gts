@@ -8,11 +8,14 @@ $(function() {
 		$(".page-3").toggle();
 	});
 	$(".dots").click(function() {
-		$(".page-4").toggle();
-	});
-	$(".phone").click(function() {
 		$(".page-5").toggle();
 	});
+	$(".op-p4").click(function() {
+		$(".page-4").toggle();
+	});
+	// $(".phone").click(function() {
+	// 	$(".page-5").toggle();
+	// });
 
 	var owl = $(".slider");
 	owl.owlCarousel({
@@ -60,6 +63,17 @@ $(function() {
 		return false;
 	});
 
+	$('.page-2-content-item').click(function() {
+		$('.page-2').hide();
+	});
+
+	$('.page-4-top').click(function() {
+		$('.page-4').hide();
+		$('.page-3').show();
+	});
+
+	
+
 	//for tabs on faq page
 	$(".faq-info-item").click(function() {
 		$(this).find("svg:first-child").toggle();
@@ -72,6 +86,7 @@ $(function() {
 		$(".faq-a").not($(this).find(".faq-a")).css( "display", "none" );
 	});
 });
+
 
 
 //for tabs in modal 3(left bottom one)
@@ -123,6 +138,7 @@ $(document).ready(function() {
         useScrollbar: false,
         animSpeedMainView: 1500,
         loopMainViews: false,
+        changeWhenAnim: false,
         beforeChange: function() {
             console.log('beforeChange fired!');
 
@@ -157,15 +173,6 @@ $(document).ready(function() {
             console.log('afterResize fired!');
         }
     });
-
-    // Turnon / turnoff the scroll views when they are animate
-    $('#scroll').on('click', function() {
-        if ($('#scroll').prop("checked")) {
-            $.fn.viewScroller.setChangeWhenAnim(true);
-        } else {
-            $.fn.viewScroller.setChangeWhenAnim(false);
-        }
-    });
 });
 
 //close modal
@@ -191,7 +198,7 @@ jQuery(function($){
 });
 jQuery(function($){
 	$(document).mouseup(function (e){
-		var div = $(".page-4");
+		var div = $(".page-5");
 		var dots = $(".dots");
 		if (!div.is(e.target)
 			&& div.has(e.target).length === 0 && !dots.is(e.target) && dots.has(e.target).length === 0) {
@@ -201,14 +208,34 @@ jQuery(function($){
 });
 jQuery(function($){
 	$(document).mouseup(function (e){
-		var div = $(".page-5");
-		var phone = $(".phone");
+		var div = $(".page-4");
+		var dots = $(".op-p4");
 		if (!div.is(e.target)
-			&& div.has(e.target).length === 0 && !phone.is(e.target) && phone.has(e.target).length === 0) {
+			&& div.has(e.target).length === 0 && !dots.is(e.target) && dots.has(e.target).length === 0) {
 			div.hide();
 		}
 	});
 });
+jQuery(function($){
+	$(document).mouseup(function (e){
+		var div = $(".page-calc");
+		var pageC = $(".page-calc-btn");
+		if (!div.is(e.target)
+			&& div.has(e.target).length === 0 && !pageC.is(e.target) && pageC.has(e.target).length === 0) {
+			div.hide();
+		}
+	});
+});
+// jQuery(function($){
+// 	$(document).mouseup(function (e){
+// 		var div = $(".page-5");
+// 		var phone = $(".phone");
+// 		if (!div.is(e.target)
+// 			&& div.has(e.target).length === 0 && !phone.is(e.target) && phone.has(e.target).length === 0) {
+// 			div.hide();
+// 		}
+// 	});
+// });
 
 
 
@@ -261,9 +288,9 @@ jQuery(function($){
 
 // 	    }
 // 	    position = scroll;
-// 		}
-
-// });
+// // 		}
+// /
+// // });
 
 
 // Calculator
@@ -363,6 +390,9 @@ jQuery(function($){
 			btnEnd.classList.add('calc-middle-btn');
 			btnEnd.classList.remove('calc-middle-btn-b');
 
+			var pageCalc = document.getElementById('page-calc');
+			pageCalc.style.display = 'block';
+
 			var formm = document.getElementById('stage-3-form');
 			formm.style.alignItems = 'center'
 
@@ -379,6 +409,9 @@ jQuery(function($){
 			var i;
 			for (i = 0; i < toStageTT.length; i++) 
 				{toStageTT[i].style.display = 'none';}
+
+			var pageCalc = document.getElementById('page-calc');
+			pageCalc.style.display = 'block';
 
 			elmnt.style.display = 'block';
 			stageThree.style.height = '30%';
@@ -407,8 +440,8 @@ var slickOptions = {
 	slidesToShow: 3,
 	slidesToScroll: 1,
 	initialSlide: 3,
-	prevArrow:"<i class='fas fa-long-arrow-alt-up'></i>",
-	nextArrow:"<i class='fas fa-long-arrow-alt-down'></i>"
+	prevArrow:"<b class='arrow-up'>&#8593</b>",
+	nextArrow:"<b class='arrow-down'>&#8595</b>"
 }
 
 

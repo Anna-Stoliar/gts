@@ -31,10 +31,12 @@ body
 a
 	outline: none!important
 	color: #fff
-	&:hover, &:focus
+	&:hover
 		color: #111
 		text-decoration: none
 		cursor: pointer
+	&:focus, &:active
+		color: #fff
 
 .text-right
 	text-align: right
@@ -60,6 +62,18 @@ a
 			height: 100%
 			position: absolute
 			opacity: .5
+	.lang
+		position: absolute
+		right: 27px
+		top: 65px
+		z-index: 100
+		a
+			color: #fff
+			&:hover
+				background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+
 	.btns
 		display: flex
 		flex-direction: row
@@ -72,11 +86,15 @@ a
 			position: absolute
 			left: 25px
 			top: 25px
+			&:hover
+				color: #E11CB6
 		.fa-bars
 			font-size: 32px
 			position: absolute
 			right: 25px
 			top: 25px
+			&:hover
+				color: #E11CB6
 		.home-btns-info
 			left: 25px
 		.home-btns-contact
@@ -106,7 +124,7 @@ a
 					80% {background-image: radial-gradient(#24013A, #E11CB6)}
 					100% {color: #fff; background-image: radial-gradient(#24013A, #E11CB6); border: 7px solid rgba(255, 28, 182, 0.25); background-color: #777}
 			&:active, &:focus
-				background-color: #333
+				background-color: #E11CB6
 				color: #fff
 		.policy
 			font-family: RobotoRegular, sans-serif
@@ -157,6 +175,17 @@ a
 			height: 100%
 			position: absolute
 			opacity: .5
+	.lang
+		position: absolute
+		right: 27px
+		top: 65px
+		z-index: 100
+		a
+			color: #fff
+			&:hover
+				background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
 	.btns
 		display: flex
 		flex-direction: row
@@ -173,11 +202,15 @@ a
 			position: absolute
 			left: 25px
 			top: 25px
+			&:hover
+				color: #D39D38
 		.fa-bars
 			font-size: 32px
 			position: absolute
 			right: 25px
 			top: 25px
+			&:hover
+				color: #D39D38
 		.services-btns-info
 			left: 25px
 		.services-btns-contact
@@ -207,7 +240,7 @@ a
 					80% {background-image: radial-gradient (#D39D38, #4DA0B0)}
 					100% {color: #fff; background-image: radial-gradient(#D39D38, #4DA0B0); border: 7px solid rgba(77, 160, 176, 0.25); background-color: #333}
 			&:active, &:focus
-				background-color: #333
+				background-color: #D39D38
 				color: #fff
 		.policy
 			font-family: RobotoRegular, sans-serif
@@ -304,6 +337,17 @@ a
 			height: 100%
 			position: absolute
 			opacity: .3
+	.lang
+		position: absolute
+		right: 27px
+		top: 65px
+		z-index: 100
+		a
+			color: #fff
+			&:hover
+				background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
 	.btns
 		display: flex
 		flex-direction: row
@@ -320,11 +364,15 @@ a
 			position: absolute
 			left: 25px
 			top: 25px
+			&:hover
+				color: #E72842
 		.fa-bars
 			font-size: 32px
 			position: absolute
 			right: 25px
 			top: 25px
+			&:hover
+				color: #E72842
 		.pros-btns-info
 			left: 25px
 		.pros-btns-contact
@@ -354,7 +402,7 @@ a
 					80% {background-image: radial-gradient(#FE9A5D, #FF5D7B)}
 					100% {color: #fff; background-image: radial-gradient(#FE9A5D, #FF5D7B); border: 7px solid rgba(255, 110, 115, 0.25); background-color: #333}
 			&:active, &:focus
-				background-color: #333
+				background-color: #E72842
 				color: #fff
 		.policy
 			font-family: RobotoRegular, sans-serif
@@ -518,6 +566,17 @@ a
 			height: 100%
 			position: absolute
 			opacity: .5
+	.lang
+		position: absolute
+		right: 27px
+		top: 65px
+		z-index: 100
+		a
+			color: #fff
+			&:hover
+				background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
 	.btns
 		display: flex
 		flex-direction: row
@@ -534,11 +593,15 @@ a
 			position: absolute
 			left: 25px
 			top: 25px
+			&:hover
+				color: #FE9A5D
 		.fa-bars
 			font-size: 32px
 			position: absolute
 			right: 25px
 			top: 25px
+			&:hover
+				color: #FE9A5D
 		.calc-btns-info
 			left: 25px
 		.calc-btns-contact
@@ -568,7 +631,7 @@ a
 					80% {background-image: radial-gradient(#FE9A5D, #FF5D7B)}
 					100% {color: #fff; background-image: radial-gradient(#FE9A5D, #FF5D7B); border: 7px solid rgba(255, 110, 115, 0.25); background-color: #333}
 			&:active, &:focus
-				background-color: #333
+				background-color: #FE9A5D
 				color: #fff
 		.policy
 			font-family: RobotoRegular, sans-serif
@@ -599,7 +662,7 @@ a
 			flex-direction: column
 			justify-content: center
 			align-items: center
-			height: 60%
+			height: 65%
 			background-color: #fff
 			border-radius: 5px	
 			h4
@@ -685,7 +748,7 @@ a
 #stage-2-form
 	align-items: center
 #stage-1-form
-	padding-bottom: 25px
+	padding-bottom: 0px
 	padding-left: 20px
 #stage-3-form
 	padding-left: 60px
@@ -696,7 +759,7 @@ a
 	width: 21vw 
 	background: #fff
 	border-radius: 8px
-	box-shadow: 2px 1px 8px #FCB045
+	box-shadow: 1px 1px 12px #FCB045
 	margin: 0 1vw
 	padding: 5px 5px 0px 0px
 	z-index: 2
@@ -776,6 +839,17 @@ a
 			height: 100%
 			position: absolute
 			opacity: .5
+	.lang
+		position: absolute
+		right: 27px
+		top: 65px
+		z-index: 100
+		a
+			color: #fff
+			&:hover
+				background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
 	.btns
 		display: flex
 		flex-direction: row
@@ -792,11 +866,15 @@ a
 			position: absolute
 			left: 25px
 			top: 25px
+			&:hover
+				color: #E72842
 		.fa-bars
 			font-size: 32px
 			position: absolute
 			right: 25px
 			top: 25px
+			&:hover
+				color: #E72842
 		.faq-btns-info
 			left: 25px
 		.faq-btns-contact
@@ -826,7 +904,7 @@ a
 					80% {background-image: radial-gradient(#E72842, #B97364)}
 					100% {color: #fff; background-image: radial-gradient(#E72842, #B97364); border: 7px solid rgba(231, 40, 66, 0.25); background-color: #333}
 			&:active, &:focus
-				background-color: #333
+				background-color: #E72842
 				color: #fff
 		.policy
 			font-family: RobotoRegular, sans-serif
@@ -865,7 +943,7 @@ a
 				justify-content: center
 				font-family: "Open Sans", sans-serif
 				font-weight: 400
-				font-size: 2.5vw
+				font-size: 2.3vw
 				margin-top: 50px
 				width: 100%
 				.faq-info
@@ -1023,6 +1101,17 @@ a
 			height: 100%
 			position: absolute
 			opacity: .5
+	.lang
+		position: absolute
+		right: 27px
+		top: 65px
+		z-index: 100
+		a
+			color: #fff
+			&:hover
+				background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
 	.btns
 		display: flex
 		flex-direction: row
@@ -1039,11 +1128,15 @@ a
 			position: absolute
 			left: 25px
 			top: 25px
+			&:hover
+				color: #E11CB6
 		.fa-bars
 			font-size: 32px
 			position: absolute
 			right: 25px
 			top: 25px
+			&:hover
+				color: #E11CB6
 		.security-btns-info
 			left: 25px
 		.security-btns-contact
@@ -1067,7 +1160,7 @@ a
 				animation-duration: 1s
 				animation-fill-mode: forwards
 			&:active, &:focus
-				background-color: #333
+				background-color: #E11CB6
 				color: #fff
 		.policy
 			font-family: RobotoRegular, sans-serif
@@ -1225,6 +1318,17 @@ a
 			height: 100%
 			position: absolute
 			opacity: .6
+	.lang
+		position: absolute
+		right: 27px
+		top: 65px
+		z-index: 100
+		a
+			color: #fff
+			&:hover
+				background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
 	.btns
 		display: flex
 		flex-direction: row
@@ -1241,11 +1345,15 @@ a
 			position: absolute
 			left: 25px
 			top: 25px
+			&:hover
+				color: #544A7D
 		.fa-bars
 			font-size: 32px
 			position: absolute
 			right: 25px
 			top: 25px
+			&:hover
+				color: #544A7D
 		.team-btns-info
 			left: 25px
 		.team-btns-contact
@@ -1275,7 +1383,7 @@ a
 					80% {background-image: radial-gradient(#544A7D, #FFD452)}
 					100% {color: #fff; background-image: radial-gradient(#544A7D, #FFD452); border: 7px solid rgba(255, 212, 82, 0.25); background-color: #333}
 			&:active, &:focus
-				background-color: #333
+				background-color: #544A7D
 				color: #fff
 		.policy
 			font-family: RobotoRegular, sans-serif
@@ -1314,7 +1422,7 @@ a
 				height: 55vh
 				left: 0px
 				padding-left: 100px
-				top: calc(50% - 250px)
+				top: 20%
 				z-index: 10
 				.itm
 					display: flex
@@ -1396,23 +1504,23 @@ a
 		background-color: #fff
 		display: none
 
-.fa-long-arrow-alt-up
-	&::before
-		position: absolute
-		top: calc(50% - 60px)
-		left: 55px
-		z-index: 10
-		font-size: 30px
-		margin-left: 100px
+.arrow-up
+	position: absolute
+	top: calc(50% - 70px)
+	left: 55px
+	z-index: 10
+	font-size: 30px
+	margin-left: 100px
+	cursor: pointer
 
-.fa-long-arrow-alt-down
-	&::before
-		position: absolute
-		top: calc(50% + 40px)
-		left: 55px
-		z-index: 10
-		font-size: 30px
-		margin-left: 100px
+.arrow-down
+	position: absolute
+	top: calc(50% + 20px)
+	left: 55px
+	z-index: 10
+	font-size: 30px
+	margin-left: 100px
+	cursor: pointer
 
 
 
@@ -1443,6 +1551,17 @@ a
 			height: 100%
 			position: absolute
 			opacity: .5
+	.lang
+		position: absolute
+		right: 27px
+		top: 65px
+		z-index: 100
+		a
+			color: #fff
+			&:hover
+				background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
 	.btns
 		display: flex
 		flex-direction: row
@@ -1459,11 +1578,15 @@ a
 			position: absolute
 			left: 25px
 			top: 25px
+			&:hover
+				color: #FE9A5D
 		.fa-bars
 			font-size: 32px
 			position: absolute
 			right: 25px
 			top: 25px
+			&:hover
+				color: #FE9A5D
 		.communication-btns-info
 			left: 25px
 		.communication-btns-contact
@@ -1493,7 +1616,7 @@ a
 					80% {background-image: radial-gradient(#FE9A5D, #FF5D7B)}
 					100% {color: #fff; background-image: radial-gradient(#FE9A5D, #FF5D7B); border: 7px solid rgba(255, 110, 115, 0.25); background-color: #333}
 			&:active, &:focus
-				background-color: #333
+				background-color: #FE9A5D
 				color: #fff
 		.policy
 			font-family: RobotoRegular, sans-serif
@@ -1536,6 +1659,7 @@ a
 				.com-form
 					margin-right: 15vw
 					margin-left: -5vw
+					margin-top: 20px
 					background-color: #fff
 					width: 400px
 					height: 388px
@@ -1588,6 +1712,7 @@ a
 						display: flex
 						flex-direction: row
 						margin-left: -5vw
+						margin: 15px 0px
 						&:hover
 							img
 								border: 10px solid #ad9497
@@ -1658,6 +1783,17 @@ a
 			height: 100%
 			position: absolute
 			opacity: .5
+	.lang
+		position: absolute
+		right: 27px
+		top: 65px
+		z-index: 100
+		a
+			color: #fff
+			&:hover
+				background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
 	.btns
 		display: flex
 		flex-direction: row
@@ -1674,11 +1810,15 @@ a
 			position: absolute
 			left: 25px
 			top: 25px
+			&:hover
+				color: #E11CB6
 		.fa-bars
 			font-size: 32px
 			position: absolute
 			right: 25px
 			top: 25px
+			&:hover
+				color: #E11CB6
 		.contact-btns-info
 			left: 25px
 		.contact-btns-contact
@@ -1702,7 +1842,7 @@ a
 				animation-duration: 1s
 				animation-fill-mode: forwards
 			&:active, &:focus
-				background-color: #333
+				background-color: #E11CB6
 				color: #fff
 		.policy
 			font-family: RobotoRegular, sans-serif
@@ -1757,7 +1897,6 @@ a
 							font-size: 30px
 							&:hover
 								color: #ff766f
-
 				.con-form
 					background-color: #fff
 					width: 400px
@@ -1834,21 +1973,21 @@ a
 
 .content-1
 	animation-name: concon1
-	animation-duration: 1.5s
+	animation-duration: 1s
 	animation-fill-mode: backwards
 	@keyframes concon1
 		0% {margin-left: -2000px;}
 		100% {margin-left: 0px;}
 .content-2
 	animation-name: concon2
-	animation-duration: 1.5s
+	animation-duration: 1s
 	animation-fill-mode: backwards
 	@keyframes concon2
 		from {margin-left: 2000px;}
 		to {margin-left: 0px;}
 .content-3
 	animation-name: concon3
-	animation-duration: 1.5s
+	animation-duration: 1s
 	animation-fill-mode: backwards
 	@keyframes concon3
 		0% {transform: scale(0);}
@@ -1856,21 +1995,21 @@ a
 
 .content-1-b
 	animation-name: concon1-b
-	animation-duration: 0.5s
+	animation-duration: 0.3s
 	animation-fill-mode: forwards
 	@keyframes concon1-b
 		0% {margin-left: 0px;}
 		100% {margin-left: 2000px;}
 .content-2-b
 	animation-name: concon2-b
-	animation-duration: 0.5s
+	animation-duration: 0.3s
 	animation-fill-mode: forwards
 	@keyframes concon2-b
 		from {margin-left: 0px;}
 		to {margin-left: -2000px;}
 .content-3-b
 	animation-name: concon3-b
-	animation-duration: 0.5s
+	animation-duration: 0.3s
 	animation-fill-mode: forwards
 	@keyframes concon3-b
 		0% {transform: scale(1);}
@@ -1879,9 +2018,9 @@ a
 
 .page
 	width: 1230px
-	height: 500px
+	height: 480px
 	position: fixed
-	top: calc(50% - 250px)
+	top: calc(50% - 260px)
 	left: calc(50% - 615px)
 	display: flex
 	flex-direction: row
@@ -1901,18 +2040,14 @@ a
 		font-size: em(24px)
 		font-family: "Open Sans", sans-serif
 		font-weight: 700
-	img
-		width: 40%
-		height: auto
 .page-2
 	background-color: rgba(0, 0, 0, .75)
-	padding-top: calc(50% - 650px)
+	padding-top: 2.5%
 	z-index: 100
-
 	.page-2-content
 		display: flex
 		flex-direction: row
-		justify-content: space-between
+		justify-content: space-around
 		flex-wrap: wrap
 		.page-2-content-item
 			display: flex
@@ -1922,7 +2057,7 @@ a
 			font-size: 16px
 			font-family: "Open Sans", sans-serif
 			font-weight: 700
-			&:hover
+			&:hover, &:focus, &:active
 				border: 2px solid transparent
 				-moz-border-image: -moz-linear-gradient(top, #FE9A5D 0%, #FF5D7B 100%)
 				-webkit-border-image: -webkit-linear-gradient(top, #FE9A5D 0%, #FF5D7B 100%)
@@ -1938,8 +2073,18 @@ a
 				width: 270px
 				height: 135px
 .page-3
+	position: fixed
 	background-color: #fff
 	z-index: 100
+	width: 600px!important
+	height: 300px!important
+	left: calc(50% - 300px)
+	top: calc(50% - 150px)
+	display: flex
+	flex-direction: row
+	box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.25)
+	border-radius: 4px
+	display: none
 	ul
 		list-style: none
 		text-transform: uppercase
@@ -1948,8 +2093,12 @@ a
 		font-family: "Open Sans", sans-serif
 		font-weight: 700
 		margin: 0
-		padding: 80px 0 125px 0
+		padding: 0
+		height: 65%
+		margin-top: 8.75%
 		li
+			margin: 0
+			padding: 0
 			a
 				color: #959090
 				&::before
@@ -2019,7 +2168,7 @@ a
 				border-radius: 4px
 				color: #fff
 				text-align: left
-				width: 25vw
+				width: 27vw
 				padding: 10px 0px 10px 20px
 				margin: 0 50px 10px 60px
 				transition: background-color 0.5s ease
@@ -2078,6 +2227,13 @@ a
 	margin-top: 20px
 	left: calc(50% - 210px)
 	z-index: 100
+	position: fixed
+	top: calc(50% - 260px)
+	display: flex
+	flex-direction: row
+	box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.25)
+	border-radius: 4px
+	display: none
 	h4
 		color: #743535
 		font-family: "Open Sans", sans-serif
@@ -2114,13 +2270,62 @@ a
 			outline: none!important
 
 
+.page-calc
+	background-color: #fff
+	width: 420px
+	height: 400px
+	padding: 45px
+	margin-top: 20px
+	left: calc(50% - 210px)
+	z-index: 100
+	position: fixed
+	top: calc(50% - 260px)
+	display: flex
+	flex-direction: row
+	box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.25)
+	border-radius: 4px
+	display: none
+	h4
+		color: #743535
+		font-family: "Open Sans", sans-serif
+		font-weight: 700
+		margin: 0 0 30px 0
+		text-align: center
+	input
+		border: none
+		border-bottom: 1px solid #D1D1D1
+		color: #D1D1D1
+		background-color: none
+		width: 100%
+		padding: 20px 0 0px 10px
+		&:active, &:focus
+			outline: none!important
+			border-bottom: 1px solid #743535
+			transition: border-bottom ease 1s
+	.page-calc-btn
+		margin: 50px auto 0
+		width: 270px
+		height: 55px
+		display: flex
+		justify-content: center
+		align-items: center
+		background: linear-gradient(to bottom, #FE9A5D, #FF5D7B)
+		box-shadow: 2px 2px 10px #FF7E6B
+		border-radius: 40px
+		border: none
+		&:hover
+			box-shadow: inset 0 0 10px #777
+			text-shadow: 2px 2px 10px #555
+			transition: box-shadow ease 5s
+		&:active, &:focus
+			outline: none!important
+
 .slider
 	position: absolute
 	top: 10%
 	left: 0
 	width: 100%
 	height: 90%
-	overflow-y: hidden
 	display: none
 	.slide-wrap
 		width: 100%
@@ -2193,3 +2398,7 @@ a
 
 
 
+.lang
+	a
+		color: #333
+		z-index: 100

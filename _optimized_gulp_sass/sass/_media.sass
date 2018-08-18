@@ -72,7 +72,7 @@
 					transform: scale(0.9)
 
 	.page
-		transform: scale(0.7)
+		transform: scale(0.9)
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
@@ -140,6 +140,9 @@
 		transform: scale(1.7)!important
 		margin-left: 280px!important
 
+	.page
+		transform: scale(0.68)
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -166,12 +169,14 @@
 					transform: scale(0.7)!important
 	
 
-
-	.page
-		transform: scale(0.5)
+	.page-1
+		img
+			width: 50%
+			height: auto
 
 	.page-4
 		.page-4-content
+			height: 88%!important
 			.page-4-content-links
 				font-size: 1.9vw
 				width: 600px
@@ -227,6 +232,11 @@
 	.slider
 		display: none
 
+	.page
+		transform: scale(0.6)
+
+
+
 	
 
 @media only screen and (max-width : 830px)
@@ -240,6 +250,13 @@
 	.calc-middle
 		justify-content: space-between!important
 		width: 120%!important
+
+	.calc
+		.content
+			.calc-content-page 
+				h4::after
+					width: 300px!important
+					left: calc(50% - 150px)!important
 
 	.calc-line
 		&::after
@@ -389,6 +406,13 @@
 		p
 			font-size: 2.5vw
 
+	.page-2
+		width: 100vw!important
+		left: calc(50% - 50vw)!important
+		height: 850px!important
+		transform: scale(0.8)!important
+		top: 0vw!important
+
 	.slick-list
 		&::after
 			display: none
@@ -407,25 +431,38 @@
 				&::after
 					top: 20px!important
 
+	.slick-list
+		margin-left: -50px!important
+
+	.arrow-up
+		left: 5px!important
+
+	.arrow-down
+		left: 5px!important
+
 
 	
 @media only screen and (max-width : 750px)
 
 	.stage 
-			form
-				transform: scale(0.5)
+		form
+			transform: scale(0.5)
 
-	.calc
-		.content
-			.calc-content-page 
-				h4::after
-					width: 100px!important
-					left: calc(50% - 50px)!important
+	.page-4
+		transform: scale(0.5)!important
+
 
 @media only screen and (max-width : 650px)
 
 	.page
 		transform: scale(0.38)
+
+	.page-2
+		height: 850px!important
+		top: 1vw!important
+		width: 120vw!important
+		left: calc(50% - 60vw)!important
+		padding-top: 5vw!important
 
 	.services
 		.content
@@ -451,6 +488,8 @@
 							.tablink-security-info
 								font-size: 2.4vw!important
 
+
+
 	.calc-line-1
 		&:after
 			width: 85vw!important
@@ -461,29 +500,46 @@
 		&:after
 			width: 85vw!important
 
+	.staff-info-slogan
+		width: 150px!important
+
+	.page-4
+		width:  900px!important
+		height: 620px!important
+		left: calc(50% - 450px)!important
+		top: calc(50% - 310px)!important
+		.page-4-content
+			height: 88%!important
+			width: 100%!important
+			.page-4-content-links
+				font-size: 3.5vw
+				width: 400px
+				.page-4-content-links-link
+					width: 300px!important
+			.page-4-content-info
+				width: 500px!important
+
+	.page-3
+		transform: scale(0.7)
+
+
+
 @media only screen and (max-width : 600px)
 
-	.slick-list
-		margin-left: 0px!important
 
 	.slick-cur
 		transform: scale(1.2)!important
 		margin-left: 110px!important
 
 	.staff-info-slogan
-		width: 100px!important
+		width: 120px!important
+		line-height: 19px!important
 
+	.page-1
+		img
+			width: 60%
+			height: auto
 	
-
-	.fa-long-arrow-alt-up
-		&::before
-			top: calc(50% - 25px - 40px)!important
-			left: 55px!important
-
-	.fa-long-arrow-alt-down
-		&::before
-			top: calc(50% + 40px)!important
-			left: 55px!important
 
 	.pros
 		.content
@@ -521,6 +577,14 @@
 						transform: scale(0.52)!important
 						margin-right: 14vw!important
 						margin-top: 0px!important
+
+	.page-2
+		width: 130vw!important
+		transform: scale(0.7)!important
+		top: -7vw!important
+		left: calc(50% - 65vw)!important
+		height: 900px!important
+		padding-top: 10vw!important
 
 
 
