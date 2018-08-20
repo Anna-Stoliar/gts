@@ -287,10 +287,13 @@ a
 						width: 25vw
 						height: auto
 					&:hover
-						.item-name
-							height: 100%
-							font-size: 2vw
+						.item-text
+							height: 65%
 							transition: all 0.5s ease
+							color: #fff
+							display: flex
+							justify-content: center
+							align-items: center
 					.item-name
 						color: #4E1B4A
 						position: absolute
@@ -302,6 +305,16 @@ a
 						align-items: center
 						height: 35%
 						font-size: 1vw
+					.item-text
+						display: flex
+						justify-content: center
+						align-items: center
+						height: 0%
+						width: 100%
+						background: rgba(0, 0, 0, 0.3)
+						position: absolute
+						top: 0
+						color: transparent
 			.services-bottom
 				font-family: "Open Sans", sans-serif
 				font-weight: 700
