@@ -155,27 +155,6 @@ function openTabHome(tabName,elmnt) {
 document.getElementById("open-link").click();
 
 
-//for tabs security page
-function openTabSec(cityName,elmnt) {
-    var i, tabcontentS, tablinksS;
-
-    tabcontentS = document.getElementsByClassName("tabcontent-security");
-    for (i = 0; i < tabcontentS.length; i++) {
-        tabcontentS[i].style.display = "none";
-    }
-    document.getElementById(cityName).style.display = "block";
-
-    tablinksS = document.getElementsByClassName("tablink-security");
-    for (i = 0; i < tablinksS.length; i++) {
-        tablinksS[i].classList.remove("security-tab-active");
-    }
-
-    elmnt.classList.add("security-tab-active");
-}
-
-//open one tab by default
-document.getElementById("security-open-link").click();
-
 $(document).ready(function() {
 
     // Sets viewScroller with sample events
