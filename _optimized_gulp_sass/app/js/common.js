@@ -24,7 +24,8 @@ $(function() {
 		itemClass: "slide-wrap",
 		nav: true,
 		navElement: false,
-		navText: ""
+		navText: "",
+		//navContainer: ".slider-nav-container"
 	});
 
 	var owl1 = $(".slider-1");
@@ -34,7 +35,8 @@ $(function() {
 		itemClass: "slide-wrap",
 		nav: true,
 		navElement: false,
-		navText: ""
+		navText: "",
+		//navContainer: ".slider-nav-container-1"
 	});
 
 	$(".next").click(function(){
