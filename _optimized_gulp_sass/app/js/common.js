@@ -39,6 +39,25 @@ $(function() {
 		//navContainer: ".slider-nav-container-1"
 	});
 
+	var owl2 = $(".slider-2");
+	owl2.owlCarousel({
+		loop: true,
+		itemClass: "slide-wrap",
+		nav: true,
+		navElement: false,
+		navText: "",
+		responsiveClass: true,
+		responsive:{
+			0:{
+				items:2
+			},
+			600:{
+				items: 3
+			}
+		}
+		//navContainer: ".slider-nav-container-2"
+	});
+
 	$(".next").click(function(){
 		owl1.trigger('next.owl.carousel')
 	});
@@ -51,6 +70,13 @@ $(function() {
 	});
 	$(".prev").click(function(){
 		owl.trigger('prev.owl.carousel')
+	});
+
+	$(".next").click(function(){
+		owl2.trigger('next.owl.carousel')
+	});
+	$(".prev").click(function(){
+		owl2.trigger('prev.owl.carousel')
 	});
 
 
