@@ -27,6 +27,16 @@ $(function() {
 		navText: ""
 	});
 
+	var owl1 = $(".slider-1");
+	owl1.owlCarousel({
+		loop: true,
+		items: 1,
+		itemClass: "slide-wrap",
+		nav: true,
+		navElement: false,
+		navText: ""
+	});
+
 	$(".next").click(function(){
 		owl.trigger('next.owl.carousel')
 	});
