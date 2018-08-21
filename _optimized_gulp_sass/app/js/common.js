@@ -489,6 +489,10 @@ jQuery(function($){
 			formm.style.alignItems = 'center'
 			formm.style.paddingLeft = '0px'
 
+			var formms = document.getElementById('stage-3-form-s');
+			formms.style.alignItems = 'center'
+			formms.style.paddingLeft = '45px'
+
 			var calcLine = document.getElementById('calc-line');
 			calcLine.classList.add('calc-line-3');
 
@@ -496,7 +500,6 @@ jQuery(function($){
 			lbl.innerHTML = 'All Done!';
 		}
 	}
-
 
 var slickOptions = {
 	vertical: true,
@@ -510,6 +513,8 @@ var slickOptions = {
 
 
 $('.slick').slick(slickOptions);
+
+
 
 $('.slick-current').addClass('slick-cur');
 $('.slick-current img').addClass('bor-team');

@@ -293,7 +293,7 @@
 
 	.calc-line
 		&::after
-			width: 79vw!important
+			width: 83vw!important
 
 	.stage
 		width: 49vw!important
@@ -309,7 +309,7 @@
 			width: 79vw!important
 	.calc-line-3
 		&:after
-			width: 79vw!important
+			width: 80vw!important
 
 	.slider
 		display: block!important
@@ -753,6 +753,45 @@
 				width: 20px!important
 				left: calc(50% - 10px)!important
 
+	.team-top
+		h2
+			left: calc(50% - 55px)!important
+			&::after
+				width: 80px!important
+				left: calc(50% - 40px)!important
+
+	#stage-1-form, #stage-2-form, #stage-3-form
+		display: none
+
+	#stage-1-form-s, #stage-2-form-s, #stage-3-form-s
+		display: block!important
+		z-index: 100!important
+
+	.stage
+		height: 70px!important
+
+	.calc-middle
+		transform: scale(0.6)!important
+
+	#calc-text
+		font-size: em(16px)!important
+	
+	.calc 
+		.content
+			.calc-content-page 
+				margin-bottom: 55px!important
+				.calc-middle
+					margin-bottom: 20px!important
+				h4::after
+					top: 30px!important
+
+	.calc-top
+		h2
+			left: calc(50% - 82px)!important
+			&::after
+				width: 130px!important
+				left: calc(50% - 65px)!important
+
 @media only screen and (max-height : 400px)
 
 	.services
@@ -787,9 +826,6 @@
 
 	.faq-info-item-text
 		transform: scale(0.8)!important
-
-	
-
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
