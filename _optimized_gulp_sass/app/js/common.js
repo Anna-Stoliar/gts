@@ -305,58 +305,6 @@ jQuery(function($){
 
 
 
-
-// // scroll
-// 	if($(".home:hover").length != 0){
-// 		$( ".services" ).scrollTop(function() {
-// 			$( ".services" ).css( "margin-top", "-100vh" );
-// 			$( ".services" ).css( "transition", "margin-top ease 3s" );
-// 		});
-// 	}
-
-// 	if($(".services:hover").length != 0){
-// 		var scroll = $(window).scrollTop();
-// 	    if(scroll > position) {
-// 	        console.log('scrollDown');
-// 	        $( ".pros" ).scrollTop(function() {
-// 			$( ".services .content" ).css( "position", "fixed" );
-// 			$( ".pros" ).css( "margin-top", "-100vh" );
-// 			$( ".pros" ).css( "transition", "margin-top ease 3s" );
-// 		});
-
-// 	    } else {
-// 	         console.log('scrollUp');
-// 	         $( ".services" ).scrollTop(function() {
-// 			$( ".services .content" ).css( "position", "fixed" );
-// 			$( ".services" ).css( "margin-top", "0vh" );
-// 			$( ".services" ).css( "transition", "margin-top ease 3s" );
-// 			$( ".pros" ).css( "margin-top", "0vh" );
-// 		});
-
-// 	    }
-// 	    position = scroll;
-// 		}
-// 	if($(".pros:hover").length != 0){
-// 		var scroll = $(window).scrollTop();
-// 	    if(scroll > position) {
-// 	        console.log('scrollDown');
-// 	        // add code for next element
-// 	    } else {
-// 	         console.log('scrollUp');
-// 	         $( ".pros" ).scrollTop(function() {
-// 			$( ".pros .content" ).css( "position", "fixed" );
-// 			$( ".pros" ).css( "margin-top", "0vh" );
-// 			$( ".pros" ).css( "transition", "margin-top ease 3s" );
-// 			$( ".services" ).css( "margin-top", "-100vh" );
-// 		});
-
-// 	    }
-// 	    position = scroll;
-// // 		}
-// /
-// // });
-
-
 // Calculator
 	function toST(elmnt) {
 		if (window.innerWidth > 830) {
@@ -543,23 +491,23 @@ $('.slick').on('init', function() {
 });
 
 
-
-function reSizez() {
+$(document).ready(function() {
 	if (window.innerWidth < 560) {
-		window.screen.lockOrientation("landscape-primary");
+		$("#orient").css( "display", "block" );
 	}
-}
+	else{
+		$("#orient").css( "display", "none" );
+	}
+});
 
+$(window).resize(function(){
+	if (window.innerWidth < 560) {
+		$("#orient").css( "display", "block" );
+	}
+	if (window.innerWidth > 560) {
+		$("#orient").css( "display", "none" );
+	}
+});
 
-// window.onresize = function() {
-//     changeCon();
-// }
-
-// function changeCon() {
-//     if (window.innerWidth < 830) {
-//     }
-//     else {
-//     }    
-// }
 
 
