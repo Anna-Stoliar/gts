@@ -609,18 +609,11 @@
 
 	.top
 		h2
-			font-family: "Open Sans", sans-serif
-			font-weight: 700
-			margin: 0px
-			font-size: em(18px)!important
+			font-size: em(14px)!important
 			padding-top: 70px
-			position: absolute
 			&::after
-				content: ""
-				height: 2px
-				position: absolute
-				background-color: #fff
-				top: 110px
+				height: 1px!important
+				top: 93px!important
 
 	.page-1
 		img
@@ -629,10 +622,6 @@
 		p
 			font-size: 1.7vw!important
 
-	.slider-2
-		.slide-2
-			.slide-content
-				margin-top: 3vh!important
 
 	.services
 		.content
@@ -649,9 +638,35 @@
 					font-size: 1.5vw!important
 					margin-bottom: 40px!important
 
+	.slider-nav-1
+		div
+			top: 10px!important
+			left: -48vw
+			&:last-child
+				left: 45vw
+
+	.service-top
+		h2
+			left: calc(50% - 77px)!important
+			&::after
+				width: 130px!important
+				left: calc(50% - 65px)!important
+
+	.slider-2
+		.slide-2
+			.slide-content
+				margin-top: 3vh!important
+
+	.pros-top
+		h2
+			left: calc(50% - 45px)!important
+			&::after
+				width: 67px!important
+				left: calc(50% - 33px)!important
+
 	.slider-nav-2
 		div
-			top: -40px!important
+			top: 0px!important
 			left: -48vw
 			&:last-child
 				left: 45vw
@@ -660,7 +675,7 @@
 
 	.services
 		.content
-			margin-top: 3.8vw!important
+			margin-top: 4vw!important
 			.services-content-page
 				justify-content: space-between!important
 				.services-middle
