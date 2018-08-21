@@ -605,6 +605,73 @@
 		padding-top: 10vw!important
 
 
+@media only screen and (max-height : 600px)
+
+	.top
+		h2
+			font-family: "Open Sans", sans-serif
+			font-weight: 700
+			margin: 0px
+			font-size: em(18px)!important
+			padding-top: 70px
+			position: absolute
+			&::after
+				content: ""
+				height: 2px
+				position: absolute
+				background-color: #fff
+				top: 110px
+
+	.page-1
+		img
+			width: 20%
+			height: auto
+		p
+			font-size: 1.7vw!important
+
+	.slider-2
+		.slide-2
+			.slide-content
+				margin-top: 3vh!important
+
+	.services
+		.content
+			margin-top: 3vw!important
+			.services-content-page
+				justify-content: space-between!important
+				.services-middle
+					.services-middle-item
+						img
+							width: 40vw!important
+						.item-name
+							font-size: 2.5vw!important
+				.services-bottom
+					font-size: 1.5vw!important
+					margin-bottom: 40px!important
+
+	.slider-nav-2
+		div
+			top: -40px!important
+			left: -48vw
+			&:last-child
+				left: 45vw
+
+@media only screen and (max-height : 400px)
+
+	.services
+		.content
+			margin-top: 3.8vw!important
+			.services-content-page
+				justify-content: space-between!important
+				.services-middle
+					.services-middle-item
+						img
+							width: 30vw!important
+						.item-name
+							font-size: 1.5vw!important
+				.services-bottom
+					font-size: 1.5vw!important
+					margin-bottom: 50px!important
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
