@@ -509,7 +509,7 @@ var slickOptions = {
 }
 
 
-$('.slick').slick(slickOptions)
+$('.slick').slick(slickOptions);
 
 $('.slick-current').addClass('slick-cur');
 $('.slick-current img').addClass('bor-team');
@@ -540,7 +540,7 @@ $('.slick').on('init', function() {
 
 
 function reSizez() {
-	if (window.innerWidth < 480) {
+	if (window.innerWidth < 560) {
 		window.screen.lockOrientation("landscape-primary");
 	}
 }
