@@ -414,7 +414,8 @@
 
 	.communication 
 		.content 
-			.communication-content-page 
+			.communication-content-page
+				justify-content: center!important 
 				.communication-middle 
 					.com-form
 						display: none!important
@@ -705,6 +706,53 @@
 							height: 40px!important
 							margin-top: 0px!important
 
+	.contact-top
+		h2
+			left: calc(50% - 44px)!important
+			&::after
+				width: 53px!important
+				left: calc(50% - 26px)!important
+
+	.faq-info-1
+		.faq-info-item-img
+			top: -55px!important
+			left: calc(50% - 25px)!important
+		.faq-info-item-text
+			.faq-a
+				right: 0px!important
+
+	.faq-info-2
+		.faq-info-item-img
+			top: -55px!important
+			left: calc(50% - 25px)!important
+
+	.faq-info-item-text
+		.faq-q
+			height: 50px!important
+			font-size: 1.5em!important
+			line-height: 15px
+		.faq-a
+			font-size: 1.4em!important
+			line-height: 15px
+			padding-left: 10px!important
+			padding-right: 10px
+			top: 60px!important
+
+	.slider-nav
+		div
+			cursor: pointer
+			position: absolute
+			top: -50px!important
+			left: -49vw
+			&:last-child
+				left: 45vw
+	.faq-top
+		h2
+			left: calc(50% - 14px)!important
+			&::after
+				width: 20px!important
+				left: calc(50% - 10px)!important
+
 @media only screen and (max-height : 400px)
 
 	.services
@@ -736,6 +784,9 @@
 					.contact-middle-info
 						.con-btn-s
 							height: 30px!important
+
+	.faq-info-item-text
+		transform: scale(0.8)!important
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
