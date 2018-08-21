@@ -46,6 +46,7 @@ $(function() {
 		nav: true,
 		navElement: false,
 		navText: "",
+		center: true,
 		responsiveClass: true,
 		responsive:{
 			0:{
@@ -155,6 +156,27 @@ function openTabHome(tabName,elmnt) {
 document.getElementById("open-link").click();
 
 
+// //for tabs security page
+// function openTabSec(cityName,elmnt) {
+//     var i, tabcontentS, tablinksS;
+
+//     tabcontentS = document.getElementsByClassName("tabcontent-security");
+//     for (i = 0; i < tabcontentS.length; i++) {
+//         tabcontentS[i].style.display = "none";
+//     }
+//     document.getElementById(cityName).style.display = "block";
+
+//     tablinksS = document.getElementsByClassName("tablink-security");
+//     for (i = 0; i < tablinksS.length; i++) {
+//         tablinksS[i].classList.remove("security-tab-active");
+//     }
+
+//     elmnt.classList.add("security-tab-active");
+// }
+
+// //open one tab by default
+// document.getElementById("security-open-link").click();
+
 $(document).ready(function() {
 
     // Sets viewScroller with sample events
@@ -260,7 +282,26 @@ jQuery(function($){
 // 		}
 // 	});
 // });
-
+jQuery(function($){
+	$(document).mouseup(function (e){
+		var div = $(".con-form-m");
+		var pageC = $(".page-5-btn");
+		if (!div.is(e.target)
+			&& div.has(e.target).length === 0 && !pageC.is(e.target) && pageC.has(e.target).length === 0) {
+			div.hide();
+		}
+	});
+});
+jQuery(function($){
+	$(document).mouseup(function (e){
+		var div = $(".com-form-m");
+		var pageC = $(".page-5-btn");
+		if (!div.is(e.target)
+			&& div.has(e.target).length === 0 && !pageC.is(e.target) && pageC.has(e.target).length === 0) {
+			div.hide();
+		}
+	});
+});
 
 
 
