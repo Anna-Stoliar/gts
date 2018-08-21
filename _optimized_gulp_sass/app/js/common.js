@@ -46,11 +46,10 @@ $(function() {
 		nav: true,
 		navElement: false,
 		navText: "",
-		center: true,
 		responsiveClass: true,
 		responsive:{
 			0:{
-				items:2
+				items: 2
 			},
 			600:{
 				items: 3
