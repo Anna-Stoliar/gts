@@ -307,33 +307,24 @@ jQuery(function($){
 
 // Calculator
 	function toST(elmnt) {
-		if (window.innerWidth > 830) {
+		if (window.innerWidth > 1200) {
 		    var toStageTwo = document.getElementById('stage-2');
 			toStageTwo.classList.add('stage');
 			toStageTwo.classList.remove('stage-2');
 			toStageTwo.style.padding = '0 5px 15px 0px';
 			
 			var stageOne = document.getElementById('stage-1');
-			var toStageT = stageOne.getElementsByClassName('container-radio-calc');
-			var i;
-			for (i = 0; i < toStageT.length; i++) 
-				{toStageT[i].style.display = 'none';}
 
 			elmnt.style.display = 'block';
 			stageOne.style.height = '30%';
 			stageOne.style.padding = '0 5px 15px 0';
-
-			var formm = document.getElementById('stage-1-form');
-			formm.style.alignItems = 'center'
 			
 			var calcLine = document.getElementById('calc-line');
 			calcLine.classList.add('calc-line-1');
 
-			var lbl = document.getElementById('calc-text');
-			lbl.innerHTML = 'Размещение проекта';
 		}
 
-		if (window.innerWidth < 831) {
+		if (window.innerWidth < 1201) {
 		    var toStageTwo = document.getElementById('stage-2');
 			toStageTwo.classList.add('stage');
 			toStageTwo.classList.remove('stage-2');
@@ -342,24 +333,21 @@ jQuery(function($){
 			var stageOne = document.getElementById('stage-1');
 			stageOne.style.display = "none"
 
-			var lbl = document.getElementById('calc-text');
-			lbl.innerHTML = 'Размещение проекта';
+			var calcLine = document.getElementById('calc-line');
+			calcLine.classList.add('calc-line-1');
+
 		}
 	}
 
 
 	function toTT(elmnt) {
-		if (window.innerWidth > 830) {
+		if (window.innerWidth > 1200) {
 		    var toStageTHree = document.getElementById('stage-3');
 			toStageTHree.classList.add('stage');
 			toStageTHree.classList.remove('stage-3');
 			toStageTHree.style.padding = '0px 5px 15px 0px';
 			
 			var stageTwo = document.getElementById('stage-2');
-			var toStageTT = stageTwo.getElementsByClassName('container-radio-calc');
-			var i;
-			for (i = 0; i < toStageTT.length; i++) 
-				{toStageTT[i].style.display = 'none';}
 
 			elmnt.style.display = 'block';
 			stageTwo.style.height = '30%';
@@ -367,11 +355,8 @@ jQuery(function($){
 
 			var calcLine = document.getElementById('calc-line');
 			calcLine.classList.add('calc-line-2');
-
-			var lbl = document.getElementById('calc-text');
-			lbl.innerHTML = 'Желаемые сроки выполнения';
 		}
-		if (window.innerWidth < 831) {
+		if (window.innerWidth < 1201) {
 		    var toStageTHree = document.getElementById('stage-3');
 			toStageTHree.classList.add('stage');
 			toStageTHree.classList.remove('stage-3');
@@ -381,18 +366,15 @@ jQuery(function($){
 			var stageTwo = document.getElementById('stage-2');
 			stageTwo.style.display = "none"
 
-			var lbl = document.getElementById('calc-text');
-			lbl.innerHTML = 'Желаемые сроки выполнения';
+			var calcLine = document.getElementById('calc-line');
+			calcLine.classList.add('calc-line-2');
+
 		}
 	}
 
 	function toET(elmnt) {	
-		if (window.innerWidth > 830) {
+		if (window.innerWidth > 1200) {
 			var stageThree = document.getElementById('stage-3');
-			var toStageTT = stageThree.getElementsByClassName('container-radio-calc');
-			var i;
-			for (i = 0; i < toStageTT.length; i++) 
-				{toStageTT[i].style.display = 'none';}
 
 			elmnt.style.display = 'block';
 			stageThree.style.height = '30%';
@@ -403,27 +385,14 @@ jQuery(function($){
 			btnEnd.classList.remove('calc-middle-btn-b');
 
 			var pageCalc = document.getElementById('page-calc');
-			pageCalc.style.display = 'block';
-
-			var formm = document.getElementById('stage-3-form');
-			formm.style.alignItems = 'center'
+			pageCalc.style.display = 'block!important';
 
 			var calcLine = document.getElementById('calc-line');
 			calcLine.classList.add('calc-line-3');
-			formm.style.paddingLeft = '0px'
 
-			var lbl = document.getElementById('calc-text');
-			lbl.innerHTML = 'All Done!';
 		}
-		if (window.innerWidth < 831) {
+		if (window.innerWidth < 1201) {
 		    var stageThree = document.getElementById('stage-3');
-			var toStageTT = stageThree.getElementsByClassName('container-radio-calc');
-			var i;
-			for (i = 0; i < toStageTT.length; i++) 
-				{toStageTT[i].style.display = 'none';}
-
-			var pageCalc = document.getElementById('page-calc');
-			pageCalc.style.display = 'block';
 
 			elmnt.style.display = 'block';
 			stageThree.style.height = '30%';
@@ -432,20 +401,17 @@ jQuery(function($){
 			var btnEnd = document.getElementById('btn-end');
 			btnEnd.classList.add('calc-middle-btn');
 			btnEnd.classList.remove('calc-middle-btn-b');
-
-			var formm = document.getElementById('stage-3-form');
-			formm.style.alignItems = 'center'
-			formm.style.paddingLeft = '0px'
 
 			var formms = document.getElementById('stage-3-form-s');
 			formms.style.alignItems = 'center'
-			formms.style.paddingLeft = '45px'
 
 			var calcLine = document.getElementById('calc-line');
 			calcLine.classList.add('calc-line-3');
 
-			var lbl = document.getElementById('calc-text');
-			lbl.innerHTML = 'All Done!';
+			var pageCalc = document.getElementById('page-calc');
+			pageCalc.style.display = 'block!important';
+
+
 		}
 	}
 

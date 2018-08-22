@@ -115,18 +115,19 @@
 					margin-bottom: 20px
 				.services-middle
 					margin-bottom: -20px
+					.services-middle-item
+						.item-text
+							font-size: em(8px)!important
 	.pros 
 		.content 
 			.pros-content-page 
 				.pros-middle 
 					.pros-middle-item
 						transform: scale(0.7)!important
-						margin: 0px 10px 55px 10px!important
-						padding: 10px 0px 0px 0px!important
+						margin-bottom: 20px!important
 						flex: 20%!important
 						&:hover
-							margin: -10px 0px 0px 0px!important
-							padding: 10px 10px 15px 10px!important
+							margin-bottom: 0px!important
 
 
 	.contact
@@ -152,6 +153,44 @@
 
 	.stage-1, .stage-2, .stage-3
 		padding: 5px 5px 0px 0px!important
+
+
+	.stage-2, .stage-3
+		display: none
+
+	.calc-middle
+		justify-content: space-between!important
+		width: 120%!important
+
+	.calc
+		.content
+			.calc-content-page 
+				width: 70vw
+				h4::after
+					width: 300px!important
+					left: calc(50% - 150px)!important
+				.calc-middle
+					width: 90%!important
+
+	.calc-line
+		&::after
+			width: 54vw!important
+
+	.stage
+		width: 30vw!important
+		height: 50%!important
+		form
+			transform: scale(0.8)!important
+
+	.calc-line-1
+		&:after
+			width: 54vw!important
+	.calc-line-2
+		&:after
+			width: 54vw!important
+	.calc-line-3
+		&:after
+			width: 54vw!important
 
 	
 
@@ -188,17 +227,18 @@
 					margin-bottom: 30px
 				.services-middle
 					margin-bottom: -30px
+					.services-middle-item
+						.item-text
+							font-size: em(6px)!important
+
 
 	.pros 
 		.content 
 			.pros-content-page 
 				.pros-middle 
 					.pros-middle-item
-						margin: 10px 5px 10px 5px!important
-						padding: 10px 0px 10px 0px!important
-						&:hover
-							margin: 10px 5px -10px 5px!important
-							padding: 10px 0px 10px 0px!important
+						margin-left: 10px!important
+						margin-right: 10px!important
 
 	.communication
 		.content
@@ -238,9 +278,6 @@
 		transform: scale(1.5)!important
 		margin-left: 200px!important
 
-	.calc-middle
-		transform: scale(0.8)
-
 	.stage
 		form
 			transform: scale(0.6)
@@ -262,6 +299,19 @@
 	.page
 		transform: scale(0.6)
 
+	.pros 
+		.content 
+			.pros-content-page 
+				.pros-middle 
+					.pros-middle-item
+						margin-left: 10px!important
+						margin-right: 10px!important
+						margin-bottom: 50px!important
+						&:hover
+							margin-bottom: 42px!important
+						&:nth-child(6)
+							&:hover
+								margin-bottom: 62px!important
 
 
 	
@@ -277,39 +327,6 @@
 	#pros-mid
 		display: none!important
 
-	.stage-2, .stage-3
-		display: none
-
-	.calc-middle
-		justify-content: space-between!important
-		width: 120%!important
-
-	.calc
-		.content
-			.calc-content-page 
-				h4::after
-					width: 300px!important
-					left: calc(50% - 150px)!important
-
-	.calc-line
-		&::after
-			width: 83vw!important
-
-	.stage
-		width: 49vw!important
-		height: 100%!important
-		form
-			transform: scale(0.8)!important
-
-	.calc-line-1
-		&:after
-			width: 79vw!important
-	.calc-line-2
-		&:after
-			width: 79vw!important
-	.calc-line-3
-		&:after
-			width: 80vw!important
 
 	.slider
 		display: block!important
@@ -379,12 +396,10 @@
 				.pros-middle 
 					.pros-middle-item
 						transform: scale(0.7)!important
-						margin: 10px 10px 10px 10px!important
-						padding: 10px 10px 10px 10px!important
 						flex: 20%!important
+						margin-bottom: 0px!important
 						&:hover
-							margin: 10px 10px -10px 10px!important
-							padding: 10px 10px 10px 10px!important
+							margin-bottom: 0px!important
 						width: 150px!important
 						h4
 							font-size: em(16px)
@@ -404,6 +419,8 @@
 							width: 80vw!important
 						.item-name
 							font-size: 3vw!important
+						.item-text
+							font-size: 2vw!important
 
 	.contact 
 		.content 
@@ -616,10 +633,12 @@
 				height: 1px!important
 				top: 93px!important
 
+	#logo-h-i
+		display: block!important
+
 	.page-1
 		img
-			width: 20%
-			height: auto
+			display: none!important
 		p
 			font-size: 1.7vw!important
 
@@ -716,7 +735,7 @@
 	.faq-info-1
 		.faq-info-item-img
 			top: -55px!important
-			left: calc(50% - 25px)!important
+			left: -25px!important
 		.faq-info-item-text
 			.faq-a
 				right: 0px!important
@@ -724,7 +743,7 @@
 	.faq-info-2
 		.faq-info-item-img
 			top: -55px!important
-			left: calc(50% - 25px)!important
+			left: 68vw!important
 
 	.faq-info-item-text
 		.faq-q
@@ -760,8 +779,6 @@
 				width: 80px!important
 				left: calc(50% - 40px)!important
 
-	#stage-1-form, #stage-2-form, #stage-3-form
-		display: none
 
 	#stage-1-form-s, #stage-2-form-s, #stage-3-form-s
 		display: block!important
@@ -791,6 +808,9 @@
 			&::after
 				width: 130px!important
 				left: calc(50% - 65px)!important
+
+	.slick-slide
+		opacity: 0!important
 
 @media only screen and (max-height : 400px)
 
@@ -826,6 +846,19 @@
 
 	.faq-info-item-text
 		transform: scale(0.8)!important
+
+	.faq-info-1
+		.faq-info-item-img
+			top: -55px!important
+			left: 25px!important
+		.faq-info-item-text
+			.faq-a
+				right: 0px!important
+
+	.faq-info-2
+		.faq-info-item-img
+			top: -55px!important
+			left: 60vw!important
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
