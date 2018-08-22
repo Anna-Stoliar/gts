@@ -176,49 +176,85 @@ document.getElementById("open-link").click();
 // //open one tab by default
 // document.getElementById("security-open-link").click();
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
-    // Sets viewScroller with sample events
-    $('.mainbag').viewScroller({
-        useScrollbar: false,
-        animSpeedMainView: 1500,
-        loopMainViews: false,
-        changeWhenAnim: false,
-        beforeChange: function() {
-            console.log('beforeChange fired!');
+//     // Sets viewScroller with sample events
+//     $('.mainbag').viewScroller({
+//         useScrollbar: false,
+//         animSpeedMainView: 1500,
+//         loopMainViews: false,
+//         changeWhenAnim: false,
+//         beforeChange: function() {
+//             console.log('beforeChange fired!');
 
-           	$('.con1').removeClass('content-1');
-		    $('.con2').removeClass('content-2');
-		    $('.con3').removeClass('content-3');
+//            	$('.con1').removeClass('content-1');
+// 		    $('.con2').removeClass('content-2');
+// 		    $('.con3').removeClass('content-3');
             
-            $('.con1').addClass('content-1-b');
-            $('.con2').addClass('content-2-b');
-            $('.con3').addClass('content-3-b');
+//             $('.con1').addClass('content-1-b');
+//             $('.con2').addClass('content-2-b');
+//             $('.con3').addClass('content-3-b');
 
-            return false; // It means that views change will be terminated
+//             return false; // It means that views change will be terminated
             
 
-        },
-        afterChange: function() {
-            console.log('afterChange fired!');
+//         },
+//         afterChange: function() {
+//             console.log('afterChange fired!');
 
-            $('.con1').removeClass('content-1-b');
-		    $('.con2').removeClass('content-2-b');
-		    $('.con3').removeClass('content-3-b');
+//             $('.con1').removeClass('content-1-b');
+// 		    $('.con2').removeClass('content-2-b');
+// 		    $('.con3').removeClass('content-3-b');
 
-		    $('.con1').addClass('content-1');
-            $('.con2').addClass('content-2');
-            $('.con3').addClass('content-3');
+// 		    $('.con1').addClass('content-1');
+//             $('.con2').addClass('content-2');
+//             $('.con3').addClass('content-3');
 
-        },
-        beforeResize: function() {
-            console.log('beforeResize fired!');
-        },
-        afterResize: function() {
-            console.log('afterResize fired!');
-        }
-    });
+//         },
+//         beforeResize: function() {
+//             console.log('beforeResize fired!');
+//         },
+//         afterResize: function() {
+//             console.log('afterResize fired!');
+//         }
+//     });
+// });
+
+
+$(document).ready(function(){
+      $(".main").onepage_scroll({
+		sectionContainer: "section",
+		easing: "ease",
+		animationTime: 1500,
+		pagination: false,
+		beforeMove: function(index) {
+			console.log('beforeChange fired!');
+
+	           	$('.con1').removeClass('content-1');
+			    $('.con2').removeClass('content-2');
+			    $('.con3').removeClass('content-3');
+	            
+	            $('.con1').addClass('content-1-b');
+	            $('.con2').addClass('content-2-b');
+	            $('.con3').addClass('content-3-b');
+		},
+		afterMove: function(index) {
+			console.log('afterChange fired!');
+
+	            $('.con1').removeClass('content-1-b');
+			    $('.con2').removeClass('content-2-b');
+			    $('.con3').removeClass('content-3-b');
+
+			    $('.con1').addClass('content-1');
+	            $('.con2').addClass('content-2');
+	            $('.con3').addClass('content-3');
+		},
+		loop: false,
+		keyboard: true, 
+		direction: "vertical"
+	});
 });
+
 
 //close modal
 jQuery(function($){
@@ -409,8 +445,7 @@ jQuery(function($){
 			calcLine.classList.add('calc-line-3');
 
 			var pageCalc = document.getElementById('page-calc');
-			pageCalc.style.display = 'block!important';
-
+			pageCalc.style.display = 'block';
 
 		}
 	}
@@ -454,16 +489,6 @@ $('.slick').on('init', function() {
 }).on('afterChange', function() {
    $('.slick-current .staff-info-slogan').css('width', "400px");
 
-});
-
-
-$(document).ready(function() {
-	if (window.innerWidth < 560) {
-		$("#orient").css( "display", "block" );
-	}
-	else{
-		$("#orient").css( "display", "none" );
-	}
 });
 
 $(window).resize(function(){
