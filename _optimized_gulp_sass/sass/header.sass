@@ -132,11 +132,14 @@ a
 				color: #fff
 		.policy
 			font-family: RobotoRegular, sans-serif
-			font-size: em(14px)
+			font-size: em(12px)
 			opacity: 0.6
 			position: absolute
 			bottom: calc(-100vh + 25px)
 			left: calc(50vw - 105px)
+		&:hover
+			.policy
+				opacity: 1!important
 	.content
 		height: 100%
 		width: 100%
@@ -249,11 +252,13 @@ a
 				color: #fff
 		.policy
 			font-family: RobotoRegular, sans-serif
-			font-size: em(14px)
+			font-size: em(12px)
 			opacity: 0.6
 			position: absolute
 			bottom: calc(-100vh + 25px)
 			left: calc(50vw - 105px)
+			&:hover
+				opacity: 1!important
 	.service-top
 		h2
 			left: calc(50% - 116px)
@@ -289,6 +294,7 @@ a
 				.services-middle-item
 					position: relative
 					margin-bottom: 30px
+					overflow: hidden
 					img
 						width: 25vw
 						height: auto
@@ -427,11 +433,13 @@ a
 				color: #fff
 		.policy
 			font-family: RobotoRegular, sans-serif
-			font-size: em(14px)
+			font-size: em(12px)
 			opacity: 0.6
 			position: absolute
 			bottom: calc(-100vh + 25px)
 			left: calc(50vw - 105px)
+			&:hover
+				opacity: 1!important
 	.pros-top
 		h2
 			left: calc(50% - 77px)
@@ -653,11 +661,13 @@ a
 				color: #fff
 		.policy
 			font-family: RobotoRegular, sans-serif
-			font-size: em(14px)
+			font-size: em(12px)
 			opacity: 0.6
 			position: absolute
 			bottom: calc(-100vh + 25px)
 			left: calc(50vw - 105px)
+			&:hover
+				opacity: 1!important
 	.calc-top
 		h2
 			left: calc(50% - 146px)
@@ -935,11 +945,13 @@ a
 				color: #fff
 		.policy
 			font-family: RobotoRegular, sans-serif
-			font-size: em(14px)
+			font-size: em(12px)
 			opacity: 0.6
 			position: absolute
 			bottom: calc(-100vh + 25px)
 			left: calc(50vw - 105px)
+			&:hover
+				opacity: 1!important
 	.faq-top
 		h2
 			left: calc(50% - 24px)
@@ -1200,11 +1212,13 @@ a
 				color: #fff
 		.policy
 			font-family: RobotoRegular, sans-serif
-			font-size: em(14px)
+			font-size: em(12px)
 			opacity: 0.6
 			position: absolute
 			bottom: calc(-100vh + 25px)
 			left: calc(50vw - 105px)
+			&:hover
+				opacity: 1!important
 	.team-top
 		h2
 			left: calc(50% - 93px)
@@ -1434,11 +1448,13 @@ a
 				color: #fff
 		.policy
 			font-family: RobotoRegular, sans-serif
-			font-size: em(14px)
+			font-size: em(12px)
 			opacity: 0.6
 			position: absolute
 			bottom: calc(-100vh + 25px)
 			left: calc(50vw - 105px)
+			&:hover
+				opacity: 1!important
 	.communication-top
 		h2
 			left: calc(50% - 83px)
@@ -1691,11 +1707,13 @@ a
 				color: #fff
 		.policy
 			font-family: RobotoRegular, sans-serif
-			font-size: em(14px)
+			font-size: em(12px)
 			opacity: 0.6
 			position: absolute
 			bottom: calc(-100vh + 25px)
 			left: calc(50vw - 105px)
+			&:hover
+				opacity: 1!important
 	.contact-top
 		h2
 			left: calc(50% - 51px)
@@ -1733,6 +1751,13 @@ a
 					font-weight: 400
 					font-size: 1vw
 					padding-right: 45px
+					>a
+						opacity: 0.6
+						margin-right: 20px
+						font-size: 20px
+						&:hover
+							color: #fff
+							opacity: 1
 					p
 						opacity: 0.6
 						span
@@ -1941,9 +1966,9 @@ a
 	background-color: #fff
 	z-index: 100
 	width: 600px!important
-	height: 300px!important
+	height: 350px!important
 	left: calc(50% - 300px)
-	top: calc(50% - 150px)
+	top: calc(50% - 175px)
 	display: flex
 	flex-direction: row
 	box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.25)
@@ -2028,6 +2053,7 @@ a
 			border-right: 1px solid #F3F3F3
 			.page-4-content-links-link
 				background: none
+				cursor: pointer
 				border: 2px solid #fff
 				border-radius: 4px
 				color: #fff
@@ -2050,7 +2076,7 @@ a
 				p
 					font-family: "Open Sans", sans-serif
 					font-weight: 400
-					font-size: em(14px)
+					font-size: em(12px)
 					margin: 0px
 					span
 						font-size: em(16px)
@@ -2059,6 +2085,7 @@ a
 					color: #421212
 					box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25)
 					background-color: #fff
+					cursor: pointer
 			.p4-active
 				color: #421212
 				box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25)
@@ -2068,10 +2095,10 @@ a
 			flex-direction: column
 			justify-content: space-between
 			margin: 0 0 0 40px
-			height: 100%s
+			height: 100%
 			.page-4-content-info-link
 				display: none
-				font-size: em(18px)
+				font-size: em(16px)
 				margin-right: 22vw
 				margin-top: 2vw
 				animation-name: flip
@@ -2082,14 +2109,16 @@ a
 			a
 				font-size: em(14px)
 				text-decoration: underline
-				margin-right: 50px
+
+
+
 .page-5
 	background-color: #fff
 	width: 420px
 	height: 400px
 	padding: 45px
 	margin-top: 20px
-	left: calc(50% - 210px)
+	left: calc(50% - 200px)
 	z-index: 100
 	position: fixed
 	top: calc(50% - 260px)
@@ -2335,6 +2364,43 @@ a
 			justify-content: center
 			align-items: center
 
+.slider-3
+	position: absolute
+	top: 5%
+	left: 0
+	width: 100%
+	height: 90%
+	overflow: hidden
+	display: none
+	.slide-wrap
+		width: 100%
+		float: left
+		.slide-3
+			color: #fff
+			position: relative
+			.slide-content
+				position: relative
+				z-index: 1
+				display: flex
+				flex-direction: row	
+	.owl-dots
+		display: none
+		text-align: center
+		width: 100%
+		position: absolute
+		bottom: 130px
+		.owl-dot
+			width: 14px
+			height: 14px
+			background-color: #777
+			border: none
+			border-radius: 50%
+			margin: 0 3px
+			cursor: pointer
+			transition: background-color 0.25s ease
+			&.active
+				background-color: #ff766f
+
 .slider-nav
 	display: none
 	position: absolute
@@ -2364,6 +2430,20 @@ a
 			left: 45vw
 
 .slider-nav-2
+	display: none
+	position: absolute
+	z-index: 2
+	color: #fff
+	font-size: 36px
+	div
+		cursor: pointer
+		position: absolute
+		top: 0
+		left: -48vw
+		&:last-child
+			left: 45vw
+
+.slider-nav-3
 	display: none
 	position: absolute
 	z-index: 2
@@ -2480,12 +2560,4 @@ a
 		&:active, &:focus
 			outline: none!important
 
-#orient
-	width: 100vw
-	height: 100vh
-	background-color: #555
-	position: fixed
-	top: 0
-	left: 0
-	display: none
-	z-index: 1000
+

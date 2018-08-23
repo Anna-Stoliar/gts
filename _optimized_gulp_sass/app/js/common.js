@@ -58,6 +58,17 @@ $(function() {
 		//navContainer: ".slider-nav-container-2"
 	});
 
+	var owl3 = $(".slider-3");
+	owl3.owlCarousel({
+		loop: true,
+		items: 1,
+		itemClass: "slide-wrap",
+		nav: true,
+		navElement: false,
+		navText: "",
+		//navContainer: ".slider-nav-container-1"
+	});
+
 	$(".next").click(function(){
 		owl1.trigger('next.owl.carousel')
 	});
@@ -79,6 +90,12 @@ $(function() {
 		owl2.trigger('prev.owl.carousel')
 	});
 
+	$(".next").click(function(){
+		owl3.trigger('next.owl.carousel')
+	});
+	$(".prev").click(function(){
+		owl3.trigger('prev.owl.carousel')
+	});
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
@@ -133,23 +150,24 @@ $(function() {
 });
 
 
-
 //for tabs in modal 3(left bottom one)
 function openTabHome(tabName,elmnt) {
-    var i, tabcontent, tablinks;
+	if (window.innerWidth >830) {
+		var i, tabcontent, tablinks;
 
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    document.getElementById(tabName).style.display = "block";
+	    tabcontent = document.getElementsByClassName("tabcontent");
+	    for (i = 0; i < tabcontent.length; i++) {
+	        tabcontent[i].style.display = "none";
+	    }
+	    document.getElementById(tabName).style.display = "block";
 
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("p4-active");
-    }
+	    tablinks = document.getElementsByClassName("tablink");
+	    for (i = 0; i < tablinks.length; i++) {
+	        tablinks[i].classList.remove("p4-active");
+	    }
 
-    elmnt.classList.add("p4-active");
+	    elmnt.classList.add("p4-active");
+	}
 }
 //open one tab by default
 document.getElementById("open-link").click();
@@ -173,8 +191,8 @@ document.getElementById("open-link").click();
 //     elmnt.classList.add("security-tab-active");
 // }
 
-// //open one tab by default
-// document.getElementById("security-open-link").click();
+// // //open one tab by default
+// // document.getElementById("security-open-link").click();
 
 // $(document).ready(function() {
 
@@ -491,14 +509,27 @@ $('.slick').on('init', function() {
 
 });
 
+
+$(document).ready(function() {
+	if (window.innerWidth < 560) {
+		$("#orient").css( "display", "flex" );
+	}
+	else{
+		$("#orient").css( "display", "none" );
+	}
+});
+
 $(window).resize(function(){
 	if (window.innerWidth < 560) {
-		$("#orient").css( "display", "block" );
+		$("#orient").css( "display", "flex" );
 	}
 	if (window.innerWidth > 560) {
 		$("#orient").css( "display", "none" );
 	}
 });
+
+
+$("#preload").css( "display", "none" );
 
 
 

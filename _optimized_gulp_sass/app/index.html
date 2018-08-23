@@ -45,9 +45,24 @@
 </head>
 	
 <body>
+<div id="preload" style="
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	background-color: #fff;
+">
+	<img src="img/logo.gif" alt="" style="width: 300px; height: 300px;">
+</div>
+
 <div class="main" id="mainbag">
 	<!--home page-->
-		<section class="home mainview" vs-anchor="firstview">
+		<section class="home" vs-anchor="firstview" id="home">
 		<!--bg for home-->
 			<div class="home-bg bg">
 			</div>
@@ -83,7 +98,7 @@
 		<!--buttons on bottom-->
 				<div class="btns">
 					<a href="#" class="home-btns-info dots"><i class="fas fa-ellipsis-v"></i></a>
-					<a href="#" class="policy">Политика конфиденциальности</a>
+					<p href="#" class="policy">Copyright &copy; 2018 Gera Tech Studio</p>
 					<a href="#" class="home-btns-contact phone"><i class="fas fa-phone fa-flip-horizontal"></i></a>
 				</div>
 			<!--buttons on bottom-->
@@ -92,7 +107,7 @@
 
 
 	<!--services page-->
-		<section class="services mainview" vs-anchor="secondview" id="services">
+		<section class="services" vs-anchor="secondview" id="services">
 		<!--bg for services-->
 			<div class="services-bg bg">
 			</div>
@@ -294,7 +309,7 @@
 		<!--buttons on bottom-->
 				<div class="btns">
 					<a href="#" class="services-btns-info dots"><i class="fas fa-ellipsis-v"></i></a>
-					<a href="#" class="policy">Политика конфиденциальности</a>
+					<p href="#" class="policy">Copyright &copy; 2018 Gera Tech Studio</p>
 					<a href="#" class="services-btns-contact phone"><i class="fas fa-phone fa-flip-horizontal"></i></a>
 				</div>
 			<!--buttons on bottom-->
@@ -303,7 +318,7 @@
 
 
 	<!--pros page-->
-		<section class="pros mainview" vs-anchor="thirdview" id="pros">
+		<section class="pros" vs-anchor="thirdview" id="pros">
 		<!--bg for pros-->
 			<div class="pros-bg bg">
 			</div>
@@ -485,7 +500,7 @@
 		<!--buttons on bottom-->
 				<div class="btns">
 					<a href="#" class="pros-btns-info dots"><i class="fas fa-ellipsis-v"></i></a>
-					<a href="#" class="policy">Политика конфиденциальности</a>
+					<p href="#" class="policy">Copyright &copy; 2018 Gera Tech Studio</p>
 					<a href="#" class="pros-btns-contact phone"><i class="fas fa-phone fa-flip-horizontal"></i></a>
 				</div>
 			<!--buttons on bottom-->
@@ -494,7 +509,7 @@
 
 
 	<!--calc page-->
-		<section class="calc mainview" vs-anchor="fourthview" id="calc">
+		<section class="calc" vs-anchor="fourthview" id="calc">
 		<!--bg for calc-->
 			<div class="calc-bg bg">
 			</div>
@@ -577,7 +592,7 @@
 		<!--buttons on bottom-->
 				<div class="btns">
 					<a href="#" class="calc-btns-info dots"><i class="fas fa-ellipsis-v"></i></a>
-					<a href="#" class="policy">Политика конфиденциальности</a>
+					<p href="#" class="policy">Copyright &copy; 2018 Gera Tech Studio</p>
 					<a href="#" class="calc-btns-contact phone"><i class="fas fa-phone fa-flip-horizontal"></i></a>
 				</div>
 			<!--buttons on bottom-->
@@ -586,7 +601,7 @@
 
 
 	<!--faq page-->
-		<section class="faq mainview" vs-anchor="fifthview" id="faq">
+		<section class="faq" vs-anchor="fifthview" id="faq">
 		<!--bg for faq-->
 			<div class="faq-bg bg">
 			</div>
@@ -816,7 +831,7 @@
 		<!--end security content-->
 		<div class="btns">
 					<a href="#" class="faq-btns-info dots"><i class="fas fa-ellipsis-v"></i></a>
-					<a href="#" class="policy">Политика конфиденциальности</a>
+					<p href="#" class="policy">Copyright &copy; 2018 Gera Tech Studio</p>
 					<a href="#" class="faq-btns-contact phone"><i class="fas fa-phone fa-flip-horizontal"></i></a>
 				</div>
 			<!--buttons on bottom-->
@@ -824,7 +839,7 @@
 	<!--end faq page-->
 
 	<!--team page-->
-		<section class="team mainview" vs-anchor="sixthview" id="team">
+		<section class="team" vs-anchor="sixthview" id="team">
 		<!--bg for team-->
 			<div class="team-bg bg">
 			</div>
@@ -904,7 +919,7 @@
 		<!--buttons on bottom-->
 				<div class="btns">
 					<a href="#" class="team-btns-info dots"><i class="fas fa-ellipsis-v"></i></a>
-					<a href="#" class="policy">Политика конфиденциальности</a>
+					<p href="#" class="policy">Copyright &copy; 2018 Gera Tech Studio</p>
 					<a href="#" class="team-btns-contact phone"><i class="fas fa-phone fa-flip-horizontal"></i></a>
 				</div>
 			<!--buttons on bottom-->
@@ -913,7 +928,7 @@
 
 
 	<!--communication page-->
-		<section class="communication mainview" vs-anchor="seventhview"  id="com">
+		<section class="communication" vs-anchor="seventhview"  id="com">
 		<!--bg for communication-->
 			<div class="communication-bg bg">
 			</div>
@@ -997,7 +1012,7 @@
 		<!--buttons on bottom-->
 				<div class="btns">
 					<a href="#" class="communication-btns-info dots"><i class="fas fa-ellipsis-v"></i></a>
-					<a href="#" class="policy">Политика конфиденциальности</a>
+					<p href="#" class="policy">Copyright &copy; 2018 Gera Tech Studio</p>
 					<a href="#" class="communication-btns-contact phone"><i class="fas fa-phone fa-flip-horizontal"></i></a>
 				</div>
 			<!--buttons on bottom-->
@@ -1006,7 +1021,7 @@
 
 
 	<!--contact page-->
-		<section class="contact mainview" vs-anchor="eightsview" id="contact">
+		<section class="contact" vs-anchor="eightsview" id="contact">
 		<!--bg for contact-->
 			<div class="contact-bg bg">
 			</div>
@@ -1047,6 +1062,8 @@
 								<a class="con-social-itm"><i class="fab fa-github"></i></a>
 								<a class="con-social-itm"><i class="fab fa-google-plus-g" data-fa-transform="shrink-7" data-fa-mask="fas fa-circle"></i></a>
 							</div>
+							<a href="tel:380509354761">+38-(050)-93-54-761</a><br>
+							<a href="tel:380673553844">+38-(067)-35-53-844</a>
 							<button class="con-btn-s" onclick="$('.con-form-m').show()">Подписаться</button>
 						</div>
 					<!--form conn-->
@@ -1070,7 +1087,7 @@
 		<!--buttons on bottom-->
 				<div class="btns">
 					<a href="#" class="contact-btns-info dots"><i class="fas fa-ellipsis-v"></i></a>
-					<a href="#" class="policy">Политика конфиденциальности</a>
+					<p href="#" class="policy">Copyright &copy; 2018 Gera Tech Studio</p>
 					<a href="#" class="contact-btns-contact phone"><i class="fas fa-phone fa-flip-horizontal"></i></a>
 				</div>
 			<!--buttons on bottom-->
@@ -1106,39 +1123,39 @@
 	<!--modal 1 - site map-->
 				<div class="page-2 page">
 					<div class="page-2-content">
-						<a href="#firstview"" class="page-2-content-item vs-anchor">
+						<a href="#home" class="page-2-content-item vs-anchor">
 							<span>Главная</span>
 							<img src="img/figma_img/header.png" alt="">
 						</a>
-						<a href="#secondview" class="page-2-content-item vs-anchor">
+						<a href="#services" class="page-2-content-item vs-anchor">
 							<span>Нашы услуги</span>
 							<img src="img/figma_img/services.png" alt="">
 						</a>
-						<a href="#thirdview" class="page-2-content-item vs-anchor">
+						<a href="#pros" class="page-2-content-item vs-anchor">
 							<span>Почему мы</span>
 							<img src="img/figma_img/reasons.png" alt="">
 						</a>
-						<a href="#fourthview" class="page-2-content-item vs-anchor">
+						<a href="#calc" class="page-2-content-item vs-anchor">
 							<span>Расчитать стоимость</span>
 							<img src="img/figma_img/calc.png" alt="">
 						</a>
 					</div>
 					<div class="page-2-content">
-						<a href="#fifthview" class="page-2-content-item vs-anchor">
+						<a href="#faq" class="page-2-content-item vs-anchor">
 							<span>Частозадаваемые вопросы</span>
 							<img src="img/figma_img/FAQ.png" alt="">
 						</a>
-						<a href="#sixthview" class="page-2-content-item vs-anchor">
-							<span>Безопасность</span>
-							<img src="img/figma_img/security.png" alt="">
-						</a>
-						<a href="#seventhview" class="page-2-content-item vs-anchor">
+						<a href="#team" class="page-2-content-item vs-anchor">
 							<span>Наша команда</span>
 							<img src="img/figma_img/team.png" alt="">
 						</a>
-						<a href="#eightsview" class="page-2-content-item vs-anchor">
+						<a href="#com" class="page-2-content-item vs-anchor">
 							<span>Связь с нами</span>
 							<img src="img/figma_img/communication.png" alt="">
+						</a>
+						<a href="#contact" class="page-2-content-item vs-anchor">
+							<span>Контакты</span>
+							<img src="img/figma_img/contact.png" alt="">
 						</a>
 					</div>
 				</div>
@@ -1147,8 +1164,10 @@
 		<div class="page-3 text-center">
 			<ul>
 				<li class="op-p4"><a href="#">Сайт под ключ</a></li>
-				<li><a href="#">Прайс-лист</a></li>
-				<li><a href="#">Заказать услугу</a></li>
+				<li><a href="#">Прототипирование</a></li>
+				<li><a href="#">Продвижение</a></li>
+				<li><a href="#">Разработка фирменного дизайна</a></li>
+				<li><a href="#">Контекстная реклама</a></li>
 				<!--<li><a href="#">Язык</a></li>-->
 			</ul>
 		</div>
@@ -1158,18 +1177,18 @@
 			<div class="page-4-top text-right">
 				<a>Сайт под ключ <i class="fas fa-play"></i></a>
 			</div>
-			<div class="page-4-content">
+			<div class="page-4-content" id="page-4-1">
 				<div class="page-4-content-links">
 					<button class="tablink page-4-content-links-link p4-active" id="open-link" onclick="openTabHome('link-one', this)">
 						<h4>landing page</h4>
 						<p>Минимальная цена: <span>500&#36;</span></p>
 					</button>
 					<button class="tablink page-4-content-links-link" onclick="openTabHome('link-two', this)">
-						<h4>Сайт визитка</h4>
+						<h4>Промо сайт</h4>
 						<p>Минимальная цена: <span>500&#36;</span></p>
 					</button>
 					<button class="tablink page-4-content-links-link" onclick="openTabHome('link-three', this)">
-						<h4>Промо сайт</h4>
+						<h4>Информационный сайт</h4>
 						<p>Минимальная цена: <span>500&#36;</span></p>
 					</button>
 					<button class="tablink page-4-content-links-link" onclick="openTabHome('link-four', this)">
@@ -1192,24 +1211,138 @@
 							</p>
 						</div>
 						<div class="tabcontent page-4-content-info-link" id="link-two">
-							<h4>Сайт визитка</h4>
-							<p>Минимальная цена: 500&#36;</p>
+							<p>Как правило неосновной сайт компании, созданный специально для рекламы и продвежения отдельного товара или услуги. Как вариант на промо сайтах пользователям предоставляется актуальная информация о товарах/услугах компании.</p>
 						</div>
 						<div class="tabcontent page-4-content-info-link" id="link-three">
-							<h4>Промо сайт</h4>
-							<p>Минимальная цена: 500&#36;</p>
+							<p>Создается с целью предоставления пользователям информации по какой-либо теме.</p>
+							<p>Сайт представляет собой достаточно юольшой массив информации, включает множество разделов, статей по определенной теме, голосования и опросы.</p>
 						</div>
 						<div class="tabcontent page-4-content-info-link" id="link-four">
-							<h4>Инернет-магазин</h4>
-							<p>Минимальная цена: 500&#36;</p>
+							<p>Популярный торговый канал, который дает возможность пользователям легко и быстро заказывать товары (реже услуги) через Интернет.</p>
 						</div>
 						<div class="tabcontent page-4-content-info-link" id="link-five">
-							<h4>Корпоративный сайт</h4>
-							<p>Минимальная цена: 500&#36;</p>
+							<p>Полноценный фирменный сайт компании</p>
+							<p>Оптимальное решение для тех, кто хочет стать лидером в своей сфере бизнеса.</p>
 						</div>
 					</div>
-					<a class="text-center">Чтобы подробнее просчитать цену на необходимый тип сайта, вы можете воспользоваться Калькулятором или заказать консультацию нашего специалиста. 
-					</a>
+					<p class="text-center page-4-link">Чтобы подробнее просчитать цену на необходимый тип сайта, вы можете воспользоваться <a href="#calc">Калькулятором</a> или <a href="#com">заказать консультацию</a> нашего специалиста. 
+					</p>
+				</div>
+			</div>
+			<div class="page-4-content" id="page-4-2" style="display: none">
+				<div class="slider-nav-container-3">
+					<div class="slider-nav-3">
+						<div class="prev"><i class="fas fa-angle-left"></i></div>
+						<div class="next"><i class="fas fa-angle-right"></i></div>
+					</div>
+				</div>
+				<div class="slider-3 owl-carousel">
+					<!--Slide start-->
+					<div class="slide-3 item">
+						<div class="slide-content">
+							<div class="page-4-content-links">
+								<button class="tablink page-4-content-links-link p4-active" id="open-link">
+									<h4>landing page</h4>
+									<p>Минимальная цена: <span>500&#36;</span></p>
+								</button>
+							</div>
+							<div class="page-4-content-info">
+									<div class="tabcontent page-4-content-info-link" id="link-one" style="display: block">
+										<p>Всего одна страница с информацией  о компании, преимуществах, уникальности и способности закрыть потребность клиента.
+										</p>
+										<p>Landing разабатывается таким образом, чтобы побудить клиента сделать необходимое действие прямо сейчас (купить товар, заказть услугу, подписаться на новости).
+										</p>
+										<p>На сегодняшний день сайты одностраничники являются одним из эффективных инструментов подаж. 
+										</p>
+									</div>
+								<p class="text-center page-4-link">Чтобы подробнее просчитать цену на необходимый тип сайта, вы можете воспользоваться <a href="#calc">Калькулятором</a> или <a href="#com">заказать консультацию</a> нашего специалиста. 
+								</p>
+							</div>
+						</div>									
+					</div>
+					<!--Slide end-->
+
+					<!--Slide start-->
+					<div class="slide-3 item">
+						<div class="slide-content">
+							<div class="page-4-content-links">
+								<button class="tablink page-4-content-links-link p4-active">
+									<h4>Промо сайт</h4>
+									<p>Минимальная цена: <span>500&#36;</span></p>
+								</button>
+							</div>
+							<div class="page-4-content-info">
+									<div class="tabcontent page-4-content-info-link" id="link-two" style="display: block">
+										<p>Как правило неосновной сайт компании, созданный специально для рекламы и продвежения отдельного товара или услуги. Как вариант на промо сайтах пользователям предоставляется актуальная информация о товарах/услугах компании.</p>
+									</div>
+								<p class="text-center page-4-link">Чтобы подробнее просчитать цену на необходимый тип сайта, вы можете воспользоваться <a href="#calc">Калькулятором</a> или <a href="#com">заказать консультацию</a> нашего специалиста. 
+								</p>
+							</div>
+						</div>									
+					</div>
+					<!--Slide end-->
+
+					<!--Slide start-->
+					<div class="slide-3 item">
+						<div class="slide-content">
+							<div class="page-4-content-links">
+								<button class="tablink page-4-content-links-link p4-active">
+									<h4>Информационный сайт</h4>
+									<p>Минимальная цена: <span>500&#36;</span></p>
+								</button>
+							</div>
+							<div class="page-4-content-info">
+									<div class="tabcontent page-4-content-info-link" id="link-three" style="display: block">
+										<p>Создается с целью предоставления пользователям информации по какой-либо теме.</p>
+										<p>Сайт представляет собой достаточно юольшой массив информации, включает множество разделов, статей по определенной теме, голосования и опросы.</p>
+									</div>
+								<p class="text-center page-4-link">Чтобы подробнее просчитать цену на необходимый тип сайта, вы можете воспользоваться <a href="#calc">Калькулятором</a> или <a href="#com">заказать консультацию</a> нашего специалиста. 
+								</p>
+							</div>
+						</div>									
+					</div>
+					<!--Slide end-->
+
+					<!--Slide start-->
+					<div class="slide-3 item">
+						<div class="slide-content">
+							<div class="page-4-content-links">
+								<button class="tablink page-4-content-links-link p4-active">
+									<h4>Инернет-магазин</h4>
+									<p>Минимальная цена: <span>500&#36;</span></p>
+								</button>
+							</div>
+							<div class="page-4-content-info">
+									<div class="tabcontent page-4-content-info-link" id="link-four" style="display: block">
+										<p>Популярный торговый канал, который дает возможность пользователям легко и быстро заказывать товары (реже услуги) через Интернет.</p>
+								</div>
+								<p class="text-center page-4-link">Чтобы подробнее просчитать цену на необходимый тип сайта, вы можете воспользоваться <a href="#calc">Калькулятором</a> или <a href="#com">заказать консультацию</a> нашего специалиста. 
+								</p>
+							</div>
+						</div>									
+					</div>
+					<!--Slide end-->
+
+					<!--Slide start-->
+					<div class="slide-3 item">
+						<div class="slide-content">
+							<div class="page-4-content-links">
+								<button class="tablink page-4-content-links-link p4-active">
+									<h4>Корпоративный сайт</h4>
+									<p>Минимальная цена: <span>500&#36;</span></p>
+								</button>
+							</div>
+							<div class="page-4-content-info">
+									<div class="tabcontent page-4-content-info-link" id="link-five" style="display: block">
+										<p>Полноценный фирменный сайт компании</p>
+										<p>Оптимальное решение для тех, кто хочет стать лидером в своей сфере бизнеса.</p>
+									</div>
+								<p class="text-center page-4-link">Чтобы подробнее просчитать цену на необходимый тип сайта, вы можете воспользоваться <a href="#calc">Калькулятором</a> или <a href="#com">заказать консультацию</a> нашего специалиста. 
+								</p>
+							</div>
+						</div>									
+					</div>
+					<!--Slide end-->
 				</div>
 			</div>
 		</div>
@@ -1238,8 +1371,20 @@
 		</div>
 	<!--end calc-->
 
-	<div id="orient">
-		change screen orient
+	<div id="orient" style="
+	width: 100vw;
+	height: 100vh;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+	opacity: 0.6;
+	">
+		<img src="img/turn.gif" alt="" style="width: 300px; height: 300px; opacity: 1!important;">
 	</div>
 
 	<!--[if lt IE 9]>
