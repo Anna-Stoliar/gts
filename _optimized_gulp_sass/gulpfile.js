@@ -34,8 +34,6 @@ gulp.task('scripts', function() {
 		'./app/libs/jquery/jquery-1.11.2.min.js',
 		'./app/libs/waypoints/waypoints.min.js',
 		'./app/libs/animate/animate-css.js',
-		'./app/libs/equalHeights/jquery.equalheights.min.js',
-		'./app/libs/fullPage/jquery.fullpage.min.js',
 		'./app/libs/viewScroller.js-master/jquery-3.1.0.min.js',
 		'./app/libs/viewScroller.js-master/jquery.easing.min.js',
 		'./app/libs/viewScroller.js-master/jquery.mousewheel.min.js',
@@ -44,7 +42,8 @@ gulp.task('scripts', function() {
 		'./app/libs/font-awesome/svg-with-js/js/fontawesome-all.min.js',
 		'./app/libs/slick-1.8.1/slick/slick.min.js',
 		'./app/libs/owlcarousel/dist/owl.carousel.min.js',
-		'./app/libs/font-awesome/svg-with-js/js/fontawesome-all.min.js',		
+		'./app/libs/font-awesome/svg-with-js/js/fontawesome-all.min.js',
+		'./app/libs/jquery.nicescroll-master/dist/jquery.nicescroll.min.js',		
 		])
 		.pipe(concat('libs.js'))
 		// .pipe(uglify()) //Minify libs.js

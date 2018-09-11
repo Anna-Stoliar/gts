@@ -45,6 +45,99 @@ a
 .text-center
 	text-align: center
 
+.lang
+	position: fixed
+	right: 27px
+	top: 65px
+	z-index: 100
+	transition: all 0.5s ease
+	.lang-cur
+		text-decoration: underline
+		cursor: pointer
+		&:hover
+			background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent
+			text-decoration: none
+	ul
+		margin: 10px 0 0
+		padding: 0
+		list-style: none
+		transition: all 0.5s ease
+		a
+			color: #fff
+			&:hover
+				background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+
+.btns
+	display: flex
+	flex-direction: row
+	align-items: flex-end
+	position: fixed
+	width: 100vw
+	z-index: 10
+	img
+		position: absolute
+		top: 15px
+		left: calc(50% - 80px)
+	.fa-th
+		font-size: 30px
+		position: fixed
+		left: 25px
+		top: 25px
+		&:hover
+			color: #E11CB6
+	.fa-bars
+		font-size: 32px
+		position: fixed
+		right: 25px
+		top: 25px
+		&:hover
+			color: #E11CB6
+	.home-btns-info
+		left: 25px
+	.home-btns-contact
+		right: 25px
+	.home-btns-info, .home-btns-contact
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 50px
+		height: 50px
+		font-size: 20px
+		background-color: #fff
+		background-clip: padding-box
+		border: 10px solid rgba(250, 255, 255, 0.25)
+		border-radius: 50%
+		color: #333
+		position: fixed
+		bottom: 25px
+		&:hover
+			animation-name: size1
+			animation-duration: 1s
+			animation-fill-mode: forwards
+			@keyframes size1
+				10% {border: 23px solid rgba(250, 255, 255, 0.25)}
+				30% {background-color: #E11CB6}
+				60% {border: 1px solid rgba(255, 28, 182, 0.25)}
+				80% {background-image: radial-gradient(#24013A, #E11CB6)}
+				100% {color: #fff; background-image: radial-gradient(#24013A, #E11CB6); border: 5px solid rgba(255, 28, 182, 0.25); background-color: #777}
+		&:active, &:focus
+			background-color: #E11CB6
+			color: #fff
+	.policy
+		font-family: RobotoRegular, sans-serif
+		font-size: em(12px)
+		opacity: 0.6
+		position: absolute
+		bottom: calc(-100vh + 25px)
+		left: calc(50vw - 105px)
+	&:hover
+		.policy
+			opacity: 1!important
+
 //home page
 .home
 	width: 100%
@@ -62,84 +155,6 @@ a
 			height: 100%
 			position: absolute
 			opacity: .5
-	.lang
-		position: absolute
-		right: 27px
-		top: 65px
-		z-index: 100
-		a
-			color: #fff
-			&:hover
-				background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
-				-webkit-background-clip: text
-				-webkit-text-fill-color: transparent
-
-	.btns
-		display: flex
-		flex-direction: row
-		align-items: flex-end
-		position: relative
-		width: 100vw
-		z-index: 10
-		img
-			position: absolute
-			top: 15px
-			left: calc(50% - 80px)
-		.fa-th
-			font-size: 30px
-			position: absolute
-			left: 25px
-			top: 25px
-			&:hover
-				color: #E11CB6
-		.fa-bars
-			font-size: 32px
-			position: absolute
-			right: 25px
-			top: 25px
-			&:hover
-				color: #E11CB6
-		.home-btns-info
-			left: 25px
-		.home-btns-contact
-			right: 25px
-		.home-btns-info, .home-btns-contact
-			display: flex
-			justify-content: center
-			align-items: center
-			width: 50px
-			height: 50px
-			font-size: 20px
-			background-color: #fff
-			background-clip: padding-box
-			border: 10px solid rgba(250, 255, 255, 0.25)
-			border-radius: 50%
-			color: #333
-			position: absolute
-			bottom: calc(-100vh + 25px)
-			&:hover
-				animation-name: size1
-				animation-duration: 1s
-				animation-fill-mode: forwards
-				@keyframes size1
-					10% {border: 23px solid rgba(250, 255, 255, 0.25)}
-					30% {background-color: #E11CB6}
-					60% {border: 1px solid rgba(255, 28, 182, 0.25)}
-					80% {background-image: radial-gradient(#24013A, #E11CB6)}
-					100% {color: #fff; background-image: radial-gradient(#24013A, #E11CB6); border: 5px solid rgba(255, 28, 182, 0.25); background-color: #777}
-			&:active, &:focus
-				background-color: #E11CB6
-				color: #fff
-		.policy
-			font-family: RobotoRegular, sans-serif
-			font-size: em(12px)
-			opacity: 0.6
-			position: absolute
-			bottom: calc(-100vh + 25px)
-			left: calc(50vw - 105px)
-		&:hover
-			.policy
-				opacity: 1!important
 	.content
 		height: 100%
 		width: 100%
@@ -183,82 +198,6 @@ a
 			height: 100%
 			position: absolute
 			opacity: .5
-	.lang
-		position: absolute
-		right: 27px
-		top: 65px
-		z-index: 100
-		a
-			color: #fff
-			&:hover
-				background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
-				-webkit-background-clip: text
-				-webkit-text-fill-color: transparent
-	.btns
-		display: flex
-		flex-direction: row
-		align-items: flex-end
-		position: relative
-		width: 100vw
-		z-index: 10
-		img
-			position: absolute
-			top: 15px
-			left: calc(50% - 80px)
-		.fa-th
-			font-size: 30px
-			position: absolute
-			left: 25px
-			top: 25px
-			&:hover
-				color: #D39D38
-		.fa-bars
-			font-size: 32px
-			position: absolute
-			right: 25px
-			top: 25px
-			&:hover
-				color: #D39D38
-		.services-btns-info
-			left: 25px
-		.services-btns-contact
-			right: 25px
-		.services-btns-info, .services-btns-contact
-			display: flex
-			justify-content: center
-			align-items: center
-			width: 50px
-			height: 50px
-			font-size: 20px
-			background-color: #fff
-			background-clip: padding-box
-			border: 10px solid rgba(250, 255, 255, 0.25)
-			border-radius: 50%
-			color: #333
-			position: absolute
-			bottom: calc(-100vh + 25px)
-			&:hover
-				animation-name: size2
-				animation-duration: 1s
-				animation-fill-mode: forwards
-				@keyframes size2
-					10% {border: 23px solid rgba(250, 255, 255, 0.25)}
-					30% {background-color: #D39D38}
-					60% {border: 1px solid rgba(77, 160, 176, 0.25)}
-					80% {background-image: radial-gradient (#D39D38, #4DA0B0)}
-					100% {color: #fff; background-image: radial-gradient(#D39D38, #4DA0B0); border: 5px solid rgba(77, 160, 176, 0.25); background-color: #333}
-			&:active, &:focus
-				background-color: #D39D38
-				color: #fff
-		.policy
-			font-family: RobotoRegular, sans-serif
-			font-size: em(12px)
-			opacity: 0.6
-			position: absolute
-			bottom: calc(-100vh + 25px)
-			left: calc(50vw - 105px)
-			&:hover
-				opacity: 1!important
 	.service-top
 		h2
 			left: calc(50% - 116px)
@@ -295,10 +234,14 @@ a
 					position: relative
 					margin-bottom: 30px
 					overflow: hidden
+					transform: scale(1)
+					transition: all ease 0.7s
 					img
 						width: 25vw
 						height: auto
 					&:hover
+						transform: scale(1.3)
+						transition: all ease 0.7s
 						.item-text
 							height: 100%
 							transition: all 0.5s ease
@@ -364,82 +307,6 @@ a
 			height: 100%
 			position: absolute
 			opacity: .3
-	.lang
-		position: absolute
-		right: 27px
-		top: 65px
-		z-index: 100
-		a
-			color: #fff
-			&:hover
-				background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
-				-webkit-background-clip: text
-				-webkit-text-fill-color: transparent
-	.btns
-		display: flex
-		flex-direction: row
-		align-items: flex-end
-		position: relative
-		width: 100vw
-		z-index: 10
-		img
-			position: absolute
-			top: 15px
-			left: calc(50% - 80px)
-		.fa-th
-			font-size: 30px
-			position: absolute
-			left: 25px
-			top: 25px
-			&:hover
-				color: #E72842
-		.fa-bars
-			font-size: 32px
-			position: absolute
-			right: 25px
-			top: 25px
-			&:hover
-				color: #E72842
-		.pros-btns-info
-			left: 25px
-		.pros-btns-contact
-			right: 25px
-		.pros-btns-info, .pros-btns-contact
-			display: flex
-			justify-content: center
-			align-items: center
-			width: 50px
-			height: 50px
-			font-size: 20px
-			background-color: #fff
-			background-clip: padding-box
-			border: 10px solid rgba(250, 255, 255, 0.25)
-			border-radius: 50%
-			color: #333
-			position: absolute
-			bottom: calc(-100vh + 25px)
-			&:hover
-				animation-name: size3
-				animation-duration: 1s
-				animation-fill-mode: forwards
-				@keyframes size3
-					10% {border: 23px solid rgba(250, 255, 255, 0.25)}
-					30% {background-color: #FE9A5D}
-					60% {border: 1px solid rgba(255, 110, 115, 0.25)}
-					80% {background-image: radial-gradient(#FE9A5D, #FF5D7B)}
-					100% {color: #fff; background-image: radial-gradient(#FE9A5D, #FF5D7B); border: 5px solid rgba(255, 110, 115, 0.25); background-color: #333}
-			&:active, &:focus
-				background-color: #E72842
-				color: #fff
-		.policy
-			font-family: RobotoRegular, sans-serif
-			font-size: em(12px)
-			opacity: 0.6
-			position: absolute
-			bottom: calc(-100vh + 25px)
-			left: calc(50vw - 105px)
-			&:hover
-				opacity: 1!important
 	.pros-top
 		h2
 			left: calc(50% - 77px)
@@ -597,6 +464,8 @@ a
 		right: 27px
 		top: 65px
 		z-index: 100
+		.lang-cur
+			cursor: pointer
 		a
 			color: #fff
 			&:hover
@@ -876,82 +745,6 @@ a
 			height: 100%
 			position: absolute
 			opacity: .5
-	.lang
-		position: absolute
-		right: 27px
-		top: 65px
-		z-index: 100
-		a
-			color: #fff
-			&:hover
-				background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
-				-webkit-background-clip: text
-				-webkit-text-fill-color: transparent
-	.btns
-		display: flex
-		flex-direction: row
-		align-items: flex-end
-		position: relative
-		width: 100vw
-		z-index: 10
-		img
-			position: absolute
-			top: 15px
-			left: calc(50% - 80px)
-		.fa-th
-			font-size: 30px
-			position: absolute
-			left: 25px
-			top: 25px
-			&:hover
-				color: #E72842
-		.fa-bars
-			font-size: 32px
-			position: absolute
-			right: 25px
-			top: 25px
-			&:hover
-				color: #E72842
-		.faq-btns-info
-			left: 25px
-		.faq-btns-contact
-			right: 25px
-		.faq-btns-info, .faq-btns-contact
-			display: flex
-			justify-content: center
-			align-items: center
-			width: 50px
-			height: 50px
-			font-size: 20px
-			background-color: #fff
-			background-clip: padding-box
-			border: 10px solid rgba(250, 255, 255, 0.25)
-			border-radius: 50%
-			color: #333
-			position: absolute
-			bottom: calc(-100vh + 25px)
-			&:hover
-				animation-name: size5
-				animation-duration: 1s
-				animation-fill-mode: forwards
-				@keyframes size5
-					10% {border: 23px solid rgba(250, 255, 255, 0.25)}
-					30% {background-color: #FE9A5D}
-					60% {border: 1px solid rgba(231, 40, 66, 0.25)}
-					80% {background-image: radial-gradient(#E72842, #B97364)}
-					100% {color: #fff; background-image: radial-gradient(#E72842, #B97364); border: 5px solid rgba(231, 40, 66, 0.25); background-color: #333}
-			&:active, &:focus
-				background-color: #E72842
-				color: #fff
-		.policy
-			font-family: RobotoRegular, sans-serif
-			font-size: em(12px)
-			opacity: 0.6
-			position: absolute
-			bottom: calc(-100vh + 25px)
-			left: calc(50vw - 105px)
-			&:hover
-				opacity: 1!important
 	.faq-top
 		h2
 			left: calc(50% - 24px)
@@ -1143,82 +936,6 @@ a
 			height: 100%
 			position: absolute
 			opacity: .6
-	.lang
-		position: absolute
-		right: 27px
-		top: 65px
-		z-index: 100
-		a
-			color: #fff
-			&:hover
-				background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
-				-webkit-background-clip: text
-				-webkit-text-fill-color: transparent
-	.btns
-		display: flex
-		flex-direction: row
-		align-items: flex-end
-		position: relative
-		width: 100vw
-		z-index: 10
-		img
-			position: absolute
-			top: 15px
-			left: calc(50% - 80px)
-		.fa-th
-			font-size: 30px
-			position: absolute
-			left: 25px
-			top: 25px
-			&:hover
-				color: #544A7D
-		.fa-bars
-			font-size: 32px
-			position: absolute
-			right: 25px
-			top: 25px
-			&:hover
-				color: #544A7D
-		.team-btns-info
-			left: 25px
-		.team-btns-contact
-			right: 25px
-		.team-btns-info, .team-btns-contact
-			display: flex
-			justify-content: center
-			align-items: center
-			width: 50px
-			height: 50px
-			font-size: 20px
-			background-color: #fff
-			background-clip: padding-box
-			border: 10px solid rgba(250, 255, 255, 0.25)
-			border-radius: 50%
-			color: #333
-			position: absolute
-			bottom: calc(-100vh + 25px)
-			&:hover
-				animation-name: size10
-				animation-duration: 1s
-				animation-fill-mode: forwards
-				@keyframes size10
-					10% {border: 23px solid rgba(250, 255, 255, 0.25)}
-					30% {background-color: #544A7D}
-					60% {border: 1px solid rgba(255, 212, 82, 0.25)}
-					80% {background-image: radial-gradient(#544A7D, #FFD452)}
-					100% {color: #fff; background-image: radial-gradient(#544A7D, #FFD452); border: 5px solid rgba(255, 212, 82, 0.25); background-color: #333}
-			&:active, &:focus
-				background-color: #544A7D
-				color: #fff
-		.policy
-			font-family: RobotoRegular, sans-serif
-			font-size: em(12px)
-			opacity: 0.6
-			position: absolute
-			bottom: calc(-100vh + 25px)
-			left: calc(50vw - 105px)
-			&:hover
-				opacity: 1!important
 	.team-top
 		h2
 			left: calc(50% - 93px)
@@ -1379,82 +1096,6 @@ a
 			height: 100%
 			position: absolute
 			opacity: .5
-	.lang
-		position: absolute
-		right: 27px
-		top: 65px
-		z-index: 100
-		a
-			color: #fff
-			&:hover
-				background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
-				-webkit-background-clip: text
-				-webkit-text-fill-color: transparent
-	.btns
-		display: flex
-		flex-direction: row
-		align-items: flex-end
-		position: relative
-		width: 100vw
-		z-index: 10
-		img
-			position: absolute
-			top: 15px
-			left: calc(50% - 80px)
-		.fa-th
-			font-size: 30px
-			position: absolute
-			left: 25px
-			top: 25px
-			&:hover
-				color: #FE9A5D
-		.fa-bars
-			font-size: 32px
-			position: absolute
-			right: 25px
-			top: 25px
-			&:hover
-				color: #FE9A5D
-		.communication-btns-info
-			left: 25px
-		.communication-btns-contact
-			right: 25px
-		.communication-btns-info, .communication-btns-contact
-			display: flex
-			justify-content: center
-			align-items: center
-			width: 50px
-			height: 50px
-			font-size: 20px
-			background-color: #fff
-			background-clip: padding-box
-			border: 10px solid rgba(250, 255, 255, 0.25)
-			border-radius: 50%
-			color: #333
-			position: absolute
-			bottom: calc(-100vh + 25px)
-			&:hover
-				animation-name: size8
-				animation-duration: 1s
-				animation-fill-mode: forwards
-				@keyframes size8
-					10% {border: 23px solid rgba(250, 255, 255, 0.25)}
-					30% {background-color: #FE9A5D}
-					60% {border: 1px solid rgba(255, 110, 115, 0.25)}
-					80% {background-image: radial-gradient(#FE9A5D, #FF5D7B)}
-					100% {color: #fff; background-image: radial-gradient(#FE9A5D, #FF5D7B); border: 5px solid rgba(255, 110, 115, 0.25); background-color: #333}
-			&:active, &:focus
-				background-color: #FE9A5D
-				color: #fff
-		.policy
-			font-family: RobotoRegular, sans-serif
-			font-size: em(12px)
-			opacity: 0.6
-			position: absolute
-			bottom: calc(-100vh + 25px)
-			left: calc(50vw - 105px)
-			&:hover
-				opacity: 1!important
 	.communication-top
 		h2
 			left: calc(50% - 83px)
@@ -1506,12 +1147,12 @@ a
 				font-family: "Open Sans", sans-serif
 				font-weight: 700
 				.com-form
-					margin-right: 15vw
+					margin-right: 10vw
 					margin-left: -5vw
 					margin-top: 20px
 					background-color: #fff
-					width: 400px
-					height: 388px
+					width: 500px
+					height: 488px
 					padding: 45px
 					display: flex
 					flex-direction: row
@@ -1525,21 +1166,24 @@ a
 							color: #743535
 							font-family: "Open Sans", sans-serif
 							font-weight: 700
-							font-size: em(18px)
+							font-size: em(24px)
 							margin: 0 0 30px 0
 							text-align: center
 						input
+							font-size: 20px
 							border: none
 							border-bottom: 1px solid #D1D1D1
 							color: #000
 							background-color: none
 							width: 100%
-							padding: 20px 0 0px 10px
+							padding: 30px 0 0px 20px
 							&:active, &:focus
 								outline: none!important
 								border-bottom: 1px solid #743535
 								transition: border-bottom ease 1s
 						textarea
+							font-size: 24px
+							margin-top: 30px
 							border: none
 							border-bottom: 1px solid #D1D1D1
 							max-width: 100%
@@ -1549,9 +1193,10 @@ a
 							padding: 10px 0px 5px 10px
 							outline: none
 						button
+							font-size: 20px
 							margin: 25px auto 0
-							width: 240px
-							height: 35px
+							width: 260px
+							height: 55px
 							display: flex
 							justify-content: center
 							align-items: center
@@ -1644,76 +1289,6 @@ a
 			height: 100%
 			position: absolute
 			opacity: .5
-	.lang
-		position: absolute
-		right: 27px
-		top: 65px
-		z-index: 100
-		a
-			color: #fff
-			&:hover
-				background: -webkit-linear-gradient(#FF5D7B, #FE9A5D)
-				-webkit-background-clip: text
-				-webkit-text-fill-color: transparent
-	.btns
-		display: flex
-		flex-direction: row
-		align-items: flex-end
-		position: relative
-		width: 100vw
-		z-index: 10
-		img
-			position: absolute
-			top: 15px
-			left: calc(50% - 80px)
-		.fa-th
-			font-size: 30px
-			position: absolute
-			left: 25px
-			top: 25px
-			&:hover
-				color: #E11CB6
-		.fa-bars
-			font-size: 32px
-			position: absolute
-			right: 25px
-			top: 25px
-			&:hover
-				color: #E11CB6
-		.contact-btns-info
-			left: 25px
-		.contact-btns-contact
-			right: 25px
-		.contact-btns-info, .contact-btns-contact
-			display: flex
-			justify-content: center
-			align-items: center
-			width: 50px
-			height: 50px
-			font-size: 20px
-			background-color: #fff
-			background-clip: padding-box
-			border: 10px solid rgba(250, 255, 255, 0.25)
-			border-radius: 50%
-			color: #333
-			position: absolute
-			bottom: calc(-100vh + 25px)
-			&:hover
-				animation-name: size1
-				animation-duration: 1s
-				animation-fill-mode: forwards
-			&:active, &:focus
-				background-color: #E11CB6
-				color: #fff
-		.policy
-			font-family: RobotoRegular, sans-serif
-			font-size: em(12px)
-			opacity: 0.6
-			position: absolute
-			bottom: calc(-100vh + 25px)
-			left: calc(50vw - 105px)
-			&:hover
-				opacity: 1!important
 	.contact-top
 		h2
 			left: calc(50% - 51px)
@@ -1758,16 +1333,20 @@ a
 						&:hover
 							color: #fff
 							opacity: 1
+						svg
+							margin-right: 10px
+							&:last-child
+								margin-bottom: -3px
 					p
-						opacity: 0.6
+
 						span
-							font-weight: 700
-							opacity: 1
+							
 					.con-social
 						.con-social-itm
 							font-size: 30px
 							&:hover
 								color: #ff766f
+
 					.con-btn-s
 						margin: 50px auto 0
 						width: 270px
@@ -1906,11 +1485,11 @@ a
 
 
 .page
-	width: 1230px
-	height: 480px
+	width: 90vw
+	height: 40vw
 	position: fixed
-	top: calc(50% - 260px)
-	left: calc(50% - 615px)
+	top: calc(50% - 20vw)
+	left: calc(50% - 45vw)
 	display: flex
 	flex-direction: row
 	box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.25)
@@ -1965,9 +1544,9 @@ a
 	position: fixed
 	background-color: #fff
 	z-index: 100
-	width: 600px!important
+	width: 750px!important
 	height: 350px!important
-	left: calc(50% - 300px)
+	left: calc(50% - 375px)
 	top: calc(50% - 175px)
 	display: flex
 	flex-direction: row
@@ -1983,8 +1562,8 @@ a
 		font-weight: 700
 		margin: 0
 		padding: 0
-		height: 65%
-		margin-top: 8.75%
+		height: 100%
+		margin-top: 6%
 		li
 			margin: 0
 			padding: 0
@@ -2059,8 +1638,8 @@ a
 				color: #fff
 				text-align: left
 				width: 27vw
-				padding: 10px 0px 10px 20px
-				margin: 0 50px 10px 60px
+				padding: 10px 20px 10px 20px
+				margin: 0 40px 10px 20px
 				transition: background-color 0.5s ease
 				transition: color 0.7s ease
 				&:active, &:focus
@@ -2099,16 +1678,20 @@ a
 			.page-4-content-info-link
 				display: none
 				font-size: em(16px)
-				margin-right: 22vw
+				margin-right: 20%
 				margin-top: 2vw
+				height: 27vw
+				overflow-y: auto
 				animation-name: flip
 				animation-duration: 1.8s
 				@keyframes flip
 					0% {transform: scaleX(-1)}
 					100% {margin-right: 22vw}
-			a
-				font-size: em(14px)
-				text-decoration: underline
+			p
+				height: 20%
+				a
+					font-size: em(14px)
+					text-decoration: underline
 
 
 
@@ -2121,7 +1704,7 @@ a
 	left: calc(50% - 250px)
 	z-index: 100
 	position: fixed
-	top: calc(50% - 150px)
+	top: calc(50% - 200px)
 	display: flex
 	flex-direction: row
 	box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.25)
@@ -2239,7 +1822,7 @@ a
 		text-align: center
 		width: 100%
 		position: absolute
-		bottom: 50px
+		bottom: 70px
 		.owl-dot
 			width: 14px
 			height: 14px
@@ -2296,7 +1879,7 @@ a
 		text-align: center
 		width: 100%
 		position: absolute
-		bottom: 130px
+		bottom: 150px
 		.owl-dot
 			width: 14px
 			height: 14px
@@ -2457,12 +2040,6 @@ a
 		&:last-child
 			left: 45vw
 
-
-
-.lang
-	a
-		color: #333
-		z-index: 100
 
 .com-form-m
 	background-color: #fff

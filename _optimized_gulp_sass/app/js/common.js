@@ -17,6 +17,19 @@ $(function() {
 	// 	$(".page-5").toggle();
 	// });
 
+	$(".lang").click(function() {
+		$(".lang-ul").toggle();
+	});
+	$(".lang-ru").click(function() {
+		$(".lang-cur").text('RU');
+	});
+	$(".lang-ua").click(function() {
+		$(".lang-cur").text('UA');
+	});
+	$(".lang-en").click(function() {
+		$(".lang-cur").text('EN');
+	});
+
 	var owl = $(".slider");
 	owl.owlCarousel({
 		loop: true,
@@ -269,12 +282,23 @@ $(document).ready(function(){
 		},
 		loop: false,
 		keyboard: true, 
-		direction: "vertical"
+		direction: "vertical",
+		responsiveFallback: 830
 	});
 });
 
 
 //close modal
+jQuery(function($){
+	$(document).mouseup(function (e){
+		var div = $(".lang-ul");
+		var tabs = $(".lang");
+		if (!div.is(e.target)
+			&& div.has(e.target).length === 0 && !tabs.is(e.target) && tabs.has(e.target).length === 0) {
+			div.hide();
+		}
+	});
+});
 jQuery(function($){
 	$(document).mouseup(function (e){
 		var div = $(".page-2");
@@ -508,6 +532,28 @@ $('.slick').on('init', function() {
    $('.slick-current .staff-info-slogan').css('width', "400px");
 
 });
+
+$(document).ready(function() {
+	$(".page-4-content-info-link").niceScroll({
+		cursorcolor:"#ff766f",
+		cursorwidth:"3px",
+		background:"rgba(20,20,20,0)",
+		cursorborder:"1px solid #ff766f",
+		cursorborderradius:0
+		}); 
+});
+
+// $(document).ready(function() {
+// 	$(".page-4-content-links").niceScroll({
+// 		cursorcolor:"#ff766f",
+// 		cursorwidth:"5px",
+// 		background:"rgba(20,20,20,0)",
+// 		cursorborder:"1px solid #ff766f",
+// 		cursorborderradius:0
+// 		}); 
+//});
+
+
 
 
 $(document).ready(function() {
