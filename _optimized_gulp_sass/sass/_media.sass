@@ -220,6 +220,12 @@
 		height: 50vw!important
 		top: calc(50% - 25vw)!important	
 
+	.com-form-m
+		width: 250px!important
+		height: 238px!important
+		top: calc(50% - 119px)!important
+		left: calc(50% - 175px)!important
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -234,6 +240,13 @@
 					.services-middle-item
 						.item-text
 							font-size: em(6px)!important
+
+	.contact 
+		.content 
+			.contact-content-page 
+				.contact-middle 
+					.contact-middle-info>a
+						font-size: 16px!important
 
 
 	.pros 
@@ -310,6 +323,14 @@
 	
 
 @media only screen and (max-width : 830px)
+
+	.com-form-m
+		transform: scale(0.7)!important
+		height: 208px!important
+		top: calc(50% - 145px)!important
+		z-index: 200!important
+		button
+			margin-top: 20px!important
 
 	.close-mod
 		display: block!important
@@ -453,8 +474,8 @@
 
 	.contact 
 		.content 
-			.contact-content-page 
-				.contact-middle 
+			.contact-content-page
+				.contact-middle
 					.con-form
 						display: none!important
 
@@ -482,7 +503,7 @@
 						margin: 0!important
 						padding: 0!important
 						font-size: 2.3vw!important
-						width: 400px!important
+						width: 90vw!important
 
 	
 
@@ -514,10 +535,6 @@
 		-o-animation: none !important
 		-ms-animation: none !important
 		animation: none !important
-
-
-
-
 	
 
 	.page-1
@@ -653,6 +670,9 @@
 
 @media only screen and (max-height : 600px) and (max-width : 900px)
 
+	.close-mod
+		display: block!important
+
 	.services
 		.content
 			.services-content-page
@@ -688,8 +708,11 @@
 
 	.contact 
 		.content 
+			transform: scale(0.8)!important
 			.contact-content-page 
-				.contact-middle 
+				.contact-middle
+					.contact-middle-info
+						width: 100vw!important
 					.con-form
 						display: none!important
 
@@ -809,7 +832,18 @@
 			top: 60px!important
 
 
-@media only screen and (max-height : 600px)
+@media only screen and (max-height : 600px) and (max-width: 830px)
+
+	.contact
+		.content
+			transform: scale(0.6)!important
+			.contact-content-page
+				.contact-middle
+					.contact-middle-info
+						width: 140vw!important
+						text-align: center!important
+						.con-btn-s
+							display: none!important
 
 
 	.top
@@ -981,6 +1015,42 @@
 		.owl-dots
 			bottom: 130px!important
 
+@media only screen and (max-height : 400px) and (max-width : 650px)
+	
+	.page-1
+		h2
+			font-size: 2.5vw!important
+
+
+	.communication
+		.content
+			.communication-content-page
+				.com-btn-s
+					transform: scale(0.7)!important
+					margin-top: -60px!important
+
+	.slider-2
+		.owl-dots
+			bottom: 110px!important
+
+	.slider-nav-2
+		div
+			top: -40px!important
+			left: -48vw
+			&:last-childs
+				left: 45vw
+
+	.slider-1
+		.owl-dots
+			bottom: 110px!important
+
+	.slider-nav-1
+		div
+			top: -20px!important
+			left: -48vw
+			&:last-childs
+				left: 45vw
+
 
 @media only screen and (max-height : 400px)
 
@@ -1004,7 +1074,6 @@
 			.communication-content-page
 				.com-btn-s
 					height: 30px!important
-					margin-top: -40px!important
 
 	.contact 
 		.content

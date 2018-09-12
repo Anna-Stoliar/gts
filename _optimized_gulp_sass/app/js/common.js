@@ -165,7 +165,6 @@ $(function() {
 
 //for tabs in modal 3(left bottom one)
 function openTabHome(tabName,elmnt) {
-	if (window.innerWidth >830) {
 		var i, tabcontent, tablinks;
 
 	    tabcontent = document.getElementsByClassName("tabcontent");
@@ -181,7 +180,6 @@ function openTabHome(tabName,elmnt) {
 
 	    elmnt.classList.add("p4-active");
 	}
-}
 //open one tab by default
 document.getElementById("open-link").click();
 
@@ -253,7 +251,7 @@ document.getElementById("open-link").click();
 
 
 $(document).ready(function(){
-      $(".main").onepage_scroll({
+	$(".main").onepage_scroll({
 		sectionContainer: "section",
 		easing: "ease",
 		animationTime: 1500,
@@ -339,16 +337,16 @@ jQuery(function($){
 		}
 	});
 });
-jQuery(function($){
-	$(document).mouseup(function (e){
-		var div = $(".page-calc");
-		var pageC = $(".page-calc-btn");
-		if (!div.is(e.target)
-			&& div.has(e.target).length === 0 && !pageC.is(e.target) && pageC.has(e.target).length === 0) {
-			div.hide();
-		}
-	});
-});
+// jQuery(function($){
+// 	$(document).mouseup(function (e){
+// 		var div = $(".page-calc");
+// 		var pageC = $(".page-calc-btn");
+// 		if (!div.is(e.target)
+// 			&& div.has(e.target).length === 0 && !pageC.is(e.target) && pageC.has(e.target).length === 0) {
+// 			div.hide();
+// 		}
+// 	});
+// });
 // jQuery(function($){
 // 	$(document).mouseup(function (e){
 // 		var div = $(".page-5");
@@ -383,114 +381,114 @@ jQuery(function($){
 
 
 
-// Calculator
-	function toST(elmnt) {
-		if (window.innerWidth > 1200) {
-		    var toStageTwo = document.getElementById('stage-2');
-			toStageTwo.classList.add('stage');
-			toStageTwo.classList.remove('stage-2');
-			toStageTwo.style.padding = '0 5px 15px 0px';
+// // Calculator
+// 	function toST(elmnt) {
+// 		if (window.innerWidth > 1200) {
+// 		    var toStageTwo = document.getElementById('stage-2');
+// 			toStageTwo.classList.add('stage');
+// 			toStageTwo.classList.remove('stage-2');
+// 			toStageTwo.style.padding = '0 5px 15px 0px';
 			
-			var stageOne = document.getElementById('stage-1');
+// 			var stageOne = document.getElementById('stage-1');
 
-			elmnt.style.display = 'block';
-			stageOne.style.height = '30%';
-			stageOne.style.padding = '0 5px 15px 0';
+// 			elmnt.style.display = 'block';
+// 			stageOne.style.height = '30%';
+// 			stageOne.style.padding = '0 5px 15px 0';
 			
-			var calcLine = document.getElementById('calc-line');
-			calcLine.classList.add('calc-line-1');
+// 			var calcLine = document.getElementById('calc-line');
+// 			calcLine.classList.add('calc-line-1');
 
-		}
+// 		}
 
-		if (window.innerWidth < 1201) {
-		    var toStageTwo = document.getElementById('stage-2');
-			toStageTwo.classList.add('stage');
-			toStageTwo.classList.remove('stage-2');
-			toStageTwo.style.padding = '0 5px 15px 0px';
+// 		if (window.innerWidth < 1201) {
+// 		    var toStageTwo = document.getElementById('stage-2');
+// 			toStageTwo.classList.add('stage');
+// 			toStageTwo.classList.remove('stage-2');
+// 			toStageTwo.style.padding = '0 5px 15px 0px';
 			
-			var stageOne = document.getElementById('stage-1');
-			stageOne.style.display = "none"
+// 			var stageOne = document.getElementById('stage-1');
+// 			stageOne.style.display = "none"
 
-			var calcLine = document.getElementById('calc-line');
-			calcLine.classList.add('calc-line-1');
+// 			var calcLine = document.getElementById('calc-line');
+// 			calcLine.classList.add('calc-line-1');
 
-		}
-	}
+// 		}
+// 	}
 
 
-	function toTT(elmnt) {
-		if (window.innerWidth > 1200) {
-		    var toStageTHree = document.getElementById('stage-3');
-			toStageTHree.classList.add('stage');
-			toStageTHree.classList.remove('stage-3');
-			toStageTHree.style.padding = '0px 5px 15px 0px';
+// 	function toTT(elmnt) {
+// 		if (window.innerWidth > 1200) {
+// 		    var toStageTHree = document.getElementById('stage-3');
+// 			toStageTHree.classList.add('stage');
+// 			toStageTHree.classList.remove('stage-3');
+// 			toStageTHree.style.padding = '0px 5px 15px 0px';
 			
-			var stageTwo = document.getElementById('stage-2');
+// 			var stageTwo = document.getElementById('stage-2');
 
-			elmnt.style.display = 'block';
-			stageTwo.style.height = '30%';
-			stageTwo.style.padding = '0px 5px 15px 0px';
+// 			elmnt.style.display = 'block';
+// 			stageTwo.style.height = '30%';
+// 			stageTwo.style.padding = '0px 5px 15px 0px';
 
-			var calcLine = document.getElementById('calc-line');
-			calcLine.classList.add('calc-line-2');
-		}
-		if (window.innerWidth < 1201) {
-		    var toStageTHree = document.getElementById('stage-3');
-			toStageTHree.classList.add('stage');
-			toStageTHree.classList.remove('stage-3');
-			toStageTHree.style.padding = '0px 5px 15px 0px';
-			toStageTHree.style.paddingLeft = '0px'
+// 			var calcLine = document.getElementById('calc-line');
+// 			calcLine.classList.add('calc-line-2');
+// 		}
+// 		if (window.innerWidth < 1201) {
+// 		    var toStageTHree = document.getElementById('stage-3');
+// 			toStageTHree.classList.add('stage');
+// 			toStageTHree.classList.remove('stage-3');
+// 			toStageTHree.style.padding = '0px 5px 15px 0px';
+// 			toStageTHree.style.paddingLeft = '0px'
 			
-			var stageTwo = document.getElementById('stage-2');
-			stageTwo.style.display = "none"
+// 			var stageTwo = document.getElementById('stage-2');
+// 			stageTwo.style.display = "none"
 
-			var calcLine = document.getElementById('calc-line');
-			calcLine.classList.add('calc-line-2');
+// 			var calcLine = document.getElementById('calc-line');
+// 			calcLine.classList.add('calc-line-2');
 
-		}
-	}
+// 		}
+// 	}
 
-	function toET(elmnt) {	
-		if (window.innerWidth > 1200) {
-			var stageThree = document.getElementById('stage-3');
+// 	function toET(elmnt) {	
+// 		if (window.innerWidth > 1200) {
+// 			var stageThree = document.getElementById('stage-3');
 
-			elmnt.style.display = 'block';
-			stageThree.style.height = '30%';
-			stageThree.style.padding = '0px 5px 15px 0px';
+// 			elmnt.style.display = 'block';
+// 			stageThree.style.height = '30%';
+// 			stageThree.style.padding = '0px 5px 15px 0px';
 
-			var btnEnd = document.getElementById('btn-end');
-			btnEnd.classList.add('calc-middle-btn');
-			btnEnd.classList.remove('calc-middle-btn-b');
+// 			var btnEnd = document.getElementById('btn-end');
+// 			btnEnd.classList.add('calc-middle-btn');
+// 			btnEnd.classList.remove('calc-middle-btn-b');
 
-			var pageCalc = document.getElementById('page-calc');
-			pageCalc.style.display = 'block!important';
+// 			var pageCalc = document.getElementById('page-calc');
+// 			pageCalc.style.display = 'block!important';
 
-			var calcLine = document.getElementById('calc-line');
-			calcLine.classList.add('calc-line-3');
+// 			var calcLine = document.getElementById('calc-line');
+// 			calcLine.classList.add('calc-line-3');
 
-		}
-		if (window.innerWidth < 1201) {
-		    var stageThree = document.getElementById('stage-3');
+// 		}
+// 		if (window.innerWidth < 1201) {
+// 		    var stageThree = document.getElementById('stage-3');
 
-			elmnt.style.display = 'block';
-			stageThree.style.height = '30%';
-			stageThree.style.padding = '0px 5px 15px 0px';
+// 			elmnt.style.display = 'block';
+// 			stageThree.style.height = '30%';
+// 			stageThree.style.padding = '0px 5px 15px 0px';
 
-			var btnEnd = document.getElementById('btn-end');
-			btnEnd.classList.add('calc-middle-btn');
-			btnEnd.classList.remove('calc-middle-btn-b');
+// 			var btnEnd = document.getElementById('btn-end');
+// 			btnEnd.classList.add('calc-middle-btn');
+// 			btnEnd.classList.remove('calc-middle-btn-b');
 
-			var formms = document.getElementById('stage-3-form-s');
-			formms.style.alignItems = 'center'
+// 			var formms = document.getElementById('stage-3-form-s');
+// 			formms.style.alignItems = 'center'
 
-			var calcLine = document.getElementById('calc-line');
-			calcLine.classList.add('calc-line-3');
+// 			var calcLine = document.getElementById('calc-line');
+// 			calcLine.classList.add('calc-line-3');
 
-			var pageCalc = document.getElementById('page-calc');
-			pageCalc.style.display = 'block';
+// 			var pageCalc = document.getElementById('page-calc');
+// 			pageCalc.style.display = 'block';
 
-		}
-	}
+// 		}
+// 	}
 
 var slickOptions = {
 	vertical: true,
