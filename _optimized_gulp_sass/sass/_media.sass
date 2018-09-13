@@ -356,7 +356,7 @@
 		height: 50vw!important
 		.page-4-top
 			p
-				font-size: em(8px)
+				display: none!important
 		.page-4-content
 			height: 88%!important
 			.page-4-content-info
@@ -528,8 +528,14 @@
 
 	.con-btn-s
 		display: flex!important
+		width: 200px!important
+		font-size: 2.5vw!important
+		height: 50px!important
 	.com-btn-s
 		display: flex!important
+		width: 200px!important
+		font-size: 2.5vw!important
+		height: 50px!important
 
 
 
@@ -712,6 +718,29 @@
 
 @media only screen and (max-height : 600px) and (max-width : 900px)
 
+	.btns
+		.fa-th,
+		.fa-bars,
+		.home-btns-info, 
+		.home-btns-contact,
+			transform: scale(0.8)!important
+		.home-btns-info
+			left: 10px!important
+		.home-btns-contact
+			right: 10px!important
+		.home-btns-info, .home-btns-contact
+			bottom: 10px!important
+		.fa-th
+			left: 20px!important
+			top: 15px!important
+		.fa-bars
+			right: 20px!important
+			top: 15px!important
+
+	.lang
+		right: 22px!important
+
+
 	.page-2
 		.page-2-wrap
 			.page-2-content
@@ -735,7 +764,7 @@
 		height: 50vw!important
 		.page-4-top
 			p
-				font-size: em(8px)
+				display: none!important
 		.page-4-content
 			height: 88%!important
 			.page-4-content-info
@@ -888,8 +917,43 @@
 			padding-right: 10px
 			top: 60px!important
 
+	.communication
+		.content
+			margin-top: 0px!important
+			.communication-content-page
+				justify-content: center!important
+				.com-btn-s
+					margin-top: -30px!important
+				.communication-middle
+					transform: scale(0.5)!important
+					.communication-middle-staff
+						flex-direction: row!important
+						.staff
+							margin-right: 15px!important
+							margin-left: 15px!important
 
-@media only screen and (max-height : 600px) and (max-width: 830px)
+	.contact 
+		.content
+			margin-top: 0vw!important
+			.contact-content-page
+				.contact-middle
+					.contact-middle-info
+						margin: 0!important
+						font-size: 1.3vw!important
+						.con-btn-s
+							height: 40px!important
+							margin-top: 0px!important
+
+	.com-btn-s
+		display: flex!important
+		width: 180px!important
+		font-size: 1.7vw!important
+		height: 40px!important
+
+
+@media only screen and (max-height : 600px) and (max-width: 900px)
+
+
 
 	.page-2
 		width: 90vw!important
@@ -981,21 +1045,7 @@
 			&:last-child
 				left: 45vw
 
-	.communication
-		.content
-			margin-top: 0px!important
-			.communication-content-page
-				justify-content: center!important
-				.com-btn-s
-					margin-top: -30px!important
-					height: 40px!important
-				.communication-middle
-					transform: scale(0.5)!important
-					.communication-middle-staff
-						flex-direction: row!important
-						.staff
-							margin-right: 15px!important
-							margin-left: 15px!important
+	
 
 	.communication-top
 		h2
@@ -1004,17 +1054,7 @@
 				width: 80px!important
 				left: calc(50% - 40px)!important
 
-	.contact 
-		.content
-			margin-top: 0vw!important
-			.contact-content-page
-				.contact-middle
-					.contact-middle-info
-						margin: 0!important
-						font-size: 1.3vw!important
-						.con-btn-s
-							height: 40px!important
-							margin-top: 0px!important
+	
 
 	.contact-top
 		h2
@@ -1155,6 +1195,7 @@
 			.communication-content-page
 				.com-btn-s
 					height: 30px!important
+					font-size: 2vw!important
 
 	.contact 
 		.content
