@@ -10,8 +10,14 @@ $(function() {
 	$(".dots").click(function() {
 		$(".page-5").toggle();
 	});
-	$(".op-p4").click(function() {
-		$(".page-4").toggle();
+	$(".op-p4-1").click(function() {
+		$("#page-4-1").toggle();
+	});
+	$(".op-p4-2").click(function() {
+		$("#page-4-2").toggle();
+	});
+	$(".op-p4-3").click(function() {
+		$("#page-4-3").toggle();
 	});
 	// $(".phone").click(function() {
 	// 	$(".page-5").toggle();
@@ -181,7 +187,43 @@ function openTabHome(tabName,elmnt) {
 	    elmnt.classList.add("p4-active");
 	}
 //open one tab by default
-document.getElementById("open-link").click();
+document.getElementById("open-link-one").click();
+
+function openTabHome1(tabName,elmnt) {
+		var i, tabcontent1, tablinks1;
+
+	    tabcontent1 = document.getElementsByClassName("tabcontent1");
+	    for (i = 0; i < tabcontent1.length; i++) {
+	        tabcontent1[i].style.display = "none";
+	    }
+	    document.getElementById(tabName).style.display = "block";
+
+	    tablinks1 = document.getElementsByClassName("tablink1");
+	    for (i = 0; i < tablinks1.length; i++) {
+	        tablinks1[i].classList.remove("p4-active");
+	    }
+
+	    elmnt.classList.add("p4-active");
+	}
+document.getElementById("open-link-two").click();
+
+function openTabHome2(tabName,elmnt) {
+		var i, tabcontent2, tablinks2;
+
+	    tabcontent2 = document.getElementsByClassName("tabcontent2");
+	    for (i = 0; i < tabcontent2.length; i++) {
+	        tabcontent2[i].style.display = "none";
+	    }
+	    document.getElementById(tabName).style.display = "block";
+
+	    tablinks2 = document.getElementsByClassName("tablink2");
+	    for (i = 0; i < tablinks2.length; i++) {
+	        tablinks2[i].classList.remove("p4-active");
+	    }
+
+	    elmnt.classList.add("p4-active");
+	}
+document.getElementById("open-link-three").click();
 
 
 // //for tabs security page
@@ -329,8 +371,28 @@ jQuery(function($){
 });
 jQuery(function($){
 	$(document).mouseup(function (e){
-		var div = $(".page-4");
-		var dots = $(".op-p4");
+		var div = $("#page-4-1");
+		var dots = $(".op-p4-1");
+		if (!div.is(e.target)
+			&& div.has(e.target).length === 0 && !dots.is(e.target) && dots.has(e.target).length === 0) {
+			div.hide();
+		}
+	});
+});
+jQuery(function($){
+	$(document).mouseup(function (e){
+		var div = $("#page-4-2");
+		var dots = $(".op-p4-2");
+		if (!div.is(e.target)
+			&& div.has(e.target).length === 0 && !dots.is(e.target) && dots.has(e.target).length === 0) {
+			div.hide();
+		}
+	});
+});
+jQuery(function($){
+	$(document).mouseup(function (e){
+		var div = $("#page-4-3");
+		var dots = $(".op-p4-3");
 		if (!div.is(e.target)
 			&& div.has(e.target).length === 0 && !dots.is(e.target) && dots.has(e.target).length === 0) {
 			div.hide();

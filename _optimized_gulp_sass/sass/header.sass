@@ -1618,13 +1618,17 @@ a
 			100% {margin-right: 0px}
 		a
 			border-bottom: 1px solid #F3F3F3
-			padding: 0px 15px 10px 5px
-			font-size: em(18px)
+			padding: 0px 15px 5px 5px
+			font-size: em(16px)!important
 			font-family: "Open Sans", sans-serif
 			font-weight: 700
 			.fas
 				font-size: 15px
 				margin-left: 15px
+		p
+			font-size: em(16px)
+			padding: 0 15px 0 15px 
+			margin-bottom: 0px
 	.page-4-content
 		position: relative
 		display: flex
@@ -1636,47 +1640,85 @@ a
 			align-items: center
 			justify-content: space-between
 			border-right: 1px solid #F3F3F3
-			height: 27vw
-			overflow: auto
-			.page-4-content-links-link
-				background: none
-				cursor: pointer
-				border: 2px solid #fff
-				border-radius: 4px
-				color: #fff
-				text-align: left
-				width: 27vw
-				padding: 10px 20px 10px 20px
-				margin: 0 40px 10px 20px
-				transition: background-color 0.5s ease
-				transition: color 0.7s ease
-				&:active, &:focus
-					outline: none!important
-				&:last-child
-					margin-bottom: 0px
-				h4
-					font-family: "Open Sans", sans-serif
-					font-weight: 700
-					font-size: em(18px)
-					text-transform: uppercase
-					margin: 0px
-				p
-					font-family: "Open Sans", sans-serif
-					font-weight: 400
-					font-size: em(12px)
-					margin: 0px
-					span
-						font-size: em(16px)
+			.page-4-wrap
+				display: flex
+				flex-direction: column
+				&:first-child
+					margin-bottom: 10px
+				.page-4-content-links-link
+					background: none
+					cursor: pointer
+					border: 2px solid #fff
+					border-radius: 4px
+					color: #fff
+					text-align: left
+					width: 27vw
+					padding: 10px 20px 10px 20px
+					margin: 0 40px 10px 20px
+					transition: background-color 0.5s ease
+					transition: color 0.7s ease
+					&:active, &:focus
+						outline: none!important
+					&:last-child
+						margin-bottom: 0px
+					h4
+						font-family: "Open Sans", sans-serif
 						font-weight: 700
-				&:hover, &:focus, &:active
+						font-size: em(18px)
+						text-transform: uppercase
+						margin: 0px
+					p
+						font-family: "Open Sans", sans-serif
+						font-weight: 400
+						font-size: em(12px)
+						margin: 0px
+						span
+							font-size: em(16px)
+							font-weight: 700
+					&:hover, &:focus, &:active
+						color: #421212
+						box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25)
+						background-color: #fff
+						cursor: pointer
+				.page-4-content-links-link-1
+					background: none
+					cursor: pointer
+					border: 2px solid #fff
+					border-radius: 4px
+					color: #fff
+					text-align: left
+					width: 27vw
+					padding: 10px 20px 10px 20px
+					margin: 0 40px 10px 20px
+					transition: background-color 0.5s ease
+					transition: color 0.7s ease
+					&:active, &:focus
+						outline: none!important
+					&:last-child
+						margin-bottom: 0px
+					h4
+						font-family: "Open Sans", sans-serif
+						font-weight: 700
+						font-size: em(18px)
+						text-transform: uppercase
+						margin: 0px
+					p
+						font-family: "Open Sans", sans-serif
+						font-weight: 400
+						font-size: em(12px)
+						margin: 0px
+						span
+							font-size: em(16px)
+							font-weight: 700
+					&:hover, &:focus, &:active
+						color: #421212
+						box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25)
+						background-color: #fff
+						cursor: pointer
+				.p4-active
 					color: #421212
 					box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25)
 					background-color: #fff
-					cursor: pointer
-			.p4-active
-				color: #421212
-				box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25)
-				background-color: #fff
 		.page-4-content-info
 			display: flex
 			flex-direction: column
@@ -1688,7 +1730,7 @@ a
 				font-size: em(16px)
 				margin-right: 22vw
 				margin-top: 2vw
-				height: 27vw
+				height: 23vw
 				overflow-y: auto
 				animation-name: flip
 				animation-duration: 1.8s

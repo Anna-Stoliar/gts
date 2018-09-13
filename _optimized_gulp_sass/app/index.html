@@ -1065,9 +1065,9 @@
 		<div class="page-3 text-center">
 			<p class="close-mod" onclick="$('.page-3').hide();">&#10005;</p>
 			<ul>
-				<li class="op-p4"><a href="#">Сайт под ключ</a></li>
-				<li><a href="#">Прототипирование</a></li>
-				<li><a href="#">Продвижение</a></li>
+				<li class="op-p4-1"><a href="#">Сайт под ключ</a></li>
+				<li class="op-p4-2"><a href="#">Прототипирование</a></li>
+				<li class="op-p4-3"><a href="#">Продвижение</a></li>
 				<li><a href="#">Разработка фирменного дизайна</a></li>
 				<li><a href="#">Контекстная реклама</a></li>
 				<!--<li><a href="#">Язык</a></li>-->
@@ -1075,36 +1075,40 @@
 		</div>
 	<!--end modal 2-->
 	<!--modal 3 - services-->
-		<div class="page-4 page">
+		<div class="page-4 page" id="page-4-1">
 			<div class="page-4-top text-right">
 				<a>Сайт под ключ <i class="fas fa-play"></i></a>
 			</div>
-			<div class="page-4-content" id="page-4-1">
+			<div class="page-4-content">
 				<div class="page-4-content-links">
-					<button class="tablink page-4-content-links-link p4-active" id="open-link" onclick="openTabHome('link-one', this)">
-						<h4>Сайт-визитка</h4>
-						<p>Минимальная цена: <span>150&#36;</span></p>
-					</button>
-					<button class="tablink page-4-content-links-link" onclick="openTabHome('link-two', this)">
-						<h4>Сайт-витрина</h4>
-						<p>Минимальная цена: <span>200&#36;</span></p>
-					</button>
-					<button class="tablink page-4-content-links-link" onclick="openTabHome('link-three', this)">
-						<h4>Промо-сайт</h4>
-						<p>Минимальная цена: <span>250&#36;</span></p>
-					</button>
-					<button class="tablink page-4-content-links-link" onclick="openTabHome('link-four', this)">
-						<h4>Landing Page</h4>
-						<p>Минимальная цена: <span>300&#36;</span></p>
-					</button>
-					<button class="tablink page-4-content-links-link" onclick="openTabHome('link-five', this)">
-						<h4>Корпоративный сайт</h4>
-						<p>Минимальная цена: <span>650&#36;</span></p>
-					</button>
-					<button class="tablink page-4-content-links-link" onclick="openTabHome('link-six', this)">
-						<h4>Интернет-магазин </h4>
-						<p>Минимальная цена: <span>800&#36;</span></p>
-					</button>
+					<div class="page-4-wrap">
+						<div class="tablink page-4-content-links-link p4-active" id="open-link-one" onclick="openTabHome('link-one', this)">
+							<h4>Сайт-визитка</h4>
+							<p>Минимальная цена: <span>150&#36;</span></p>
+						</div>
+						<div class="tablink page-4-content-links-link" onclick="openTabHome('link-two', this)">
+							<h4>Сайт-витрина</h4>
+							<p>Минимальная цена: <span>200&#36;</span></p>
+						</div>
+						<div class="tablink page-4-content-links-link" onclick="openTabHome('link-three', this)">
+							<h4>Промо-сайт</h4>
+							<p>Минимальная цена: <span>250&#36;</span></p>
+						</div>
+					</div>
+					<div class="page-4-wrap">
+						<div class="tablink page-4-content-links-link" onclick="openTabHome('link-four', this)">
+							<h4>Landing Page</h4>
+							<p>Минимальная цена: <span>300&#36;</span></p>
+						</div>
+						<div class="tablink page-4-content-links-link" onclick="openTabHome('link-five', this)">
+							<h4>Корпоративный сайт</h4>
+							<p>Минимальная цена: <span>650&#36;</span></p>
+						</div>
+						<div class="tablink page-4-content-links-link" onclick="openTabHome('link-six', this)">
+							<h4>Интернет-магазин </h4>
+							<p>Минимальная цена: <span>800&#36;</span></p>
+						</div>
+					</div>
 				</div>
 				<div class="page-4-content-info">
 					<div>
@@ -1130,6 +1134,89 @@
 						</div>
 					</div>
 					<p class="text-center page-4-link">Чтобы подробнее просчитать цену на необходимый тип сайта, вы можете <a href="#com">заказать консультацию</a> нашего специалиста. 
+					</p>
+				</div>
+			</div>
+		</div>
+	<!--end modal 3-->
+	<!--modal 3 - services-->
+		<div class="page-4 page" id="page-4-2">
+			<div class="page-4-top text-right">
+				<a>Прототипирование <i class="fas fa-play"></i></a>
+			</div>
+			<div class="page-4-content">
+				<div class="page-4-content-links">
+					<div class="page-4-wrap">
+						<div class="tablink1 page-4-content-links-link-1 p4-active" id="open-link-two" onclick="openTabHome1('link-one-1', this)">
+							<h4>Поверхностное прототипирование</h4>
+							<p>Бесплатно</p>
+						</div>
+						<div class="tablink1 page-4-content-links-link-1" onclick="openTabHome1('link-two-1', this)">
+							<h4>Базовое прототипирование</h4>
+							<p>Минимальная цена: <span>20&#36;</span></p>
+						</div>
+						<div class="tablink1 page-4-content-links-link-1" onclick="openTabHome1('link-three-1', this)">
+							<h4>Универсальное прототипирование</h4>
+							<p>Минимальная цена: <span>100&#36;</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="page-4-content-info">
+					<div>
+						<div class="tabcontent1 page-4-content-info-link" id="link-one-1">
+							<p>Такой вид прототипирования составляется при встрече с потенциальным заказчиком. Включает в себя наброски макета сайта, желаемый заказчиком функционал, описание целевой аудитории сайта, закрытие потребностей клиента сайтом и тд.. На основе выше перечисленного, клиент получит свой оффер и все возможные советы по его будущему продукту!
+							</p>
+						</div>
+						<div class="tabcontent1 page-4-content-info-link" id="link-two-1">
+							<p>Включает в себя «Поверхностное прототипирование» + составление технического задания. Техническое задание обеспечит клиенту пошаговый алгоритм разработки сайта, прозрачность и понимание функционала, этапы разработки и их временной диапазон.</p>
+						</div>
+						<div class="tabcontent1 page-4-content-info-link" id="link-three-1">
+							<p>Включает в себя «Базовое прототипирование » + анализ рынка конкурентной среды, проработка УТП, проектирование автоматизированных систем для мониторинга и аудита вашего продукта. Универсальный пакет обеспечит полноценную консультацию вашей ниши, которая будет произведена ведущими экспертами на рынке.</p>
+						</div>
+					</div>
+					<p class="text-center page-4-link">Чтобы узнать более подробную информацию на интересующую вас услугу, вы можете <a href="#com">заказать консультацию</a> нашего специалиста. 
+					</p>
+				</div>
+			</div>
+		</div>
+	<!--end modal 3-->
+	<!--modal 3 - services-->
+		<div class="page-4 page" id="page-4-3">
+			<div class="page-4-top text-right">
+				<a>Продвижение <i class="fas fa-play"></i></a>
+				<p>PPC-продвижение (от 150&#36; + мин. 160&#36;): Настройка и введения контекстной рекламы в GOOGLE ADWORDS (Украина). Вы можете выбрать один из 3 уровней настройки, которые подходят под ваши требования.</p>
+			</div>
+			<div class="page-4-content">
+				<div class="page-4-content-links">
+					<div class="page-4-wrap">
+						<div class="tablink2 page-4-content-links-link-1 p4-active" id="open-link-three" onclick="openTabHome2('link-one-2', this)">
+							<h4>Standart</h4>
+							<p>Цена: от <span>150&#36;</span> + бюджет на PPC мин. <span>160&#36;</span></p>
+						</div>
+						<div class="tablink2 page-4-content-links-link-1" onclick="openTabHome2('link-two-2', this)">
+							<h4>Business</h4>
+							<p>Цена: от <span>250&#36;</span> + бюджет на PPC мин. <span>160&#36;</span></p>
+						</div>
+						<div class="tablink2 page-4-content-links-link-1" onclick="openTabHome2('link-three-2', this)">
+							<h4>Business PRO</h4>
+							<p>Цена: от <span>400&#36;</span> + бюджет на PPC мин. <span>160&#36;</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="page-4-content-info">
+					<div>
+						<div class="tabcontent2 page-4-content-info-link" id="link-one-2">
+							<p>1 уровень настройки контекстной рекламы. Включает в себя: поисковую рекламу, поисковый ремаркетинг, баннерный ремаркетинг, до 500 ключевых слов, до 150 текстовых объявлений.
+							</p>
+						</div>
+						<div class="tabcontent2 page-4-content-info-link" id="link-two-2">
+							<p>2 уровень настройки контекстной рекламы. Включает в себя пакет «Standart» + баннерная реклама, до 1000 ключевых слов, до 300 текстовых объявлений.</p>
+						</div>
+						<div class="tabcontent2 page-4-content-info-link" id="link-three-2">
+							<p>3 уровень настройки контекстной рекламы. Включает в себя пакет «Business» + динамический ремаркетинг, реклама в Gmail, без ограничений ключевых слов, без ограничений текстовых объявлений.</p>
+						</div>
+					</div>
+					<p class="text-center page-4-link">Чтобы узнать более подробную информацию на интересующую вас услугу, вы можете <a href="#com">заказать консультацию</a> нашего специалиста. 
 					</p>
 				</div>
 			</div>
