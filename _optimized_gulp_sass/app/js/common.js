@@ -297,7 +297,7 @@ $(document).ready(function(){
 		sectionContainer: "section",
 		easing: "ease",
 		animationTime: 1500,
-		pagination: false,
+		pagination: true,
 		beforeMove: function(index) {
 			console.log('beforeChange fired!');
 
@@ -323,7 +323,8 @@ $(document).ready(function(){
 		loop: false,
 		keyboard: true, 
 		direction: "vertical",
-		responsiveFallback: 830
+		responsiveFallback: 830,
+		updateURL: true
 	});
 });
 
@@ -617,20 +618,17 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-	if (window.innerWidth < 560) {
-		$("#orient").css( "display", "flex" );
-	}
-	else{
-		$("#orient").css( "display", "none" );
+	if (window.innerWidth < 561) {
+		window.location.href = "pagesm.html";
 	}
 });
 
 $(window).resize(function(){
-	if (window.innerWidth < 560) {
-		$("#orient").css( "display", "flex" );
+	if (window.innerWidth < 561) {
+		window.location.href = "pagesm.html";
 	}
 	if (window.innerWidth > 560) {
-		$("#orient").css( "display", "none" );
+		window.location.href = "index.html";
 	}
 });
 

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	
+
+	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+	<style></style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+	
+	<!-- Load CSS Start -->
+	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
+	<script>//loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load CSS End -->
+
+	<!-- Load CSS Compiled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+</head>
+	
+<body>
+<div id="preloadsm" style="
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	background-color: #fff;
+">
+	<img src="img/logo.gif" alt="" style="width: 300px; height: 300px;">
+</div>
+
+<button id="sTopBtn" onclick="topFunction()"><i class="far fa-arrow-alt-circle-up"></i></button>
+
+<a href="#" class="home-btns-contact phone"><i class="fas fa-phone fa-flip-horizontal"></i></a>
+
+	<header class="header-sm" id="header-sm">
+		<p>784338</p>
+		<p onclick="oMenu()"><i class="fas fa-bars"></i></p>
+	</header>
+
+<!--home page-->
+	<section class="home-sm" id="home">
+	<!--home content-->
+
+		<div class="pagesm-wrap">
+
+			<div class="home-sm-content text-center">
+				<img src="img/header/logo.png" alt="">
+				<h2>Сайт под ключ, который РЕАЛЬНО работает на вас!</h2>
+				<p>GersTech молодая веб студия занимающаяся индивидуальной разработкой сайтов под ключ,<br> SEO продвижением сайтов, разработкой фирменного стиля и логотипа компании,<br> прототипированием сайтов, контекстной рекламой.</p>
+				<p>Удачный, продающий сайт – 93% успеха любого бизнеса!</p>
+			</div>
+
+		</div>
+
+	<!--end home content-->
+	</section>
+<!--end home page-->
+
+<!--services page-->
+	<section class="services-sm" id="services">
+	<!--services content-->
+
+		<div class="pagesm-wrap">
+
+			<div class="services-sm-content text-center">
+				<div class="service-sm-top top-sm text-center">
+					<h2>У нас вы получите</h2>
+				</div>
+
+				<div class="services-sm-middle">
+					<a class="services-sm-middle-item">
+						<img src="img/services/img1.png" alt="">
+						<div class="item-text-sm">
+							Согласно вашему запросу и потребностям, которые должен закрывать Ваш сайт, мы разработаем его прототип. Далее вы можете продолжить работу с нами и заказать услугу создания сайта. 
+						</div>
+						<div class="item-name-sm">
+							Прототипирование сайта
+						</div>
+					</a>
+					<a class="services-sm-middle-item">
+						<img src="img/services/img2.png" alt="">
+						<div class="item-text-sm">
+							Полный спектр услуг по созданию и оптимизации работы вашего сайта. От анализа ниши до установки аналитики на сайте. ВАЖНО! Ваш сайт будет написан на индивидуальном «движке». Мы используем свежие тенденции в создании сайтов. Пользуемся современными языками программирования. Получаем валидный, оптимизированный код. Разрабатываем креативный, привлекательный дизайн! ШАБЛОНЫ ЭТО НЕ ПРО НАС!
+						</div>
+						<div class="item-name-sm">
+							Сайты под ключ
+						</div>
+					</a>
+					<a class="services-sm-middle-item">
+						<img src="img/services/img3.png" alt="">
+						<div class="item-text-sm">
+							 Включает полноценный спектр услуг по продвижению сайтов. Начиная от SEO-оптимизации и заканчивая контекстной рекламой (PPC). Это необходимо для того, чтобы максимально повысить узнаваемость вашего продукта, которое повлечет за собой привлечения новых клиентов.
+						</div>
+						<div class="item-name-sm">
+							SEO продвижение
+						</div>
+					</a>
+					<a class="services-sm-middle-item">
+						<img src="img/services/img 4.png" alt="">
+						<div class="item-text-sm">
+							Вы только создаете свой бренд? Наверняка вы будете использовать максимальное количество предметов, чтобы заявить о своей индивидуальности. Мы поможем проработать единую стилистику вашему бренду. От шариковой ручки с названием компании, до больших растяжных  баннеров - все будет выдержано в одном стиле. 
+						</div>
+						<div class="item-name-sm">
+							Разрботка фирменного дизайна
+						</div>
+					</a>
+					<a class="services-sm-middle-item">
+						<img src="img/services/img5.png" alt="">
+						<div class="item-text-sm">
+							Нужно обновить дизайн? Собираетесь сделать ребрендинг? Без обновления дизайна и создания нового и привлекательного имиджа вам не обойтись! Наши специалисты  всегда в тренде и в курсе новых видений относительно дизайна!
+						</div>
+						<div class="item-name-sm">
+							Фирменный стиль и логотип компании
+						</div>
+					</a>
+					<a class="services-sm-middle-item">
+						<img src="img/services/img6.png" alt="">
+						<div class="item-text-sm">
+							 Позволит вам получить всевозможные услуги нашей студии по скидке. В зависимости от выбора услуг и их количества, клиент не ощутит удара по кошельку и будет приятно удивлен. Мы подготовили пакеты услуг разного вида и направления, которые помогут найти оптимальный ценник именно для вас.
+						</div>
+						<div class="item-name-sm">
+							Контекстная реклама
+						</div>
+					</a>
+				</div>
+
+				<div class="services-sm-bottom">
+					<span>Нужна «вкусная упаковка» бренда? Продающий сайт, с которого идут лиды и заявки?</span><br>
+					Gera Tech Ваше верное решение!
+				</div>
+			</div>
+
+		</div>
+
+	<!--end services content-->
+	</section>
+<!--end services page-->
+
+<!--pros page-->
+	<section class="pros-sm" id="pros">
+
+		<div class="pagesm-wrap">
+
+		<!--pros content-->
+			<div class="pros-sm-content text-center">
+
+				<div class="pros-sm-top top-sm text-center">
+					<h2>Почему мы?</h2>
+				</div>
+
+				<div class="pros-sm-middle">
+					<a class="pros-sm-middle-item">
+						<div class="pros-middle-item-img"></div>
+						<h4>Предоплата</h4>
+						<p>Осуществляется после согласования прототипа<span class="more">...</span><span class="more-text"> и детальногоо ТЗ</span></p>
+					</a>
+					<a class="pros-sm-middle-item">
+						<div class="pros-middle-item-img"></div>
+						<h4>Дизайн</h4>
+						<p>Красочный, цепляющий<span class="more">...</span><span class="more-text">, «приятный глазу» клиента.</span></p>
+					</a>
+					<a class="pros-sm-middle-item">
+						<div class="pros-middle-item-img"></div>
+						<h4>Сайт без CMS</h4>
+						<p>Сайт создается с использованием<span class="more">...</span><span class="more-text"> личного «движка» для вашего сайта. </span></p>
+					</a>
+					<a class="pros-sm-middle-item">
+						<div class="pros-middle-item-img"></div>
+						<h4>Оптимальный код</h4>
+						<p>При написании сайта ипользуем новые языки<span class="more">...</span><span class="more-text"> программирования и Фраймворков.</span> </p>
+					</a>
+					<a class="pros-sm-middle-item">
+						<div class="pros-middle-item-img"></div>
+						<h4>Техническая поддержка</h4>
+						<p>Техническая поддержка сайта обеспечевиается навечно</p>
+					</a>
+					<a class="pros-sm-middle-item">
+						<div class="pros-middle-item-img"></div>
+						<h4>Работаем на результат</h4>
+						<p>Все сроки при этом прописываются так, чтобы успеть  качесвенно<span class="more">...</span><span class="more-text"> выполнить конкретную задачу.</span></p>
+					</a>
+					<a class="pros-sm-middle-item">
+						<div class="pros-middle-item-img"></div>
+						<h4>От души</h4>
+						<p>Частичка души, фантазии и креатив разработчиков<span class="more">...</span><span class="more-text"> вкладывается в каждый проект.</span></p>
+					</a>
+					<a class="pros-sm-middle-item">
+						<div class="pros-middle-item-img"></div>
+						<h4>Адекватные цены</h4>
+						<p>Наши цены не будут Вас удивлять. Они <span class="more">...</span><span class="more-text">просто адекватны для того или иного задания.</span></p>
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+	<!--end pros content-->
+	</section>
+<!--end pros page-->
+
+<!--faq page-->
+	<section class="faq-sm" id="faq">
+	<!--faq content-->
+
+		<div class="pagesm-wrap">
+
+		<!--faq content-->
+			<div class="faq-sm-content text-center">
+			<!--faq page-->
+				<div class="faq-sm-top top-sm text-center">
+					<h2>FAQ</h2>
+				</div>
+
+				<div class="faq-sm-middle">
+					<div class="faq-sm-info">
+						<div class="faq-sm-info-item faq-sm-1">
+							<div class="faq-sm-info-item-img"
+							style="background-image: url('img/faq/faq1.png')">
+								
+							</div>
+							<div class="faq-sm-info-item-text">
+								<div class="faq-sm-q">Что если к концу проекта, стоимость сайтa увеличится и она меня не будет устраивать?</div>
+								<div class="faq-sm-a">Как уже было сказано, перед созданием сайта, разрабатывается его прототип. Именно с прототипом вы получаете готовую стоимость вашего сайта на выходе. Эта сумма может измениться ТОЛЬКО В СЛУЧАЕ добавления вами функционала, который не был предусмотрен на начальном этапе.</div>
+							</div>
+						</div>
+						<div class="faq-sm-info-item faq-sm-2">
+							<div class="faq-sm-info-item-img"
+							style="background-image: url('img/faq/faq2.png'); background-position: 20px 15px;">
+								
+							</div>
+							<div class="faq-sm-info-item-text">
+								<div class="faq-sm-q">Могу ли я использовать свой дизайн для сайта?</div>
+								<div class="faq-sm-a">Да, в таком случае мы сразу приступим к этапу верстки. Цена проекта в данном случае также индивидуальна. Однако всегда выгоднее заказать полный пакет услуг в нашей студии. </div>
+							</div>
+						</div>
+						<div class="faq-sm-info-item faq-sm-1">
+							<div class="faq-sm-info-item-img"
+							style="background-image: url('img/faq/faq3.png'); background-position: 13px 15px;">
+								
+							</div>
+							<div class="faq-sm-info-item-text">
+								<div class="faq-sm-q">Могу ли я рассчитаться на сайт в рассрочку?</div>
+								<div class="faq-sm-a">Да, у нас есть возможность оплатиы за работу в рассрочку. Либо стоимость разбивается на несколько равных частей и выплачивается с определенной периодичностью. Либо можно оплачивать работу поэтапно. Т.е. после выполнения определенно этапа проекта предусматривается оплата и начинается дальнейшая работа над сайтом.</div>
+							</div>
+						</div>	
+						<div class="faq-sm-info-item faq-sm-2">
+							<div class="faq-sm-info-item-img"
+							style="background-image: url('img/faq/faq4.png'); background-position: 19px 15px;">
+								
+							</div>
+							<div class="faq-sm-info-item-text">
+								<div class="faq-sm-q">Что если сайт «сломается» после гарантийного периода?</div>
+								<div class="faq-sm-a">Наша техподдержка осуществляется навечно. Вы можете не переживать, что мы «испаримся» после того, как получим от вас оплату. Более того, мы «ремонтируем» даже те сайты, которые делали не мы. Стоимость техничесткой поддержки после истечения гарантийного периода будет зависеть от сложности задачи, а так же от того, чей продукт подлежит поддержке: нашей студии или сторонней. </div>
+							</div>
+							
+						</div>
+						<div class="faq-sm-info-item faq-sm-1">
+							<div class="faq-sm-info-item-img"
+							style="background-image: url('img/faq/faq5.png')">
+								
+							</div>
+							<div class="faq-sm-info-item-text">
+								<div class="faq-sm-q">Как быстро сайт наберет популярность?</div>
+								<div class="faq-sm-a">Все зависит от интенсивности продвижения, который вы  выберете. В среднем, сайт выходит на хорошие показатели трафика после 1 мес активного продвижения. Далее уже следует поддержание результата. </div>
+							</div>
+							
+						</div>
+						<div class="faq-sm-info-item faq-sm-2">
+							<div class="faq-sm-info-item-img"
+							style="background-image: url('img/faq/faq6.png'); background-position: 18px 15px;">
+							</div>
+							<div class="faq-sm-info-item-text">
+								<div class="faq-sm-q">Обязательно ли мне писать подробное техническое задание? Как его составлять?</div>
+								<div class="faq-sm-a">От Вас требуется максимально подробно расписать пожелания к сайту, его функциональные возможности. Все остальное мы сделаем за Вас. Подробно распишем задание и просчитаем стоимость готового продукта  с учетом необходимого функционала.</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		<!--end security pages-->
+			
+		</div>
+
+	<!--end security content-->
+	</section>
+<!--end faq page-->
+
+<!--team page-->
+	<section class="team-sm" id="team">
+	<!--team content-->
+
+		<div class="pagesm-wrap">
+
+		<!--team content-->
+			<div class="team-sm-content text-center">
+
+				<div class="team-sm-top top-sm text-center">
+					<h2>Наша команда</h2>
+				</div>
+
+				  <div class="team-sm-middle">
+				      <div class="team-sm-itm">
+				        <img src="img/communication/man.png" alt="">
+						<div class="staff-sm-info">
+							<span class="staff-sm-info-position">art director</span>
+							<span class="staff-sm-info-name">Виктор Кубатый 1</span>
+							<span class="staff-sm-info-slogan">“Работаю как мушкетер - один за всех!”</span>
+						</div>
+				      </div>      
+				      <div class="team-sm-itm">
+				        <img src="img/communication/man.png" alt="">
+							<div class="staff-sm-info">
+							<span class="staff-sm-info-position">art director</span>
+							<span class="staff-sm-info-name">Виктор Кубатый 2</span>
+							<span class="staff-sm-info-slogan">“Работаю как мушкетер - один за всех!”</span>
+						</div>
+				      </div>      
+				      <div class="team-sm-itm">
+				        <img src="img/communication/man.png" alt="">
+							<div class="staff-sm-info">
+							<span class="staff-sm-info-position">art director</span>
+							<span class="staff-sm-info-name">Виктор Кубатый 3</span>
+							<span class="staff-sm-info-slogan">“Работаю как мушкетер - один за всех!”</span>
+						</div>
+				      </div>      
+				      <div class="team-sm-itm">
+				        <img src="img/communication/man.png" alt="">
+							<div class="staff-sm-info">
+								<span class="staff-sm-info-position">art director</span>
+								<span class="staff-sm-info-name">Виктор Кубатый 4</span>
+								<span class="staff-sm-info-slogan">“Работаю как мушкетер - один за всех!”</span>
+							</div>
+				      </div>     
+				      <div class="team-sm-itm">
+				        <img src="img/communication/man.png" alt="">
+							<div class="staff-sm-info">
+								<span class="staff-sm-info-position">art director</span>
+								<span class="staff-sm-info-name">Виктор Кубатый 5</span>
+								<span class="staff-sm-info-slogan">“Работаю как мушкетер - один за всех!”</span>
+							</div>
+				      </div>
+				  </div>
+			</div>
+
+		
+		</div>
+	<!--end team content-->
+	</section>
+<!--end team page-->
+
+<!--communication page-->
+	<section class="communication-sm" id="com">
+		
+	<!--communication content-->
+		<div class="pagesm-wrap">
+		<!--communication content-->
+			<div class="communication-sm-content text-center">
+		<!--pros page-->
+				<div class="communication-sm-top top-sm text-center">
+					<h2>Связь с нами</h2>
+				</div>
+
+				<div class="communication-sm-middle">
+				<!--form comm-->
+					<div class="com-sm-form">
+						<form action="">
+							<h4>Консультация експерта</h4>
+							<input type="text" placeholder="Ваше ИФО" name="Name">
+							<input type="tel" placeholder="Телефон" name="Phone">
+							<textarea placeholder="Опишите вашу проблему или предложение..." name="Desk"></textarea> 
+							<button class="page-5-btn">Заказать звонок</button>
+						</form>
+					</div>
+				<!--end end formm-->
+				</div>
+			</div>
+		<!--end communication content-->
+
+		
+			
+		</div>
+	<!--end communication content-->
+	</section>
+<!--end communication page-->
+
+<footer class="footer-sm">
+	
+	<div class="pagesm-wrap">
+
+		<div class="footer-sm-content">
+			<div class="footer-sm-content-text">
+				<p>«Если вас нет в Интернете, значит, вы не существуете», слова основателя Microsoft, Билла Гейтса. Разве поспоришь с этим высказыванием? Мы понимаем важность того, как Ваша компания будет представлена в Интернете. Именно поэтому мы и нужны Вам!</p>
+				<p>Хотите получить сайт Вашего будещего? Свяжитесь с Gera Tech любым удобным способом:</p>
+				<div class="con-social-sm">
+					<a class="con-social-sm-itm"><i class="fab fa-behance" data-fa-transform="shrink-7" data-fa-mask="fas fa-circle"></i></a>
+					<a class="con-social-sm-itm"><i class="fab fa-dribbble" data-fa-transform="shrink-6" data-fa-mask="fas fa-circle"></i></a>
+					<a class="con-social-sm-itm"><i class="fab fa-instagram" data-fa-transform="shrink-5" data-fa-mask="fas fa-circle"></i></a>
+					<a class="con-social-sm-itm"><i class="fab fa-facebook-f" data-fa-transform="shrink-5" data-fa-mask="fas fa-circle"></i></a>
+					<a class="con-social-sm-itm"><i class="fab fa-twitter" data-fa-transform="shrink-7" data-fa-mask="fas fa-circle"></i></a>
+					<a class="con-social-sm-itm"><i class="fab fa-linkedin-in" data-fa-transform="shrink-7" data-fa-mask="fas fa-circle"></i></a>
+					<a class="con-social-sm-itm"><i class="fab fa-github"></i></a>
+					<a class="con-social-sm-itm"><i class="fab fa-google-plus-g" data-fa-transform="shrink-7" data-fa-mask="fas fa-circle"></i></a>
+				</div>
+			</div>
+			<div class="footer-sm-content-contacts">
+				<a href="tel:380509354761"><i class="fas fa-phone"></i> +38-(050)-93-54-761</a><br>
+				<a href="tel:380673553844"><i class="fas fa-phone"></i> +38-(067)-35-53-844</a><br>
+				<a href="mailto: geratechstudio@gmail.com"><i class="fas fa-envelope"></i> geratechstudio@gmail.com</a>
+			</div>
+		</div>
+		<div class="footer-sm-bottom text-center">
+			Copyright &copy; 2018 Gera Tech Studio
+		</div>
+
+	</div>
+
+</footer>
+
+
+<div class="menu-sm text-center" id="menu-sm">
+	<p class="close-mod" onclick="cMenu()">&#10005;</p>
+	<a href="#">Сайт под ключ</a>
+	<a href="#">Прототипирование</a>
+	<a href="#">Продвижение</a>
+	<a href="#">Разработка фирменного дизайна</a>
+	<a href="#">Контекстная реклама</a>
+</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/pagesm.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Load Scripts End -->
+
+
+</body>
+</html>
