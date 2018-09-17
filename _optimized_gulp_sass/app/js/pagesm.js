@@ -54,8 +54,9 @@ window.onscroll = function() {
 // When the user scrolls down 20px from the top of the document, show the button
 
 function scrollFunction() {
-    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    if (document.body.scrollTop > fhome || document.documentElement.scrollTop > fhome) {
         document.getElementById("sTopBtn").style.display = "block";
+        
     } else {
         document.getElementById("sTopBtn").style.display = "none";
     }

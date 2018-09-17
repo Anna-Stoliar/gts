@@ -153,19 +153,6 @@ header
 			bottom: 0px
 
 #sTopBtn
-	width: 35px
-	height: 35px
-	color: #FD1D1D
-	position: fixed
-	bottom: 30px
-	right: 30px
-	border: none
-	outline: none
-	z-index: 999
-	display: none
-	cursor: pointer
-	background: none
-	font-size: 35px
 	animation-name: sTop
 	animation-duration: 1.5s
 	animation-iteration-count: infinite
@@ -175,7 +162,7 @@ header
 		80% {bottom: 50px}
 		100% {bottom: 60px}
 
-.home-btns-contact
+.home-btns-contact-sm
 	display: flex
 	justify-content: center
 	align-items: center
@@ -187,20 +174,39 @@ header
 	border: 10px solid rgba(250, 255, 255, 0.25)
 	border-radius: 50%
 	color: #333
+	animation-name: sTop
 	position: fixed
 	bottom: 25px
 	left: 25px
 	z-index: 999
-	&:hover
-		animation-name: size1
-		animation-duration: 1s
-		animation-fill-mode: forwards
-		@keyframes size1
-			10% {border: 15px solid rgba(250, 255, 255, 0.25)}
-			30% {background-color: #E11CB6}
-			60% {border: 1px solid rgba(255, 28, 182, 0.25)}
-			80% {background-image: radial-gradient(#24013A, #E11CB6)}
-			100% {color: #fff; background-image: radial-gradient(#24013A, #E11CB6); border: 5px solid rgba(255, 28, 182, 0.25); background-color: #777}
+	animation-name: sTop
+	animation-duration: 1.5s
+	animation-iteration-count: infinite
+	@keyframes sTop
+		0% {bottom: 30px}
+		10% {bottom: 40px}
+		80% {bottom: 50px}
+		100% {bottom: 60px}
+	&:active, &:focus
+		background-color: #E11CB6
+		color: #fff
+
+.home-btns-contact-sm-up
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 65px
+	height: 65px
+	font-size: 20px
+	background-color: #fff
+	background-clip: padding-box
+	border: 10px solid rgba(250, 255, 255, 0.25)
+	border-radius: 50%
+	color: #333
+	position: fixed
+	bottom: 25px
+	right: 25px
+	z-index: 999
 	&:active, &:focus
 		background-color: #E11CB6
 		color: #fff
@@ -209,11 +215,11 @@ header
 .home-sm
 	width: 100vw
 	position: relative
-	background-image: url(../img/header/bg-header.png)
-	background-attachment: fixed
+	background: linear-gradient(to top right, #24013A, #E11CB6)
 	&::before
 		content: ''
-		background: linear-gradient(to top right, #24013A, #E11CB6)
+		background-image: url(../img/header/bg-header.png)
+		background-attachment: fixed
 		top: 0
 		left: 0
 		width: 100%
@@ -243,12 +249,11 @@ header
 .services-sm
 	width: 100vw
 	position: relative
-	background-attachment: fixed
-	background-image: url(../img/services/bg-services.png)
+	background: linear-gradient(to right, #4DA0B0, #D39D38)
 	&::before
 		content: ''
-		background: linear-gradient(to right, #4DA0B0, #D39D38)
-		background-color: rgba(0, 0, 0, 0.5)
+		background-attachment: fixed
+		background-image: url(../img/services/bg-services.png)
 		top: 0
 		left: 0
 		width: 100%
@@ -310,12 +315,14 @@ header
 					justify-content: center
 					align-items: center
 					height: 0%
-					width: 100%
+					width: 96%
 					background: rgba(0, 0, 0, 0.8)
 					position: absolute
 					top: 0
 					color: transparent
 					font-size: 2vw
+					padding-left: 2%
+					padding-right: 2%
 		.services-sm-bottom
 			font-family: "Open Sans", sans-serif
 			font-weight: 700
@@ -327,12 +334,11 @@ header
 .pros-sm
 	width: 100vw
 	position: relative
-	background-attachment: fixed
-	background-image: url(../img/pros/bg-pros.png)
+	background: linear-gradient(to right, #FCB045 0%, #FD1D1D 30%,  #AE1CE1 100%)
 	&::before
 		content: ''
-		background: linear-gradient(to right, #FCB045 0%, #FD1D1D 30%,  #AE1CE1 100%)
-		background-color: rgba(0, 0, 0, 0.5)
+		background-attachment: fixed
+		background-image: url(../img/pros/bg-pros.png)
 		top: 0
 		left: 0
 		width: 100%
@@ -408,12 +414,6 @@ header
 					font-family: "Open Sans", sans-serif
 					font-weight: 400
 					font-size: 12px!important
-				.more
-					display: inline-block
-					transition: ease 1s display
-				.more-text
-					display: none
-					transition: ease 1s display
 				&:hover
 					background: #fff
 					border-radius: 4px
@@ -453,12 +453,11 @@ header
 .faq-sm
 	width: 100vw
 	position: relative
-	background-attachment: fixed
-	background-image: url(../img/faq/faq-bg.png)
+	background: linear-gradient(to right, #6BE585, #E72842)
 	&::before
 		content: ''
-		background: linear-gradient(to right, #6BE585, #E72842)
-		background-color: rgba(0, 0, 0, 0.5)
+		background-attachment: fixed
+		background-image: url(../img/faq/faq-bg.png)
 		top: 0
 		left: 0
 		width: 100%
@@ -546,12 +545,11 @@ header
 .team-sm
 	width: 100vw
 	position: relative
-	background-attachment: fixed
-	background-image: url(../img/team/team-bg.png)
+	background: linear-gradient(to right, #544A7D, #FFD452)
 	&::before
 		content: ''
-		background: linear-gradient(to right, #544A7D, #FFD452)
-		background-color: rgba(0, 0, 0, 0.5)
+		background-attachment: fixed
+		background-image: url(../img/team/team-bg.png)
 		top: 0
 		left: 0
 		width: 100%
@@ -578,7 +576,7 @@ header
 				align-items: center
 				background-color: rgba(0, 0, 0, 0.5)
 				padding: 5px
-				margin: 15px 10px
+				margin: 20px 10px
 				width: 85vw
 				&:nth-child(2n)
 					img
@@ -609,6 +607,7 @@ header
 					width: 200px
 					.staff-sm-info-position
 						opacity: 0.6
+						font-size: 12px
 					.staff-sm-info-name
 						font-weight: 700
 						font-size: em(18px)
@@ -629,12 +628,11 @@ header
 .communication-sm
 	width: 100vw
 	position: relative
-	background-attachment: fixed
-	background-image: url(../img/communication/com-bg.png)
+	background: linear-gradient(to right, #FF4B2B, #FF416C)
 	&::before
 		content: ''
-		background: linear-gradient(to right, #FF4B2B, #FF416C)
-		background-color: rgba(0, 0, 0, 0.5)
+		background-attachment: fixed
+		background-image: url(../img/communication/com-bg.png)
 		top: 0
 		left: 0
 		width: 100%
@@ -726,11 +724,11 @@ header
 .footer-sm
 	width: 100vw
 	position: relative
-	background-attachment: fixed
-	background-image: url(../img/contacts/contacts-bg.png)
+	background: linear-gradient(to top right, #24013A, #E11CB6)
 	&::before
 		content: ''
-		background: linear-gradient(to top right, #24013A, #E11CB6)
+		background-attachment: fixed
+		background-image: url(../img/contacts/contacts-bg.png)
 		top: 0
 		left: 0
 		width: 100%
@@ -745,13 +743,13 @@ header
 		.footer-sm-content-text
 			font-family: "Open Sans", sans-serif
 			font-weight: 400
-			font-size: 2vw
+			font-size: 2.2vw
 			padding-right: 15px
 			width: 50%
 			.con-social-sm
 				.con-social-sm-itm
 					font-size: 24px
-					&:hover
+					&:hover, &:active, &:focus
 						color: #ff766f
 		.footer-sm-content-contacts
 			>a
@@ -763,6 +761,62 @@ header
 	.footer-sm-bottom
 		margin-top: 15px
 		font-size: 14px
+
+.header-sm-menu
+	width: 100%
+	height: 55px
+	position: fixed
+	top: 0
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	background-color: #555
+	z-index: 998
+	background: linear-gradient(to right, #F37335, #FDC830)
+	opacity: 0.8
+	padding: 0 25px
+	.fa-bars
+		font-size: 25px
+		margin-right: 50px
+		cursor: pointer
+
+.page-menu
+	background: linear-gradient(to right, #FDC830, #F37335)
+	font-family: "Open Sans", sans-serif
+	font-weight: 600
+	margin: 0
+	padding: 55px 30px 30px
+	.page-menu-itm
+		border: 3px solid #fff
+		border-bottom-left-radius: 15px
+		border-bottom-right-radius: 15px
+		padding: 0 15px
+		margin: 24px 0
+		.page-menu-itm-head
+			padding: 10px
+			margin: 15px 0px 15px
+			display: flex
+			border-top-left-radius: 15px
+			border-top-right-radius: 15px
+			flex-direction: column
+			justify-content: center
+			align-items: flex-start
+			background-color: #fff
+			color: #421212
+			h4
+				font-size: 20px
+				padding: 0
+				margin: 0
+			p
+				padding: 0
+				margin: 0
+				border-top: 1px solid #421212
+				span
+					font-weight: 700
+		.page-menu-itm-body
+			font-weight: 400
+
 
 //ALWAYS END
 @import "media"
