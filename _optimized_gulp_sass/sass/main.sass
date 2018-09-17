@@ -211,21 +211,22 @@ header
 		background-color: #E11CB6
 		color: #fff
 
+.page-sm-bg
+	position: absolute
+	height: 100%
+	width: 100%
+	top: 0
+	left: 0
+	opacity: 0.5
+
 //home page
 .home-sm
 	width: 100vw
 	position: relative
 	background: linear-gradient(to top right, #24013A, #E11CB6)
-	&::before
-		content: ''
+	.sm-bg-home
 		background-image: url(../img/header/bg-header.png)
-		background-attachment: fixed
-		top: 0
-		left: 0
-		width: 100%
-		height: 100%
-		position: absolute
-		opacity: .5
+		position: fixed
 	.home-sm-content
 		position: relative
 		display: flex
@@ -250,16 +251,8 @@ header
 	width: 100vw
 	position: relative
 	background: linear-gradient(to right, #4DA0B0, #D39D38)
-	&::before
-		content: ''
-		background-attachment: fixed
+	.sm-bg-services
 		background-image: url(../img/services/bg-services.png)
-		top: 0
-		left: 0
-		width: 100%
-		height: 100%
-		position: absolute
-		opacity: .5
 	.services-sm-content
 		position: relative
 		display: flex
@@ -335,16 +328,8 @@ header
 	width: 100vw
 	position: relative
 	background: linear-gradient(to right, #FCB045 0%, #FD1D1D 30%,  #AE1CE1 100%)
-	&::before
-		content: ''
-		background-attachment: fixed
+	.sm-bg-pros
 		background-image: url(../img/pros/bg-pros.png)
-		top: 0
-		left: 0
-		width: 100%
-		height: 100%
-		position: absolute
-		opacity: .5
 	.pros-sm-content
 		position: relative
 		display: flex
@@ -454,16 +439,8 @@ header
 	width: 100vw
 	position: relative
 	background: linear-gradient(to right, #6BE585, #E72842)
-	&::before
-		content: ''
-		background-attachment: fixed
+	.sm-bg-faq
 		background-image: url(../img/faq/faq-bg.png)
-		top: 0
-		left: 0
-		width: 100%
-		height: 100%
-		position: absolute
-		opacity: .5
 	.faq-sm-content
 		position: relative
 		display: flex
@@ -546,16 +523,8 @@ header
 	width: 100vw
 	position: relative
 	background: linear-gradient(to right, #544A7D, #FFD452)
-	&::before
-		content: ''
-		background-attachment: fixed
+	.sm-bg-team
 		background-image: url(../img/team/team-bg.png)
-		top: 0
-		left: 0
-		width: 100%
-		height: 100%
-		position: absolute
-		opacity: .5
 	.team-sm-content
 		position: relative
 		display: flex
@@ -629,16 +598,8 @@ header
 	width: 100vw
 	position: relative
 	background: linear-gradient(to right, #FF4B2B, #FF416C)
-	&::before
-		content: ''
-		background-attachment: fixed
+	.sm-bg-com
 		background-image: url(../img/communication/com-bg.png)
-		top: 0
-		left: 0
-		width: 100%
-		height: 100%
-		position: absolute
-		opacity: .5
 	.communication-sm-content
 		position: relative
 		display: flex
@@ -725,16 +686,8 @@ header
 	width: 100vw
 	position: relative
 	background: linear-gradient(to top right, #24013A, #E11CB6)
-	&::before
-		content: ''
-		background-attachment: fixed
+	.sm-bg-footer
 		background-image: url(../img/contacts/contacts-bg.png)
-		top: 0
-		left: 0
-		width: 100%
-		height: 100%
-		position: absolute
-		opacity: .5
 	.footer-sm-content
 		display: flex
 		flex-direction: row
